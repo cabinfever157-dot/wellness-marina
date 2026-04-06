@@ -39,3 +39,32 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent/Development
+.opencode/
+.playwright-mcp/
+ARCHON_*.md
+COMMANDS.md
+DESIGN.md
+SESSION_HANDOFF.md
+global_sync.js
+update_commands.js
+test_openai.js
+opencode.json
+opencode.json.backup
+rules.md
+dev.log
+
+# Uploads (user-generated content)
+Uploads/
+
+# Backup folders
+rhtp-temp/
+
+# Agent config (local only)
+AGENTS.md
+CLAUDE.md
+
+# Screenshots
+*.png
+*.webp
