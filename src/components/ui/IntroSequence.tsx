@@ -53,7 +53,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             </video>
           </motion.div>
 
-          {/* Dark overlay - fades with video */}
+          {/* Dark overlay */}
           <motion.div
             initial={{ opacity: 0.3 }}
             animate={{ opacity: 0.6 }}
@@ -61,7 +61,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             className="absolute inset-0 bg-[#020C1B] z-10"
           />
 
-          {/* Text 1 - "Rural Waterfront" - Slides up, positioned in upper 3/4 */}
+          {/* Text 1 - "Rural Waterfront" - Slides up, positioned higher */}
           <AnimatePresence>
             {showText1 ? (
               <motion.div
@@ -69,7 +69,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-center justify-center pt-[10vh]"
+                className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
               >
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
                   Rural Waterfront
@@ -78,7 +78,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             ) : null}
           </AnimatePresence>
 
-          {/* Text 2 - Tagline - Slides up under Text 1 */}
+          {/* Text 2 - "Reimagined" - Slides up under Text 1 */}
           <AnimatePresence>
             {showText2 ? (
               <motion.div
@@ -86,7 +86,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-center justify-center pt-[28vh]"
+                className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
               >
                 <p className="text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
                   Reimagined
@@ -95,7 +95,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             ) : null}
           </AnimatePresence>
 
-          {/* Logo - Slides up under tagline */}
+          {/* Logo - Upper left, slides up */}
           <AnimatePresence>
             {showLogo ? (
               <motion.div
@@ -103,16 +103,13 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-center justify-center pt-[45vh]"
+                className="absolute inset-0 z-20 flex items-end justify-start px-8 pb-[15vh]"
               >
-                <div className="text-center">
-                  <span className="text-2xl md:text-4xl font-bold text-gradient-gold tracking-[0.3em]">
-                    NEWVION
-                  </span>
-                  <span className="block text-xs md:text-sm text-white/60 tracking-[0.5em] mt-2">
-                    WELLNESS MARINA
-                  </span>
-                </div>
+                <img 
+                  src="/images/logo.png" 
+                  alt="Newvion" 
+                  className="h-16 md:h-24 w-auto"
+                />
               </motion.div>
             ) : null}
           </AnimatePresence>
