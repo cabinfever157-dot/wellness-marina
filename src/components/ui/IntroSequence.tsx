@@ -12,10 +12,10 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setPhase("text"), 1200),
-      setTimeout(() => setPhase("video"), 2400),
-      setTimeout(() => setPhase("fade"), 4500),
-      setTimeout(() => onComplete(), 5500),
+      setTimeout(() => setPhase("text"), 1500),
+      setTimeout(() => setPhase("video"), 3000),
+      setTimeout(() => setPhase("fade"), 5000),
+      setTimeout(() => onComplete(), 6000),
     ];
     return () => timers.forEach(clearTimeout);
   }, [onComplete]);
@@ -29,10 +29,10 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="fixed inset-0 z-[300] bg-[#020C1B]"
         >
-          {/* Video Background - Fades in during video phase */}
+          {/* Video Background - Fades in during video phase only */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: phase !== "logo" && phase !== "text" ? 1 : 0 }}
+            animate={{ opacity: phase === "video" ? 1 : 0 }}
             transition={{ duration: 2, ease: "easeOut" }}
             className="absolute inset-0"
           >
@@ -43,65 +43,74 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             />
           </motion.div>
 
-          {/* Dark overlay for text legibility */}
-          <div className="absolute inset-0 bg-[#020C1B]/70 z-10" />
-
-          {/* Logo - Scales in */}
+          {/* Dark overlay for text legibility - stronger during logo/text phases */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute inset-0 z-20 flex items-center justify-center"
-          >
-            <div className="text-center">
-              {/* Logo mark / text */}
+            initial={{ opacity: 1 }}
+            animate={{ opacity: phase === "video" ? 0.5 : 1 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 bg-[#020C1B]/80 z-10"
+          />
+
+          {/* Phase 1: Logo - Centered, no overlap with text */}
+          <AnimatePresence>
+            {(phase === "logo") && (
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute inset-0 z-20 flex items-center justify-center"
+              >
+                <div className="text-center">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    className="text-5xl md:text-7xl font-bold text-white tracking-tight"
+                  >
+                    <span className="text-gradient-gold">Newvion</span>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    className="text-sm md:text-lg text-white/60 tracking-[0.4em] uppercase mt-4"
+                  >
+                    Wellness Marina
+                  </motion.div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Phase 2 & 3: Headline Text - Appears BELOW logo area, never overlaps */}
+          <AnimatePresence>
+            {(phase === "text" || phase === "video") && (
+              <motion.div
+                initial={{ opacity: 0, y: 60 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="text-4xl md:text-6xl font-bold text-white tracking-tight"
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute inset-0 z-30 flex items-end justify-center pb-24 md:pb-32 px-4"
               >
-                <span className="text-gradient-gold">Newvion</span>
+                <div className="text-center max-w-5xl">
+                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display leading-[0.95] tracking-tight text-white">
+                    Rural Waterfront
+                    <br />
+                    <span className="text-gradient-gold italic">Reimagined</span>
+                  </h1>
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    className="text-base md:text-xl text-white/70 mt-6 max-w-2xl mx-auto"
+                  >
+                    Healthcare, hospitality, community — designed for living well.
+                  </motion.p>
+                </div>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-sm md:text-base text-white/60 tracking-[0.4em] uppercase mt-2"
-              >
-                Wellness Marina
-              </motion.div>
-            </div>
-          </motion.div>
-
-          {/* Animated Headline Text */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: phase === "text" || phase === "video" ? 1 : 0 }}
-            transition={{ duration: 0.8 }}
-            className="absolute inset-0 z-30 flex items-center justify-center"
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, delay: 0, ease: [0.16, 1, 0.3, 1] }}
-              className="text-center px-4 max-w-5xl"
-            >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight text-white">
-                Rural Waterfront
-                <br />
-                <span className="text-gradient-gold italic">Reimagined</span>
-              </h1>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.6 }}
-                className="text-lg md:text-xl text-white/70 mt-6 max-w-2xl mx-auto"
-              >
-                Healthcare, hospitality, community — designed for living well.
-              </motion.p>
-            </motion.div>
-          </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* Progress bar */}
           <motion.div
