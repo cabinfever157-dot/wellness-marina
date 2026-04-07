@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.className} ${playfair.className}`}>
-      <body className="min-h-full antialiased bg-background text-text selection:bg-gold/30 selection:text-gold overflow-x-hidden">
+      <body className="min-h-full antialiased text-text selection:bg-gold/30 selection:text-gold overflow-x-hidden">
         {/* Grain texture overlay */}
         <div
           className="fixed inset-0 pointer-events-none z-[99] opacity-[0.025] mix-blend-overlay"
