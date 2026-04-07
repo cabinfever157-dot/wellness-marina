@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="text-xs font-bold text-[#D4AF37] tracking-[0.3em] uppercase mb-6"
+          className="text-xs font-bold text-[#D4AF37] tracking-[0.3em] uppercase mb-16"
         >
           Moore Haven, Florida — April 2026
         </motion.p>
@@ -48,7 +48,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight max-w-5xl"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight max-w-5xl text-white"
         >
           Rural Waterfront
           <br />

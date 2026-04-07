@@ -54,10 +54,10 @@ export function IntroSequence({ videoId, onComplete }: IntroSequenceProps) {
           </motion.div>
 
           {/* Content Layer */}
-          <div className="relative z-20 flex flex-col items-center justify-center max-w-4xl px-8 w-full h-full">
+          <div className="relative z-20 flex flex-col items-center justify-start pt-32 max-w-4xl px-8 w-full h-full">
             {/* Mission Text */}
             <motion.div
-              animate={{ y: showLogo ? -80 : 0 }}
+              animate={{ y: showLogo ? -120 : 0 }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
               className="flex flex-col items-center justify-center"
             >
@@ -77,7 +77,7 @@ export function IntroSequence({ videoId, onComplete }: IntroSequenceProps) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ 
                   opacity: showText ? 1 : 0,
-                  y: showLogo ? -60 : 0
+                  y: showLogo ? -100 : 0
                 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
                 className="mt-16 text-center"
