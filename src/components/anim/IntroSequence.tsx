@@ -102,7 +102,7 @@ export function IntroSequence({ videoId, onComplete }: IntroSequenceProps) {
                   y: showLogo ? -60 : 0
                 }}
                 transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-                className="mt-8 text-center"
+                className="mt-16 text-center"
               >
                 <div className="text-lg md:text-xl lg:text-2xl text-white/80 tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
                   Designed for Living Well
