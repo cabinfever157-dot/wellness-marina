@@ -60,7 +60,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
         initial={{ opacity: 0, y: 200 }}
         animate={phase !== "video" ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[3vh]"
       >
         <div className="relative">
           {/* Glow behind text */}
@@ -76,7 +76,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
         initial={{ opacity: 0, y: 200 }}
         animate={phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[13vh]"
       >
         <div className="relative">
           {/* Glow behind text */}
@@ -92,7 +92,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
         initial={{ opacity: 0, y: 200 }}
         animate={phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute inset-0 z-20 flex items-center justify-center pt-[35vh]"
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[19vh]"
       >
         <div className="relative">
           {/* Glow effect behind logo */}
