@@ -13,11 +13,11 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
   useEffect(() => {
     const timers = [
       setTimeout(() => setPhase("text1"), 1000),
-      setTimeout(() => setPhase("text2"), 2200),
-      setTimeout(() => setPhase("logo"), 3400),
-      setTimeout(() => setPhase("hold"), 4400),
-      setTimeout(() => setPhase("fade"), 6400),
-      setTimeout(() => onComplete(), 7400),
+      setTimeout(() => setPhase("text2"), 2600),
+      setTimeout(() => setPhase("logo"), 4200),
+      setTimeout(() => setPhase("hold"), 5200),
+      setTimeout(() => setPhase("fade"), 7200),
+      setTimeout(() => onComplete(), 8200),
     ];
     return () => timers.forEach(clearTimeout);
   }, [onComplete]);
@@ -26,7 +26,7 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1, ease: "easeInOut" }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
       className="fixed inset-0 z-[300] bg-[#020C1B] overflow-hidden"
     >
       {/* Video - ONLY the video fades in, nothing else */}
@@ -53,53 +53,53 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
       {/* All content container - centered, stacked vertically with proper spacing */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-[15vh]">
         
-        {/* Text 1 - "Rural Waterfront" - Slides up, positioned in upper 3/4 */}
+        {/* Text 1 - "Rural Waterfront" - Slides up slowly, positioned in upper 3/4 */}
         <motion.div
           initial={{ opacity: 0, y: 150 }}
           animate={phase !== "video" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
           className="relative"
         >
-          {/* Glow behind text */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-32 bg-white/[0.03] rounded-full blur-3xl" />
+          {/* Dark glow behind text */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-40 bg-black/60 rounded-full blur-3xl" />
           <h1 className="relative z-10 text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
             Rural Waterfront
           </h1>
         </motion.div>
 
-        {/* Spacer - AT LEAST 1 inch gap (mt-6 ≈ 24px, user wants more) */}
+        {/* Spacer - AT LEAST 1 inch gap */}
         <div className="h-16" />
 
-        {/* Text 2 - "Reimagined" - Slides in under Text 1 */}
+        {/* Text 2 - "Reimagined" - Slides in slowly under Text 1 */}
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
           className="relative"
         >
-          {/* Glow behind text */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-20 bg-white/[0.02] rounded-full blur-3xl" />
+          {/* Dark glow behind text */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-24 bg-black/50 rounded-full blur-3xl" />
           <p className="relative z-10 text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
             Reimagined
           </p>
         </motion.div>
 
-        {/* Spacer - AT LEAST 2 inches gap (h-12 ≈ 48px) */}
+        {/* Spacer - AT LEAST 2 inches gap */}
         <div className="h-16" />
 
-        {/* Logo - Slides in, AT LEAST 2 inches from tagline */}
+        {/* Logo - Slides in slowly, 2+ inches from tagline, double size with bright glow */}
         <motion.div
           initial={{ opacity: 0, y: 80 }}
           animate={phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
           className="relative"
         >
-          {/* Glow effect behind logo */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 bg-gradient-to-r from-[#D4AF37]/25 to-[#D4AF37]/15 rounded-full blur-3xl" />
+          {/* Bright glow effect behind logo */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-40 bg-gradient-to-r from-[#D4AF37]/50 to-[#FFD700]/30 rounded-full blur-3xl" />
           <img 
             src="/images/logo.png" 
             alt="Newvion" 
-            className="relative z-10 h-20 md:h-28 w-auto"
+            className="relative z-10 h-40 md:h-56 w-auto"
           />
         </motion.div>
       </div>
