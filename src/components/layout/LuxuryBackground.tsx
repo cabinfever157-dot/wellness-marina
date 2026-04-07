@@ -38,15 +38,18 @@ export function LuxuryBackground() {
         style={{ x: springX, y: springY }}
         className="absolute inset-[-5%] w-[110%] h-[110%]"
       >
-        <div
+        {/* The Blurred Marina Background */}
+        <div 
           className="absolute inset-0 bg-cover bg-center opacity-60"
-          style={{
+          style={{ 
             backgroundImage: "url('/images/blur-bg.png')",
-            filter: "blur(20px) saturate(1.1) brightness(1.2)",
+            filter: "blur(20px) saturate(1.2) brightness(0.9)"
           }}
         />
-        <div className="absolute inset-0 bg-[#FDFBF7]/40" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/20 to-[#FDFBF7]/80" />
+        
+        {/* Dark layered gradients to let the blurred image shine through */}
+        <div className="absolute inset-0 bg-[#0d1b3e]/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/90 via-[#0d1b3e]/40 to-[#0d1b3e]/90" />
       </motion.div>
     </div>
   );
