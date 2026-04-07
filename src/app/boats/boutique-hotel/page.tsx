@@ -26,10 +26,14 @@ export default function BoutiqueHotelPage() {
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
-              <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/2.jpg')" }} />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+              <div className="relative h-64 lg:h-auto min-h-[300px] overflow-hidden rounded-l-2xl">
+                <iframe
+                  src="https://player.vimeo.com/video/1177737915?title=0&byline=0&portrait=0"
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0d1b3e]/80 via-transparent to-transparent pointer-events-none" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Waterfront Resort Experience</h2>
