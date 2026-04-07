@@ -85,6 +85,14 @@ const boatItems = [
     tagColor: "bg-purple-600/90 text-white shadow-purple-500/50 shadow-lg",
   },
   {
+    name: "Spa Boat",
+    description: "Luxury spa treatments on the water — massage, hydrotherapy, steam rooms, and relaxation lounges with waterfront views.",
+    href: "/boats/spa",
+    image: "/images/2.jpg",
+    tag: "Wellness",
+    tagColor: "bg-rose-600/90 text-white shadow-rose-500/50 shadow-lg",
+  },
+  {
     name: "Wellness Retreat Boat",
     description: "Immersive wellness programming — yoga, mindfulness, nutrition, and spa treatments on the water.",
     href: "/boats/wellness-retreat",
