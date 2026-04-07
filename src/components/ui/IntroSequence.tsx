@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 interface IntroSequenceProps {
@@ -22,96 +22,89 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
     return () => timers.forEach(clearTimeout);
   }, [onComplete]);
 
-  const showText1 = phase !== "video";
-  const showText2 = phase === "text2" || phase === "logo" || phase === "hold";
-  const showLogo = phase === "logo" || phase === "hold";
-  const isFading = phase === "fade";
-
   return (
-    <AnimatePresence>
-      {!isFading && (
-        <motion.div
-          initial={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed inset-0 z-[300] bg-[#020C1B] overflow-hidden"
+    <motion.div
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="fixed inset-0 z-[300] bg-[#020C1B] overflow-hidden"
+    >
+      {/* Video - Fades in first */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="absolute inset-0"
+      >
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
         >
-          {/* Video - Fades in first */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            className="absolute inset-0"
-          >
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="/videos/Hero.mp4" type="video/mp4" />
-            </video>
-          </motion.div>
+          <source src="/videos/Hero.mp4" type="video/mp4" />
+        </video>
+      </motion.div>
 
-          {/* Dark overlay */}
-          <motion.div
-            initial={{ opacity: 0.3 }}
-            animate={{ opacity: 0.6 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0 bg-[#020C1B] z-10"
+      {/* Dark overlay */}
+      <motion.div
+        initial={{ opacity: 0.3 }}
+        animate={{ opacity: 0.6 }}
+        transition={{ duration: 1.5 }}
+        className="absolute inset-0 bg-[#020C1B] z-10"
+      />
+
+      {/* Text 1 - "Rural Waterfront" - Animates to final position once */}
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        animate={phase !== "video" ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
+      >
+        <div className="relative">
+          {/* Glow behind text */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-24 bg-white/[0.03] rounded-full blur-3xl" />
+          <h1 className="relative z-10 text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
+            Rural Waterfront
+          </h1>
+        </div>
+      </motion.div>
+
+      {/* Text 2 - "Reimagined" - Animates to final position once */}
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        animate={phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
+      >
+        <div className="relative">
+          {/* Glow behind text */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-16 bg-white/[0.02] rounded-full blur-3xl" />
+          <p className="relative z-10 text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
+            Reimagined
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Logo - Centered with glow */}
+      <motion.div
+        initial={{ opacity: 0, y: 200 }}
+        animate={phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 z-20 flex items-center justify-center pt-[35vh]"
+      >
+        <div className="relative">
+          {/* Glow effect behind logo */}
+          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-32 bg-gradient-to-r from-[#D4AF37]/25 to-[#D4AF37]/15 rounded-full blur-3xl" />
+          <img 
+            src="/images/logo.png" 
+            alt="Newvion" 
+            className="relative z-10 h-20 md:h-28 w-auto"
           />
-
-          {/* Text 1 - "Rural Waterfront" - Single animation, stays in place */}
-          {showText1 && (
-            <motion.div
-              initial={{ opacity: 0, y: 150 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
-            >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
-                Rural Waterfront
-              </h1>
-            </motion.div>
-          )}
-
-          {/* Text 2 - "Reimagined" - Animates in, stays in place */}
-          {showText2 && (
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
-            >
-              <p className="text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
-                Reimagined
-              </p>
-            </motion.div>
-          )}
-
-          {/* Logo - Centered with glow, animates in, stays in place */}
-          {showLogo && (
-            <motion.div
-              initial={{ opacity: 0, y: 80 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute inset-0 z-20 flex items-center justify-center pt-[35vh]"
-            >
-              <div className="relative">
-                {/* Glow effect behind logo */}
-                <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-[#D4AF37]/30 to-[#D4AF37]/20 rounded-full blur-3xl" />
-                <img 
-                  src="/images/logo.png" 
-                  alt="Newvion" 
-                  className="relative z-10 h-20 md:h-28 w-auto"
-                />
-              </div>
-            </motion.div>
-          )}
-        </motion.div>
-      )}
-    </AnimatePresence>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
