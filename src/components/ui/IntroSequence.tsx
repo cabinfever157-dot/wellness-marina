@@ -22,13 +22,14 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
     return () => timers.forEach(clearTimeout);
   }, [onComplete]);
 
-  const showText1 = phase === "text1" || phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade";
-  const showText2 = phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade";
-  const showLogo = phase === "logo" || phase === "hold" || phase === "fade";
+  const showText1 = phase !== "video";
+  const showText2 = phase === "text2" || phase === "logo" || phase === "hold";
+  const showLogo = phase === "logo" || phase === "hold";
+  const isFading = phase === "fade";
 
   return (
     <AnimatePresence>
-      {phase !== "fade" && (
+      {!isFading && (
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -61,58 +62,53 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
             className="absolute inset-0 bg-[#020C1B] z-10"
           />
 
-          {/* Text 1 - "Rural Waterfront" - Slides up, positioned higher */}
-          <AnimatePresence>
-            {showText1 ? (
-              <motion.div
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
-              >
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
-                  Rural Waterfront
-                </h1>
-              </motion.div>
-            ) : null}
-          </AnimatePresence>
+          {/* Text 1 - "Rural Waterfront" - Single animation, stays in place */}
+          {showText1 && (
+            <motion.div
+              initial={{ opacity: 0, y: 150 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute inset-0 z-20 flex items-center justify-center pt-[5vh]"
+            >
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
+                Rural Waterfront
+              </h1>
+            </motion.div>
+          )}
 
-          {/* Text 2 - "Reimagined" - Slides up under Text 1 */}
-          <AnimatePresence>
-            {showText2 ? (
-              <motion.div
-                initial={{ opacity: 0, y: 80 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
-              >
-                <p className="text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
-                  Reimagined
-                </p>
-              </motion.div>
-            ) : null}
-          </AnimatePresence>
+          {/* Text 2 - "Reimagined" - Animates in, stays in place */}
+          {showText2 && (
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute inset-0 z-20 flex items-center justify-center pt-[18vh]"
+            >
+              <p className="text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
+                Reimagined
+              </p>
+            </motion.div>
+          )}
 
-          {/* Logo - Upper left, slides up */}
-          <AnimatePresence>
-            {showLogo ? (
-              <motion.div
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 z-20 flex items-end justify-start px-8 pb-[15vh]"
-              >
+          {/* Logo - Centered with glow, animates in, stays in place */}
+          {showLogo && (
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute inset-0 z-20 flex items-center justify-center pt-[35vh]"
+            >
+              <div className="relative">
+                {/* Glow effect behind logo */}
+                <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-gradient-to-r from-[#D4AF37]/30 to-[#D4AF37]/20 rounded-full blur-3xl" />
                 <img 
                   src="/images/logo.png" 
                   alt="Newvion" 
-                  className="h-16 md:h-24 w-auto"
+                  className="relative z-10 h-20 md:h-28 w-auto"
                 />
-              </motion.div>
-            ) : null}
-          </AnimatePresence>
+              </div>
+            </motion.div>
+          )}
         </motion.div>
       )}
     </AnimatePresence>
