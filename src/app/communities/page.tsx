@@ -36,7 +36,7 @@ export default function CommunitiesPage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 1</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Vision Plan</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6">$75,000 Engagement</div>
+                
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
                   A comprehensive 60-90 day discovery process designed to unearth your community&apos;s true potential, bypass consulting theories, and deliver a deployable roadmap.
                 </p>
@@ -59,7 +59,7 @@ export default function CommunitiesPage() {
                   <span className="bg-blue-600 text-white shadow-blue-500/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 2</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Community Platform</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6">$5,000 / month</div>
+                
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
                   A fully branded digital destination that acts as your modern economic development infrastructure, replacing outdated methods with a national marketing engine.
                 </p>
