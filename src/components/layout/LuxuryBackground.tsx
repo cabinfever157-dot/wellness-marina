@@ -42,11 +42,11 @@ export function LuxuryBackground() {
           className="absolute inset-0 bg-cover bg-center opacity-60"
           style={{
             backgroundImage: "url('/images/2.jpg')",
-            filter: "blur(30px) saturate(1.3) brightness(0.7)",
+            filter: "blur(20px) saturate(1.1) brightness(1.2)",
           }}
         />
-        <div className="absolute inset-0 bg-[#0d1b3e]/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/20 to-[#0d1b3e]/90" />
+        <div className="absolute inset-0 bg-[#FDFBF7]/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/20 to-[#FDFBF7]/80" />
       </motion.div>
     </div>
   );

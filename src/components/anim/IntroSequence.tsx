@@ -10,24 +10,16 @@ interface IntroSequenceProps {
 }
 
 export function IntroSequence({ videoId, onComplete }: IntroSequenceProps) {
-  const [showAurora, setShowAurora] = useState(true);
-  const [showVideo, setShowVideo] = useState(false);
   const [showText, setShowText] = useState(true);
   const [showLogo, setShowLogo] = useState(false);
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   useEffect(() => {
-    const videoTimer = setTimeout(() => {
-      setShowVideo(true);
-      setShowAurora(false);
-    }, 2000);
-
     const logoTimer = setTimeout(() => setShowLogo(true), 3500);
     const fadeOutTimer = setTimeout(() => setIsFadingOut(true), 5500);
     const completeTimer = setTimeout(() => onComplete(), 8500);
 
     return () => {
-      clearTimeout(videoTimer);
       clearTimeout(logoTimer);
       clearTimeout(fadeOutTimer);
       clearTimeout(completeTimer);
@@ -43,24 +35,10 @@ export function IntroSequence({ videoId, onComplete }: IntroSequenceProps) {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 3, ease: "easeInOut" } }}
         >
-          {/* Aurora Background */}
-          <motion.div
-            animate={{ opacity: showAurora ? 1 : 0 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
-            className="absolute inset-0 z-0"
-          >
-            <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0d1b3e] via-[#112240] to-[#0d1b3e]" />
-              <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FFD700]/20 rounded-full blur-[120px] animate-pulse" />
-              <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-teal-500/20 rounded-full blur-[100px] animate-pulse" />
-              <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-500/15 rounded-full blur-[80px] animate-pulse" />
-            </div>
-          </motion.div>
-
-          {/* Video Layer */}
+          {/* Video Layer - Fade in from start */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: showVideo ? 1 : 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 2, ease: "easeInOut" }}
             className="absolute inset-0 z-10 pointer-events-none"
           >

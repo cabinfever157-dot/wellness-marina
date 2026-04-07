@@ -17,16 +17,16 @@
   --color-gold-light: #E5C158;
   --color-gold-dark: #AA8C2C;
 
-  --color-background: #020C1B;
-  --color-text: #F8F5F2;
+  --color-background: #FDFBF7;
+  --color-text: #1E293B;
   --color-primary: #D4AF37;
   --color-cta: #D4AF37;
-  --color-muted-foreground: #94A3B8;
+  --color-muted-foreground: #64748B;
 
-  --color-gold-accent: #FFD700;
-  --color-ocean: #1a4b8c;
-  --color-teal-accent: #2dd4bf;
-  --color-warm-white: #f8f6f0;
+  --color-gold-accent: #D4AF37;
+  --color-ocean: #3B82F6;
+  --color-teal-accent: #0D9488;
+  --color-warm-white: #F8F5F2;
   --color-soft-gold: #fef3c7;
 
   --animate-float: float 6s ease-in-out infinite;

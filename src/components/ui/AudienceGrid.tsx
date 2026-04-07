@@ -106,7 +106,7 @@ const AudienceGrid = () => {
                 filter: "brightness(1.2) saturate(1.3)",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/80 via-[#0d1b3e]/40 to-[#0d1b3e]/20" />
             <div className={`absolute inset-0 bg-gradient-to-br ${card.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
             {/* Content */}
