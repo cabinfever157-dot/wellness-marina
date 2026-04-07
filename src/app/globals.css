@@ -69,7 +69,7 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: transparent;
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

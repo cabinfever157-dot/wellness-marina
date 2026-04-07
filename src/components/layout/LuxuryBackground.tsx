@@ -2,10 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion, useSpring } from "framer-motion";
-import { usePathname } from "next/navigation";
 
 export function LuxuryBackground() {
-  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
 
   const springX = useSpring(0, { stiffness: 40, damping: 30 });
@@ -30,7 +28,7 @@ export function LuxuryBackground() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mounted, springX, springY]);
 
-  if (!mounted || pathname === "/") return null;
+  if (!mounted) return null;
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -38,18 +36,17 @@ export function LuxuryBackground() {
         style={{ x: springX, y: springY }}
         className="absolute inset-[-5%] w-[110%] h-[110%]"
       >
-        {/* The Blurred Marina Background */}
+        {/* The Blurred Marina Background - fully visible */}
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-60"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ 
             backgroundImage: "url('/images/blur-bg.png')",
-            filter: "blur(20px) saturate(1.2) brightness(0.9)"
+            filter: "blur(30px) saturate(1.3) brightness(1.1)"
           }}
         />
         
-        {/* Dark layered gradients to let the blurred image shine through */}
-        <div className="absolute inset-0 bg-[#0d1b3e]/60" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/90 via-[#0d1b3e]/40 to-[#0d1b3e]/90" />
+        {/* Subtle dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/70 via-[#0d1b3e]/30 to-[#0d1b3e]/70" />
       </motion.div>
     </div>
   );
