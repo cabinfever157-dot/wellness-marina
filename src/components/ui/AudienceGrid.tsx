@@ -7,7 +7,7 @@ const bentoCards = [
   {
     title: "For Communities",
     subtitle: "Transform Your Town",
-    description: "Activate waterfront assets with our 3-stage development model — from Vision Plan to physical deployment.",
+    description: "Activate the waterfront with our 3-stage development model - From Vision Plan to making the economic development connections.",
     href: "/communities",
     image: "/images/2.jpg",
     span: "col-span-1 md:col-span-2 row-span-2",

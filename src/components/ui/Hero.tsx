@@ -97,9 +97,8 @@ const Hero = () => {
           className="flex flex-wrap gap-8 md:gap-16 mt-12 pt-8 border-t border-white/10"
         >
           {[
-            { value: "11+", label: "Purpose-Built Boats" },
-            { value: "$4M", label: "RHTP Grant Funding" },
-            { value: "15M+", label: "Wellness Consumers" },
+            { value: "11+", label: "Curated Boats" },
+            { value: "100", label: "Wellness Consumers" },
             { value: "Apr '26", label: "Pilot Launch" },
           ].map((stat) => (
             <div key={stat.label} className="group">

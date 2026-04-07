@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/entrepreneurs', label: 'Entrepreneurs' },
   { href: '/investors', label: 'Investors' },
   { href: '/sponsors', label: 'Sponsors' },
-  { href: '/boats', label: 'Boats' },
+  { href: '/team', label: 'The Team' },
 ];
 
 const Header = () => {

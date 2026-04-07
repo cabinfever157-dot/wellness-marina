@@ -31,7 +31,6 @@ export default function IntroWrapper({ children }: { children: React.ReactNode }
     <>
       {!introComplete && (
         <IntroSequence
-          videoId="q2uPQl9Izq4"
           onComplete={handleIntroComplete}
         />
       )}

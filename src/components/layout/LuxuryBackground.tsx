@@ -41,7 +41,7 @@ export function LuxuryBackground() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-60"
           style={{
-            backgroundImage: "url('/images/2.jpg')",
+            backgroundImage: "url('/images/blur-bg.png')",
             filter: "blur(20px) saturate(1.1) brightness(1.2)",
           }}
         />

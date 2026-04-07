@@ -111,7 +111,7 @@ const Boats = () => {
           </span>
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
-        <h2 className="text-4xl md:text-6xl font-bold text-white">Eleven Boats.<br className="md:hidden" /> One Marina.</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-white">The Wellness Connected Marina.</h2>
         <p className="text-lg text-white/40 mt-4 max-w-2xl mx-auto">
           Each vessel is a purpose-built, multi-story platform — from clinical healthcare to culinary experiences.
         </p>
@@ -173,18 +173,7 @@ const Boats = () => {
         ))}
       </div>
 
-      {/* View All Link */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-        className="mt-12 text-center"
-      >
-        <Link href="/boats" className="text-[#FFD700] hover:underline cursor-pointer text-sm font-medium">
-          View all 11 boats →
-        </Link>
-      </motion.div>
+
     </div>
   );
 };
