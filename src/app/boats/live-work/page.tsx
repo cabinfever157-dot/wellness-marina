@@ -33,7 +33,7 @@ export default function LiveWorkPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-teal-500/20 text-teal-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Main Deck — Clinical Suite</span>
+                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Suite</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Your Practice on the Water</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -60,7 +60,7 @@ export default function LiveWorkPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Upper Deck — Private Residence</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Private Residence</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Your Waterfront Home</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">

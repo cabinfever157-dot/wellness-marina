@@ -41,7 +41,7 @@ export default function StudioPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-pink-500/20 text-pink-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Production Facilities</span>
+                  <span className="bg-pink-600 text-white shadow-pink-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Production Facilities</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Professional Content Creation</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -73,7 +73,7 @@ export default function StudioPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Rooftop Pavilion</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Open-Air Broadcast Space</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">

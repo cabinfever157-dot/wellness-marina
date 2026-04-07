@@ -39,7 +39,7 @@ export default function PrimaryCarePage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Main Deck — Clinical Services</span>
+                  <span className="bg-blue-600 text-white shadow-blue-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Services</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Full-Service Primary Care</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -62,7 +62,7 @@ export default function PrimaryCarePage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Upper Deck — Telehealth & Education</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Telehealth & Education</span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4">Telehealth Hub & Health Education</h2>
                 <p className="text-slate-300 text-lg leading-relaxed">

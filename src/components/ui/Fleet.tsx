@@ -10,7 +10,7 @@ const fleetItems = [
     href: "/fleet/primary-care",
     image: "/images/3.png",
     tag: "Healthcare",
-    tagColor: "bg-blue-500/20 text-blue-300",
+    tagColor: "bg-blue-600/90 text-white shadow-blue-500/50 shadow-lg",
   },
   {
     name: "Oncology Boat",
@@ -18,7 +18,7 @@ const fleetItems = [
     href: "/fleet/oncology",
     image: "/images/4.png",
     tag: "Specialty Care",
-    tagColor: "bg-purple-500/20 text-purple-300",
+    tagColor: "bg-purple-600/90 text-white shadow-purple-500/50 shadow-lg",
   },
   {
     name: "Dermatology Boat",
@@ -26,7 +26,7 @@ const fleetItems = [
     href: "/fleet/dermatology",
     image: "/images/5.png",
     tag: "Dual-Purpose",
-    tagColor: "bg-emerald-500/20 text-emerald-300",
+    tagColor: "bg-emerald-600/90 text-white shadow-emerald-500/50 shadow-lg",
   },
   {
     name: "Vision Care Boat",
@@ -34,7 +34,7 @@ const fleetItems = [
     href: "/fleet/vision-care",
     image: "/images/6.png",
     tag: "Healthcare",
-    tagColor: "bg-blue-500/20 text-blue-300",
+    tagColor: "bg-blue-600/90 text-white shadow-blue-500/50 shadow-lg",
   },
   {
     name: "Culinary Boat",
@@ -42,7 +42,7 @@ const fleetItems = [
     href: "/fleet/culinary",
     image: "/images/7.png",
     tag: "Lifestyle",
-    tagColor: "bg-amber-500/20 text-amber-300",
+    tagColor: "bg-amber-600/90 text-black shadow-amber-400/50 shadow-lg",
   },
   {
     name: "Studio Boat",
@@ -50,7 +50,7 @@ const fleetItems = [
     href: "/fleet/studio",
     image: "/images/8.png",
     tag: "Creative",
-    tagColor: "bg-pink-500/20 text-pink-300",
+    tagColor: "bg-pink-600/90 text-white shadow-pink-500/50 shadow-lg",
   },
 ];
 
@@ -95,7 +95,7 @@ const Fleet = () => {
                     style={{ backgroundImage: `url('${item.image}')` }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-                  <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold ${item.tagColor} drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]`}>
+                  <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md ${item.tagColor} shadow-lg`}>
                     {item.tag}
                   </span>
                 </div>

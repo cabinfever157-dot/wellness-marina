@@ -87,7 +87,7 @@ export default function CulinaryPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-amber-500/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Main Deck — Community Kitchen & Casual Dining</span>
+                  <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Community Kitchen & Casual Dining</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Where Education Meets Experience</h2>
                 <p className="text-white/60 text-lg leading-relaxed mb-6">
@@ -119,7 +119,7 @@ export default function CulinaryPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Second Floor — Chef's Table & Nutrition Care</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Second Floor — Chef's Table & Nutrition Care</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Premium Dining Meets Clinical Care</h2>
                 <p className="text-white/60 text-lg leading-relaxed mb-6">
@@ -142,7 +142,7 @@ export default function CulinaryPage() {
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
             <div className="text-center mb-8">
-              <span className="bg-amber-500/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Rooftop Pavilion</span>
+                  <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
               <h2 className="text-3xl font-bold text-white mt-4 mb-4">Where the Marina Comes Alive</h2>
               <p className="text-white/50 text-lg max-w-2xl mx-auto">
                 Accessible from both the main deck and the second floor, the rooftop is an open-air terrace for outdoor waterfront dining, weekly farm-to-table community markets, cooking demonstrations, food festivals, and seasonal community dining events.

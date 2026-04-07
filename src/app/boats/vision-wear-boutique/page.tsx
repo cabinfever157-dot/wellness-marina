@@ -33,7 +33,7 @@ export default function VisionWearBoutiquePage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-amber-500/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">The Boutique</span>
+                  <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">The Boutique</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Curated Optical Retail</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">

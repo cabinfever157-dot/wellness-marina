@@ -10,7 +10,7 @@ const boatItems = [
     href: "/boats/primary-care",
     image: "/images/3.png",
     tag: "Healthcare",
-    tagColor: "bg-blue-500/20 text-blue-300",
+    tagColor: "bg-blue-600/90 text-white shadow-blue-500/50 shadow-lg",
   },
   {
     name: "Mental Health Boat",
@@ -18,7 +18,7 @@ const boatItems = [
     href: "/boats/mental-health",
     image: "/images/Mental_Wellness_1.png",
     tag: "Wellness",
-    tagColor: "bg-teal-500/20 text-teal-300",
+    tagColor: "bg-teal-600/90 text-white shadow-teal-500/50 shadow-lg",
   },
   {
     name: "Oncology Boat",
@@ -26,7 +26,7 @@ const boatItems = [
     href: "/boats/oncology",
     image: "/images/4.png",
     tag: "Specialty Care",
-    tagColor: "bg-purple-500/20 text-purple-300",
+    tagColor: "bg-purple-600/90 text-white shadow-purple-500/50 shadow-lg",
   },
   {
     name: "Dermatology Boat",
@@ -34,7 +34,7 @@ const boatItems = [
     href: "/boats/dermatology",
     image: "/images/5.png",
     tag: "Dual-Purpose",
-    tagColor: "bg-emerald-500/20 text-emerald-300",
+    tagColor: "bg-emerald-600/90 text-white shadow-emerald-500/50 shadow-lg",
   },
   {
     name: "Vision Care Boat",
@@ -42,7 +42,7 @@ const boatItems = [
     href: "/boats/vision-care",
     image: "/images/6.png",
     tag: "Healthcare",
-    tagColor: "bg-blue-500/20 text-blue-300",
+    tagColor: "bg-blue-600/90 text-white shadow-blue-500/50 shadow-lg",
   },
   {
     name: "Vision Wear Boutique",
@@ -50,7 +50,7 @@ const boatItems = [
     href: "/boats/vision-wear-boutique",
     image: "/images/6.png",
     tag: "Retail",
-    tagColor: "bg-amber-500/20 text-amber-300",
+    tagColor: "bg-amber-600/90 text-black shadow-amber-400/50 shadow-lg",
   },
   {
     name: "Live-Work Boat",
@@ -58,7 +58,7 @@ const boatItems = [
     href: "/boats/live-work",
     image: "/images/5.png",
     tag: "E-2 Investor",
-    tagColor: "bg-teal-500/20 text-teal-300",
+    tagColor: "bg-teal-600/90 text-white shadow-teal-500/50 shadow-lg",
   },
   {
     name: "Culinary Boat",
@@ -66,7 +66,7 @@ const boatItems = [
     href: "/boats/culinary",
     image: "/images/7.png",
     tag: "Lifestyle",
-    tagColor: "bg-amber-500/20 text-amber-300",
+    tagColor: "bg-amber-600/90 text-black shadow-amber-400/50 shadow-lg",
   },
   {
     name: "Studio Boat",
@@ -74,7 +74,7 @@ const boatItems = [
     href: "/boats/studio",
     image: "/images/studio_boat.png",
     tag: "Creative",
-    tagColor: "bg-pink-500/20 text-pink-300",
+    tagColor: "bg-pink-600/90 text-white shadow-pink-500/50 shadow-lg",
   },
   {
     name: "Boutique Hotel Boat",
@@ -82,7 +82,7 @@ const boatItems = [
     href: "/boats/boutique-hotel",
     image: "/images/2.jpg",
     tag: "Hospitality",
-    tagColor: "bg-purple-500/20 text-purple-300",
+    tagColor: "bg-purple-600/90 text-white shadow-purple-500/50 shadow-lg",
   },
   {
     name: "Wellness Retreat Boat",
@@ -90,7 +90,7 @@ const boatItems = [
     href: "/boats/wellness-retreat",
     image: "/images/3.png",
     tag: "Wellness",
-    tagColor: "bg-teal-500/20 text-teal-300",
+    tagColor: "bg-teal-600/90 text-white shadow-teal-500/50 shadow-lg",
   },
 ];
 
@@ -139,7 +139,7 @@ const Boats = () => {
                   />
                   {/* Minimal gradient — only at bottom for text contrast */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/50 via-transparent to-transparent" />
-                  <span className={`absolute top-4 left-4 px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-sm ${item.tagColor}`}>
+                  <span className={`absolute top-4 left-4 px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md shadow-lg ${item.tagColor}`}>
                     {item.tag}
                   </span>
                 </div>

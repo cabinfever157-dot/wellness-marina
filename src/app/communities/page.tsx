@@ -33,7 +33,7 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <div className="mb-6">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Phase 1</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 1</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Vision Plan</h2>
                 <div className="text-[#FFD700] text-2xl font-light mb-6">$75,000 Engagement</div>
@@ -56,7 +56,7 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <div className="mb-6">
-                  <span className="bg-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Phase 2</span>
+                  <span className="bg-blue-600 text-white shadow-blue-500/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 2</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Community Platform</h2>
                 <div className="text-[#FFD700] text-2xl font-light mb-6">$5,000 / month</div>
@@ -89,7 +89,7 @@ export default function CommunitiesPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-emerald-500/20 text-emerald-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Phase 3</span>
+                  <span className="bg-emerald-600 text-white shadow-emerald-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 3</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">Physical Activation</h2>
                 <p className="text-slate-300 text-lg leading-relaxed">

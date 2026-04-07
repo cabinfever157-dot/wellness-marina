@@ -33,7 +33,7 @@ export default function MentalHealthPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="bg-teal-500/20 text-teal-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Powered by Mentavi Health</span>
+                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Powered by Mentavi Health</span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4">Grand Rapids-Based, Serving 40+ States</h2>
                 <p className="text-white/60 text-lg leading-relaxed">
@@ -64,7 +64,7 @@ export default function MentalHealthPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-teal-500/20 text-teal-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Main Deck — Private Clinical Care</span>
+                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Private Clinical Care</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Confidential, Compassionate Care</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -96,7 +96,7 @@ export default function MentalHealthPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-blue-500/20 text-blue-300 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Upper Deck — Community & Employer Wellness</span>
+                  <span className="bg-blue-600 text-white shadow-blue-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Community & Employer Wellness</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Wellness Hub</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -146,7 +146,7 @@ export default function MentalHealthPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-[#FFD700]/20 text-[#FFD700] px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Rooftop Pavilion</span>
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">The Most Important Feature</h2>
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
