@@ -82,11 +82,11 @@ export default function LiveWorkPage() {
             <h2 className="text-2xl font-bold text-white mb-6 text-center">E-2 Treaty Investor Pathway</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-teal-400 mb-2">$350K-$750K</div>
-                <div className="text-slate-400 text-sm">Physical Boat Investment</div>
+                <div className="text-3xl font-bold text-teal-400 mb-2">Premium</div>
+                <div className="text-slate-400 text-sm">Boat Investment</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-teal-400 mb-2">$40K-$100K</div>
+                <div className="text-3xl font-bold text-teal-400 mb-2">Flexible</div>
                 <div className="text-slate-400 text-sm">Equipment & Fit-Out</div>
               </div>
               <div>

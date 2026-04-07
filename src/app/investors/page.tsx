@@ -20,7 +20,7 @@ export default function InvestorsPage() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Discover Untapped Markets</h1>
             <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
-              Over $100B in Opportunity Zone capital available nationally. We provide the de-risked, place-based vehicles to capture tax-advantaged returns.
+              Opportunity Zone capital available nationally. We provide the de-risked, place-based vehicles to capture tax-advantaged returns.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function InvestorsPage() {
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Deferral of capital gains and elimination of tax on new gains (10+ year hold).</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Direct investment into high-impact, revenue-generating boat deployments.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Immediate capital deployment via turnkey boat assets.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Predictable $5,000/month recurring platform revenue backing the ecosystem.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Predictable recurring platform revenue backing the ecosystem.</li>
                 </ul>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function InvestorsPage() {
                   A seamless pathway for international capital (Canada, UK, Germany, Japan, etc.) seeking US residency through direct business investment in a supported ecosystem.
                 </p>
                 <ul className="space-y-4 text-slate-300">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey $350k-$750k boat concepts satisfy the &quot;active business&quot; requirement.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey boat concepts satisfy the &quot;active business&quot; requirement.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Newvion acts as the operational support system and brand licensor.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Removes the friction of starting an unproven concept in a new country.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Integrates the investor into a national network of like-minded operators.</li>
@@ -77,7 +77,7 @@ export default function InvestorsPage() {
               <div className="relative z-10">
                 <h2 className="text-2xl font-bold text-white mb-3">Direct Equity & Seed</h2>
                 <p className="text-lg text-slate-300 mb-6">
-                  Newvion Boat Co. is actively raising $500,000 in seed capital to fund the deployment of its Moore Haven pilot boats. Gain direct equity participation in the platform operations.
+                  Newvion Boat Co. is actively raising seed capital to fund the deployment of its Moore Haven pilot boats. Gain direct equity participation in the platform operations.
                 </p>
                 <Link href="/" className="inline-block bg-white text-[#0d1b3e] font-bold text-lg px-8 py-3 rounded-full hover:bg-[#FFD700] transition-colors cursor-pointer self-start">
                   Request Prospectus
@@ -91,7 +91,7 @@ export default function InvestorsPage() {
                 <p className="text-lg text-slate-300 mb-6">
                   Join our premium, exclusive sessions for family offices and institutional capital. Gain direct access to high-quality rural OZ deal flow and 1:1 introductions to pre-qualified municipal leaders.
                 </p>
-                <div className="text-2xl font-light text-white mb-6">$2,500 / seat (15-40 Capacity)</div>
+                <div className="text-2xl font-light text-white mb-6">Limited Seating (15-40 Capacity)</div>
                 <Link href="/" className="inline-block border border-[#FFD700] text-[#FFD700] font-bold text-lg px-8 py-3 rounded-full hover:bg-[#FFD700] hover:text-[#0d1b3e] transition-colors cursor-pointer self-start">
                   Reserve Your Seat
                 </Link>

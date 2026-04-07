@@ -161,7 +161,7 @@ export default function CulinaryPage() {
                 <div className="text-white/40 text-sm">Permanent Direct Jobs Created</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-400 mb-2">$150K-$350K</div>
+                <div className="text-3xl font-bold text-amber-400 mb-2">Significant</div>
                 <div className="text-white/40 text-sm">Annual Healthcare Savings from Chronic Disease Prevention</div>
               </div>
               <div>

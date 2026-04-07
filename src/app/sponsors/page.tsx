@@ -33,7 +33,7 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3">Physical Boat Naming Rights</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6">$100k - $300k Build Offsets</div>
+                <div className="text-[#FFD700] text-2xl font-light mb-6">Build Offsets Available</div>
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
                   National and regional brands can sponsor individual live-work boat concepts, securing naming rights, co-branding, and product placement, while actively funding health and economic development.
                 </p>
@@ -53,15 +53,15 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3">Digital Ecosystem Sponsorships</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6">$2.5k - $25k Tiers</div>
+                <div className="text-[#FFD700] text-2xl font-light mb-6">Tiered Sponsorship Options</div>
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
                   Directly fund access to critical health content for underserved populations through our Rural Connect platform. 83% of rural residents cite transportation as a barrier to care.
                 </p>
                 <ul className="space-y-4 text-slate-300">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Community Champion ($25k/yr):</strong> 416 free memberships + content series naming rights.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Health Partner ($10k/yr):</strong> 166 free memberships + primary logo placement.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Program Supporter ($5k/yr):</strong> 83 free memberships + featured local listing.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Event Sponsor ($2.5k/event):</strong> Underwrites one live community health event.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Community Champion:</strong> 416 free memberships + content series naming rights.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Health Partner:</strong> 166 free memberships + primary logo placement.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Program Supporter:</strong> 83 free memberships + featured local listing.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Event Sponsor:</strong> Underwrites one live community health event.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Webinar Underwriting:</strong> Brand in front of a national audience of city managers.</li>
                 </ul>
               </div>
@@ -76,7 +76,7 @@ export default function SponsorsPage() {
               {[
                 { value: "83%", label: "Cite Transport as Barrier to Care" },
                 { value: "15M+", label: "People in Drive Market" },
-                { value: "$4M", label: "RHTP Grant Proposal" },
+                { value: "RHTP", label: "Grant Proposal" },
                 { value: "7", label: "Specialized Healthcare Boats" },
               ].map((stat) => (
                 <div key={stat.label}>

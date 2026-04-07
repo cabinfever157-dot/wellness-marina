@@ -64,7 +64,7 @@ const ThreePillars = () => {
           </span>
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
-        <h2 className="text-4xl md:text-6xl font-bold text-white">Three Pillars.<br className="md:hidden" /> One Marina.</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-white">Experience the Wellness Connected Marina.</h2>
         <p className="text-lg text-white/40 mt-4 max-w-2xl mx-auto">
           Every boat, every space, every experience is built around wellness, lifestyle, and connection.
         </p>

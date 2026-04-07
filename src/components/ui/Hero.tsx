@@ -62,7 +62,7 @@ const Hero = () => {
           className="text-lg md:text-xl text-stone mt-6 max-w-xl leading-relaxed"
         >
           A permanent mixed-use wellness destination built entirely on the water.
-          Healthcare, resort hospitality, and community — where rural meets extraordinary.
+          Healthcare, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
         </motion.p>
 
         <motion.div

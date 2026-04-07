@@ -20,7 +20,7 @@ export default function EntrepreneursPage() {
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Launch Your Business on the Water</h1>
             <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
-              Turnkey live-work boats from $350K — pilates, culinary, studio & more. Bypass the crippling overhead of traditional commercial real estate.
+              Turnkey live-work boats — pilates, culinary, studio & more. Bypass the crippling overhead of traditional commercial real estate.
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function EntrepreneursPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3">Capital-Efficient Ownership</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6">$350k - $750k Turnkey Assets</div>
+                <div className="text-[#FFD700] text-2xl font-light mb-6">Turnkey Assets</div>
                 <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
                   Avoid zoning headaches, massive build-out costs, and construction delays by launching a mobile, scalable waterfront business with a standard 50&apos;-0&quot; x 15&apos;-9&quot; footprint.
                 </p>
@@ -59,7 +59,7 @@ export default function EntrepreneursPage() {
                 </p>
                 <ul className="space-y-4 text-slate-300">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Full Newvion brand identity, logo usage, and standards guide.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Pre-configured equipment packages (e.g., $50K Pilates studio with Technogym).</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Pre-configured equipment packages (e.g., Pilates studio with Technogym).</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Integrated Starlink, networking, and streaming systems.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Direct integration into the Newvion national digital marketing ecosystem.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Built-in audience through the Newvion Club network.</li>
