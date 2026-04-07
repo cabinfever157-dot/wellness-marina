@@ -9,8 +9,11 @@ const Hero = () => {
   return (
     <>
       <section className="relative w-full h-screen min-h-[600px] max-h-[1000px] overflow-hidden">
-        {/* Full-bleed Hero Image with Parallax */}
+        {/* Cinematic Video Background with Smooth Scale */}
         <motion.div
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
           <div
@@ -72,7 +75,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             </button>
             <a
-              href="/boats"
+              href="/#boats"
               className="group inline-flex items-center gap-2 border border-white/20 text-white font-medium px-8 py-4 rounded-full hover:border-[#D4AF37]/40 hover:text-[#D4AF37] transition-all duration-500 cursor-pointer"
             >
               View the Boats

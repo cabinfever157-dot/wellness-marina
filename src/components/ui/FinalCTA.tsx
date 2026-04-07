@@ -55,7 +55,7 @@ export default function FinalCTA() {
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </Link>
           <Link
-            href="/boats"
+            href="/#boats"
             className="inline-flex items-center gap-3 border border-white/15 text-white font-medium text-lg px-12 py-6 rounded-full hover:border-[#FFD700]/40 hover:bg-white/5 transition-all duration-500 cursor-pointer"
           >
             Explore the Boats
