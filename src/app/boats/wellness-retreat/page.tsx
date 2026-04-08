@@ -15,7 +15,7 @@ export default function WellnessRetreatPage() {
               <div className="h-px w-8 bg-teal-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Wellness Retreat Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Immersive wellness programming — yoga, mindfulness, nutrition education, and spa treatments — all on the water, managed by Lum&apos;ais.
             </p>
           </div>
@@ -33,10 +33,10 @@ export default function WellnessRetreatPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Immersive Wellness Programming</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A dedicated wellness space offering curated retreat experiences — from weekend mindfulness intensives to week-long health transformation programs.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Yoga and mindfulness programming on the rooftop pavilion.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Nutrition education and chronic disease wellness classes.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Spa treatments and therapeutic wellness services.</li>
@@ -50,21 +50,21 @@ export default function WellnessRetreatPage() {
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Sustaining the Mission</h2>
-            <p className="text-slate-300 text-center max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center max-w-3xl mx-auto leading-relaxed">
               The Wellness Retreat Boat is a critical revenue engine — generating direct daily income from retreat packages, spa fees, and corporate bookings. This revenue sustains the clinical healthcare mission, ensuring the marina&apos;s long-term sustainability without endless grant dependency.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mt-10 text-center">
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Retreats</div>
-                <div className="text-slate-400 text-sm">Weekend & week-long programs</div>
+                <div className="text-white/70 text-sm">Weekend & week-long programs</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Corporate</div>
-                <div className="text-slate-400 text-sm">Team-building & wellness days</div>
+                <div className="text-white/70 text-sm">Team-building & wellness days</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Spa</div>
-                <div className="text-slate-400 text-sm">Therapeutic & wellness services</div>
+                <div className="text-white/70 text-sm">Therapeutic & wellness services</div>
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function WellnessRetreatPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-teal-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Transform on the Water</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Join a wellness retreat that combines clinical expertise with the healing power of the waterfront.
               </p>
               <Link href="/" className="inline-block bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-teal-400 transition-colors duration-300 cursor-pointer">

@@ -19,7 +19,7 @@ export default function CommunitiesPage() {
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Transform Your Town</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               We partner with mayors, city managers, and economic development directors to activate your community&apos;s natural and cultural assets.
             </p>
           </div>
@@ -37,10 +37,10 @@ export default function CommunitiesPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Vision Plan</h2>
                 
-                <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
                   A comprehensive 60-90 day discovery process designed to unearth your community&apos;s true potential, bypass consulting theories, and deliver a deployable roadmap.
                 </p>
-                <ul className="space-y-4 text-slate-300">
+                <ul className="space-y-4 text-white">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Community asset assessment & gap analysis.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Crafting a compelling destination story.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Selection of 3-5 high-impact anchor concepts.</li>
@@ -60,10 +60,10 @@ export default function CommunitiesPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">The Community Platform</h2>
                 
-                <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
                   A fully branded digital destination that acts as your modern economic development infrastructure, replacing outdated methods with a national marketing engine.
                 </p>
-                <ul className="space-y-4 text-slate-300">
+                <ul className="space-y-4 text-white">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Replaces or enhances existing economic development departments.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> National digital marketing campaigns to attract remote workers.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey investor attraction infrastructure.</li>
@@ -92,7 +92,7 @@ export default function CommunitiesPage() {
                   <span className="bg-emerald-600 text-white shadow-emerald-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 3</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-3">Physical Activation</h2>
-                <p className="text-slate-300 text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Deploying physical assets — Innovation Hub boats for waterfronts, or modular studio spaces for inland communities — to anchor your community&apos;s new vision and draw visitors, residents, and investment.
                 </p>
               </div>
@@ -105,7 +105,7 @@ export default function CommunitiesPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[#FFD700]/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Ready to Activate Your Waterfront?</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Join pioneering communities like Moore Haven, FL and Allegan, MI in deploying the Newvion model. Stop studying and start building.
               </p>
               <Link href="/" className="inline-block bg-[#FFD700] text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-white transition-colors duration-300 cursor-pointer">

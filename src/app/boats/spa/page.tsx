@@ -15,7 +15,7 @@ export default function SpaBoatPage() {
               <div className="h-px w-8 bg-rose-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Spa Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Luxury spa treatments and relaxation therapies with stunning waterfront views — your sanctuary on the marina.
             </p>
           </div>
@@ -33,10 +33,10 @@ export default function SpaBoatPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Luxury Spa Experience</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   Indulge in premium spa treatments while enjoying the serene ambiance of being on the water. Our spa boat offers a unique escape from everyday life.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-rose-400 mr-3 mt-1">✦</span> Massage therapy — Swedish, deep tissue, and hot stone.</li>
                   <li className="flex items-start"><span className="text-rose-400 mr-3 mt-1">✦</span> Hydrotherapy pools and steam rooms.</li>
                   <li className="flex items-start"><span className="text-rose-400 mr-3 mt-1">✦</span> Relaxation lounges with panoramic marina views.</li>
@@ -53,18 +53,18 @@ export default function SpaBoatPage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-rose-400 mb-2">3 Floors</div>
-                <div className="text-slate-400 text-sm">Treatment & Relaxation Spaces</div>
+                <div className="text-white/70 text-sm">Treatment & Relaxation Spaces</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-rose-400 mb-2">Rooftop Deck</div>
-                <div className="text-slate-400 text-sm">Open-Air Relaxation Lounge</div>
+                <div className="text-white/70 text-sm">Open-Air Relaxation Lounge</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-rose-400 mb-2">Daily</div>
-                <div className="text-slate-400 text-sm">Spa Services Available</div>
+                <div className="text-white/70 text-sm">Spa Services Available</div>
               </div>
             </div>
-            <p className="text-slate-300 text-center mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
               Whether you seek therapeutic relaxation, a romantic escape, or a restorative wellness retreat, the Spa Boat delivers an unforgettable experience on the water.
             </p>
           </div>
@@ -75,7 +75,7 @@ export default function SpaBoatPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-rose-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Book Your Spa Experience</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Escape to tranquility on the water — treatments available daily.
               </p>
               <Link href="/" className="inline-block bg-rose-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-rose-400 transition-colors duration-300 cursor-pointer">

@@ -85,7 +85,7 @@ const ThreePillars = () => {
               <div className="hidden md:block absolute top-16 -right-4 w-8 h-px bg-gradient-to-r from-white/10 to-transparent z-20" />
             )}
 
-            <div className={`relative rounded-3xl border ${pillar.borderColor} bg-white/[0.04] backdrop-blur-sm p-10 h-full transition-all duration-700 group-hover:bg-white/[0.08] group-hover:shadow-2xl`}>
+            <div className={`relative rounded-3xl border ${pillar.borderColor} bg-white/[0.10] backdrop-blur-sm p-10 h-full transition-all duration-700 group-hover:bg-white/[0.15] group-hover:shadow-2xl`}>
               {/* Hover glow */}
               <div className={`absolute top-0 right-0 w-40 h-40 ${pillar.glowColor} rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
@@ -94,7 +94,7 @@ const ThreePillars = () => {
                   {pillar.icon}
                 </div>
                 <h3 className={`text-3xl font-bold ${pillar.color} mb-6`}>{pillar.title}</h3>
-                <p className="text-white/50 leading-relaxed text-lg">{pillar.description}</p>
+                <p className="text-white/70 leading-relaxed text-lg">{pillar.description}</p>
               </div>
             </div>
           </motion.div>

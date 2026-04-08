@@ -19,7 +19,7 @@ export default function StudioPage() {
               <div className="h-px w-8 bg-pink-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Studio Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               A professional digital media hub for podcasting, video production, and community storytelling — amplifying rural voices through the Rural Connect platform.
             </p>
           </div>
@@ -44,10 +44,10 @@ export default function StudioPage() {
                   <span className="bg-pink-600 text-white shadow-pink-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Production Facilities</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Professional Content Creation</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   The Studio Boat provides local entrepreneurs, small businesses, and community storytellers with professional content creation tools they typically cannot access.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Professional podcast and audio recording studio.</li>
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Video and film production suite.</li>
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Workspaces for social media and digital content creation.</li>
@@ -76,10 +76,10 @@ export default function StudioPage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Open-Air Broadcast Space</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A unique open-air broadcast and filming space with the marina as a living backdrop — serving as a community gathering space for live recordings, small business showcases, and events.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Open-air broadcast and filming with marina views.</li>
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Live recordings and community events.</li>
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Small business showcases.</li>
@@ -102,7 +102,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">FGCU</h3>
-                <p className="text-slate-400 text-sm">
+                <p className="text-white/70 text-sm">
                   Florida Gulf Coast University — primary educational partner providing student interns and workforce development for media production and digital marketing training.
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Hendry Regional</h3>
-                <p className="text-slate-400 text-sm">
+                <p className="text-white/70 text-sm">
                   Hendry Regional Medical Center — collaborates to provide health and wellness content and provider participation, linking media programming to healthcare outcomes.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Local Government</h3>
-                <p className="text-slate-400 text-sm">
+                <p className="text-white/70 text-sm">
                   Glades County, City of Moore Haven, and SWFRPC — providing dock access, regional promotion, and economic development alignment.
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function StudioPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">The Marina&apos;s Digital Hub</h2>
-                <p className="text-slate-300 text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Within the marina, the Studio Boat acts as a central digital hub that captures, produces, and distributes health, culinary, and workforce programming from the other Newvion boats — amplifying their reach through the Rural Connect platform.
                 </p>
               </div>
@@ -157,7 +157,7 @@ export default function StudioPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-pink-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Amplify Your Story</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access professional content creation tools and amplify your community&apos;s voice through the Rural Connect platform.
               </p>
               <Link href="/" className="inline-block bg-pink-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-pink-400 transition-colors duration-300 cursor-pointer">

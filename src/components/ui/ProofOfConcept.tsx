@@ -46,7 +46,7 @@ const ProofOfConcept = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">From Conversation<br className="md:hidden" /> to Commitment</h2>
-        <p className="text-lg text-white/40 mt-4 max-w-3xl mx-auto">
+        <p className="text-lg text-white/70 mt-4 max-w-3xl mx-auto">
           Grounded in executable, investable reality. We deploy in active markets, proving the model with physical assets.
         </p>
       </motion.div>
@@ -60,7 +60,7 @@ const ProofOfConcept = () => {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm group hover:border-white/10 transition-all duration-700">
+            <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.10] backdrop-blur-sm group hover:border-white/10 transition-all duration-700">
               <div className="grid lg:grid-cols-2">
                 {/* Image Side */}
                 <div className="relative h-72 lg:h-[400px] overflow-hidden">

@@ -43,10 +43,10 @@ export default function StatsMarquee() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm mx-2"
+              className="flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/5 bg-white/[0.10] backdrop-blur-sm mx-2"
             >
               <div className="text-2xl font-bold text-[#FFD700] whitespace-nowrap">{stat.value}</div>
-              <div className="text-xs text-white/40 max-w-[160px] leading-tight">{stat.label}</div>
+              <div className="text-xs text-white/70 max-w-[160px] leading-tight">{stat.label}</div>
             </div>
           ))}
         </Marquee>
@@ -56,7 +56,7 @@ export default function StatsMarquee() {
       <div>
         <div className="flex items-center justify-center gap-3 mb-8">
           <div className="h-px w-8 bg-white/10" />
-          <span className="text-white/30 text-xs font-medium tracking-[0.3em] uppercase">
+          <span className="text-white/60 text-xs font-medium tracking-[0.3em] uppercase">
             Strategic Partners
           </span>
           <div className="h-px w-8 bg-white/10" />
@@ -65,7 +65,7 @@ export default function StatsMarquee() {
           {partners.map((partner) => (
             <div
               key={partner}
-              className="px-8 py-3 rounded-full border border-white/5 text-white/30 text-sm font-medium whitespace-nowrap mx-2 hover:text-white/60 hover:border-white/10 transition-all duration-300"
+              className="px-8 py-3 rounded-full border border-white/5 text-white/60 text-sm font-medium whitespace-nowrap mx-2 hover:text-white/60 hover:border-white/10 transition-all duration-300"
             >
               {partner}
             </div>

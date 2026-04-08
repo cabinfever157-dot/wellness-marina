@@ -23,7 +23,7 @@ const DigitalEcosystem = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">Beyond the Water</h2>
-        <p className="text-lg text-white/40 mt-4 max-w-3xl mx-auto">
+        <p className="text-lg text-white/70 mt-4 max-w-3xl mx-auto">
           A national digital platform connecting rural communities to premium experiences.
         </p>
       </motion.div>
@@ -35,7 +35,7 @@ const DigitalEcosystem = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative overflow-hidden rounded-3xl border border-[#FFD700]/10 bg-white/[0.02] backdrop-blur-sm p-10 h-full group hover:border-[#FFD700]/30 transition-all duration-700">
+          <div className="relative overflow-hidden rounded-3xl border border-[#FFD700]/10 bg-white/[0.10] backdrop-blur-sm p-10 h-full group hover:border-[#FFD700]/30 transition-all duration-700">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">
@@ -49,7 +49,7 @@ const DigitalEcosystem = () => {
               <blockquote className="text-white/60 text-lg leading-relaxed italic mb-4">
                 &ldquo;Think American Express Centurion for the rural American experience.&rdquo;
               </blockquote>
-              <p className="text-white/40 leading-relaxed">
+              <p className="text-white/70 leading-relaxed">
                 A premium lifestyle membership providing access to live programming, culinary salons, wellness classes, and online concerts.
               </p>
               <div className="mt-6 flex items-center gap-2 text-sm text-white/30">
@@ -66,7 +66,7 @@ const DigitalEcosystem = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative overflow-hidden rounded-3xl border border-blue-500/10 bg-white/[0.02] backdrop-blur-sm p-10 h-full group hover:border-blue-500/30 transition-all duration-700">
+          <div className="relative overflow-hidden rounded-3xl border border-blue-500/10 bg-white/[0.10] backdrop-blur-sm p-10 h-full group hover:border-blue-500/30 transition-all duration-700">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">
@@ -80,7 +80,7 @@ const DigitalEcosystem = () => {
               <p className="text-white/60 text-lg leading-relaxed mb-4">
                 Grant-eligible health and wellness programming for underserved communities.
               </p>
-              <p className="text-white/40 leading-relaxed">
+              <p className="text-white/70 leading-relaxed">
                 Partnering with hospital systems and employer groups to bridge critical healthcare gaps through the Rural Connect platform.
               </p>
               <div className="mt-6 flex items-center gap-2 text-sm text-white/30">

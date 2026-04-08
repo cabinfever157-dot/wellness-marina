@@ -19,7 +19,7 @@ export default function SponsorsPage() {
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Reach Authentic Rural Markets</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Community-embedded rural market access that traditional advertising cannot replicate. Each sponsored boat is both a revenue-generating asset and a branded partnership vehicle.
             </p>
           </div>
@@ -34,10 +34,10 @@ export default function SponsorsPage() {
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3">Physical Boat Naming Rights</h2>
                 <div className="text-[#FFD700] text-2xl font-light mb-6">Build Offsets Available</div>
-                <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
                   National and regional brands can sponsor individual live-work boat concepts, securing naming rights, co-branding, and product placement, while actively funding health and economic development.
                 </p>
-                <ul className="space-y-4 text-slate-300">
+                <ul className="space-y-4 text-white">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Pharmacy & Healthcare:</strong> Perrigo, Bayer, CVS Health, regional health systems.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Dental:</strong> Colgate, Aspen Dental, equipment brands.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Culinary:</strong> Food/beverage brands, kitchen equipment, regional grocers.</li>
@@ -54,10 +54,10 @@ export default function SponsorsPage() {
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3">Digital Ecosystem Sponsorships</h2>
                 <div className="text-[#FFD700] text-2xl font-light mb-6">Tiered Sponsorship Options</div>
-                <p className="text-slate-300 mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
                   Directly fund access to critical health content for underserved populations through our Rural Connect platform. 83% of rural residents cite transportation as a barrier to care.
                 </p>
-                <ul className="space-y-4 text-slate-300">
+                <ul className="space-y-4 text-white">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Community Champion:</strong> 416 free memberships + content series naming rights.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Health Partner:</strong> 166 free memberships + primary logo placement.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Program Supporter:</strong> 83 free memberships + featured local listing.</li>
@@ -81,7 +81,7 @@ export default function SponsorsPage() {
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-3xl md:text-4xl font-bold text-[#FFD700]">{stat.value}</div>
-                  <div className="text-sm text-slate-400 mt-2">{stat.label}</div>
+                  <div className="text-sm text-white/70 mt-2">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -93,7 +93,7 @@ export default function SponsorsPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[#FFD700]/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Align With Impact</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Move beyond standard CSR initiatives. Integrate your brand directly into the physical and digital infrastructure transforming America&apos;s rural waterfronts.
               </p>
               <Link href="/" className="inline-block bg-[#FFD700] text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-white transition-colors duration-300 cursor-pointer">

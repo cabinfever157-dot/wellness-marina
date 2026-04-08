@@ -17,7 +17,7 @@ export default function BoatsPage() {
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">The Boats</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Purpose-built, multi-story vessels — from clinical healthcare to culinary experiences, all designed for living well.
             </p>
           </div>

@@ -120,7 +120,7 @@ const Boats = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">The Wellness Connected Marina.</h2>
-        <p className="text-lg text-white/40 mt-4 max-w-2xl mx-auto">
+        <p className="text-lg text-white/70 mt-4 max-w-2xl mx-auto">
           Each vessel is a purpose-built, multi-story platform — from clinical healthcare to culinary experiences.
         </p>
       </motion.div>
@@ -135,7 +135,7 @@ const Boats = () => {
             transition={{ duration: 0.6, delay: index * 0.07, ease: [0.16, 1, 0.3, 1] }}
           >
             <Link href={item.href} className="group block h-full">
-              <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm h-full transition-all duration-700 hover:border-[#FFD700]/20 hover:shadow-2xl hover:shadow-[#FFD700]/5 group-hover:bg-white/[0.04]">
+              <div className="relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.10] backdrop-blur-sm h-full transition-all duration-700 hover:border-[#FFD700]/20 hover:shadow-2xl hover:shadow-[#FFD700]/5 group-hover:bg-white/[0.15]">
                 {/* Image — bright by default */}
                 <div className="relative h-56 overflow-hidden">
                   <div
@@ -168,7 +168,7 @@ const Boats = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                   </div>
-                  <p className="text-white/40 mt-3 text-sm leading-relaxed group-hover:text-white/60 transition-colors">
+                  <p className="text-white/70 mt-3 text-sm leading-relaxed group-hover:text-white/60 transition-colors">
                     {item.description}
                   </p>
                 </div>

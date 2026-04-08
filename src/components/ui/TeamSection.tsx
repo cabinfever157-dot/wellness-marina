@@ -66,7 +66,7 @@ const TeamSection = () => {
             transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="group relative"
           >
-            <div className="relative rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-sm p-8 transition-all duration-700 hover:border-[#D4AF37]/20 hover:bg-white/[0.04] hover:shadow-2xl hover:shadow-[#D4AF37]/5">
+            <div className="relative rounded-3xl border border-white/5 bg-white/[0.10] backdrop-blur-sm p-8 transition-all duration-700 hover:border-[#D4AF37]/20 hover:bg-white/[0.15] hover:shadow-2xl hover:shadow-[#D4AF37]/5">
               {/* Ambient glow on hover */}
               <div className={`absolute -inset-px rounded-3xl bg-gradient-to-br ${member.color} opacity-0 group-hover:opacity-10 transition-opacity duration-700 blur-xl`} />
               

@@ -18,7 +18,7 @@ export default function PrimaryCarePage() {
               <div className="h-px w-8 bg-blue-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Primary Care & Diagnostics Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               The clinical foundation of the marina — bringing essential preventative and routine healthcare directly to the dock.
             </p>
           </div>
@@ -42,10 +42,10 @@ export default function PrimaryCarePage() {
                   <span className="bg-blue-600 text-white shadow-blue-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Services</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Full-Service Primary Care</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A complete primary care clinic eliminating transportation barriers for rural residents who would otherwise go without.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Two fully-equipped exam rooms.</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Chronic disease management (diabetes, hypertension, heart disease).</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Blood draws and lab services on-site.</li>
@@ -65,7 +65,7 @@ export default function PrimaryCarePage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Telehealth & Education</span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4">Telehealth Hub & Health Education</h2>
-                <p className="text-slate-300 text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   The upper deck extends care beyond the exam room with a telehealth hub connecting patients to specialists nationwide, and a health education classroom for community wellness programming.
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function PrimaryCarePage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-blue-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Healthcare at the Dock</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access primary care, diagnostics, and telehealth — all on the water, eliminating the barriers that keep rural communities from getting the care they need.
               </p>
               <Link href="/" className="inline-block bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-blue-400 transition-colors duration-300 cursor-pointer">

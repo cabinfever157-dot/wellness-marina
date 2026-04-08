@@ -49,7 +49,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="text-lg md:text-xl text-stone mt-6 max-w-xl leading-relaxed"
+            className="text-lg md:text-xl text-white mt-6 max-w-xl leading-relaxed"
           >
             A mixed-use wellness destination built entirely on the water.
             Healthcare, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
@@ -97,7 +97,7 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-[#D4AF37] transition-transform duration-300 group-hover:scale-110">
                   {stat.value}
                 </div>
-                <div className="text-xs text-stone mt-1 tracking-wide">{stat.label}</div>
+                <div className="text-xs text-white mt-1 tracking-wide">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -165,7 +165,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="mt-6 text-center"
               >
-                <p className="text-white/60 text-sm tracking-wide">The Newvion Wellness Marina Vision</p>
+                <p className="text-white/70 text-sm tracking-wide">The Newvion Wellness Marina Vision</p>
               </motion.div>
             </motion.div>
           </motion.div>

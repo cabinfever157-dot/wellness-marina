@@ -94,7 +94,7 @@ const AudienceGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className={`${card.span} relative overflow-hidden rounded-2xl border ${card.accentBorder} bg-white/[0.03] backdrop-blur-sm group cursor-pointer`}
+            className={`${card.span} relative overflow-hidden rounded-2xl border ${card.accentBorder} bg-white/[0.10] backdrop-blur-sm group cursor-pointer`}
           >
             <Link href={card.href} className="absolute inset-0 z-20" />
 

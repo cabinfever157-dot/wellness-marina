@@ -18,7 +18,7 @@ export default function DermatologyPage() {
               <div className="h-px w-8 bg-emerald-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Dermatology Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Clinical dermatology funded by a second-floor medical aesthetics and skin wellness spa — healthcare sustained by resort revenue.
             </p>
           </div>
@@ -42,10 +42,10 @@ export default function DermatologyPage() {
                   <span className="bg-emerald-600 text-white shadow-emerald-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Dermatology</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Skin Cancer Screening & Care</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   Essential dermatological services for rural communities where access to skin specialists is virtually non-existent.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Clinical skin cancer screenings.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Biopsies and lesion removal.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Teledermatology consultations.</li>
@@ -72,10 +72,10 @@ export default function DermatologyPage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Second Floor — Medical Aesthetics</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Revenue-Generating Wellness Spa</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A medical aesthetics and skin wellness spa for resort guests — the revenue from which sustains the clinical dermatology services below.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Medical-grade skincare treatments.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Anti-aging and cosmetic procedures.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Wellness spa services for marina visitors.</li>
@@ -91,7 +91,7 @@ export default function DermatologyPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-emerald-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Clinical Care Meets Wellness</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Where essential skin cancer screening is funded by premium wellness experiences — a sustainable model for rural healthcare.
               </p>
               <Link href="/" className="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-emerald-400 transition-colors duration-300 cursor-pointer">

@@ -18,7 +18,7 @@ export default function VisionCarePage() {
               <div className="h-px w-8 bg-blue-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Vision Care Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               A fully-equipped optometry clinic with digital retinal imaging and diabetic retinopathy screening — working in tandem with the adjacent Vision Wear Boutique Boat.
             </p>
           </div>
@@ -39,10 +39,10 @@ export default function VisionCarePage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Complete Optometry Clinic</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   Bringing essential eye care to communities where vision providers are scarce — zero local vision care providers in Glades County.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Two fully-equipped exam lanes.</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Digital retinal imaging technology.</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Diabetic retinopathy screening.</li>
@@ -57,7 +57,7 @@ export default function VisionCarePage() {
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-4 text-center">Live-Work Vision Care Boat</h2>
-            <p className="text-slate-300 text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+            <p className="text-white text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
               For practitioners seeking to live and work on the water — the Live-Work Vision Care Boat features a full optometry clinic on the main deck and a private, turnkey waterfront residence on the upper deck. Explicitly positioned for E-2 Treaty Investors.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
@@ -69,7 +69,7 @@ export default function VisionCarePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Main Deck — Clinic</h3>
-                <p className="text-slate-400 text-sm">Full optometry practice with all equipment and exam lanes.</p>
+                <p className="text-white/70 text-sm">Full optometry practice with all equipment and exam lanes.</p>
               </div>
               <div className="text-center">
                 <div className="p-4 rounded-xl bg-[#FFD700]/10 inline-block mb-4">
@@ -78,7 +78,7 @@ export default function VisionCarePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Upper Deck — Residence</h3>
-                <p className="text-slate-400 text-sm">Private, turnkey waterfront living for the practitioner.</p>
+                <p className="text-white/70 text-sm">Private, turnkey waterfront living for the practitioner.</p>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function VisionCarePage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-blue-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">See Clearly. Live Well.</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access comprehensive eye care and diabetic retinopathy screening — all on the water, close to home.
               </p>
               <Link href="/" className="inline-block bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-blue-400 transition-colors duration-300 cursor-pointer">

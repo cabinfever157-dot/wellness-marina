@@ -18,7 +18,7 @@ export default function OncologyPage() {
               <div className="h-px w-8 bg-purple-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Oncology Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Early detection, screening, and survivorship support — bringing specialized cancer care to communities that need it most.
             </p>
           </div>
@@ -39,10 +39,10 @@ export default function OncologyPage() {
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Comprehensive Cancer Support</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A pilot with NorthStar Healthcare and Hendry Regional Medical Center bringing oncology services to rural waterfronts.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Cancer screenings and early detection programs.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Telehealth oncology consultations.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Low-acuity infusion care.</li>
@@ -65,7 +65,7 @@ export default function OncologyPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">NorthStar Healthcare</h3>
-                <p className="text-slate-400 text-sm">Specialized oncology expertise and clinical protocols.</p>
+                <p className="text-white/70 text-sm">Specialized oncology expertise and clinical protocols.</p>
               </div>
               <div className="text-center">
                 <div className="p-4 rounded-xl bg-blue-500/10 inline-block mb-4">
@@ -74,7 +74,7 @@ export default function OncologyPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Hendry Regional Medical Center</h3>
-                <p className="text-slate-400 text-sm">Local hospital partnership for referrals and coordinated care.</p>
+                <p className="text-white/70 text-sm">Local hospital partnership for referrals and coordinated care.</p>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function OncologyPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-purple-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Early Detection Saves Lives</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access cancer screenings, survivorship support, and oncology care — all on the water, close to home.
               </p>
               <Link href="/" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">

@@ -19,7 +19,7 @@ export default function MentalHealthPage() {
               <div className="h-px w-8 bg-teal-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Mental Health Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               A sanctuary on the water — bridging critical care gaps with evidence-based mental health diagnosis and treatment in a stigma-free environment.
             </p>
           </div>
@@ -67,10 +67,10 @@ export default function MentalHealthPage() {
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Private Clinical Care</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Confidential, Compassionate Care</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   Three private, soundproofed counseling rooms designed for complete confidentiality, with a discreet private check-in area that eliminates the need for an open waiting room.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Individual therapy with doctorate-level psychologists.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Medical treatment visits for ADHD, anxiety, and depression.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Diagnostic evaluations covering up to 29 mental health conditions.</li>
@@ -99,10 +99,10 @@ export default function MentalHealthPage() {
                   <span className="bg-blue-600 text-white shadow-blue-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Community & Employer Wellness</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Wellness Hub</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A preventative wellness floor offering screening, coaching, and employer benefit programming — making mental health care accessible before it becomes a crisis.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Mentavi Mental Wellness Snapshot — screening across 15 clinically validated conditions.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Mental wellness coaching and sleep coaching.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Employer benefit mental health programming.</li>
@@ -149,10 +149,10 @@ export default function MentalHealthPage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">The Most Important Feature</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   An open-air waterfront deck that allows people to gather in a welcoming environment — meaning they never have to walk directly through a clinical door to begin their wellness journey.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Yoga and mindfulness programming.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Peer support groups.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Community wellness events.</li>
@@ -169,7 +169,7 @@ export default function MentalHealthPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">Designed to Destigmatize</h2>
-                <p className="text-slate-300 text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Every design choice on the Mental Health Boat is purposefully crafted to remove the stigma of seeking help. From soundproofed rooms to the absence of a traditional waiting area, the boat creates a calming, private environment where rural residents can access the care they need without judgment.
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function MentalHealthPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-teal-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Wellness Starts Here</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access evidence-based mental health care in a welcoming, stigma-free environment on the water.
               </p>
               <Link href="/" className="inline-block bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-teal-400 transition-colors duration-300 cursor-pointer">

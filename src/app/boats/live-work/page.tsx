@@ -15,7 +15,7 @@ export default function LiveWorkPage() {
               <div className="h-px w-8 bg-teal-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Live-Work Boat</h1>
-            <p className="text-xl text-slate-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               A turnkey combination of a clinical practice and a private waterfront residence — the ideal E-2 Treaty Investor qualifying asset.
             </p>
           </div>
@@ -36,10 +36,10 @@ export default function LiveWorkPage() {
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Suite</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Your Practice on the Water</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A fully equipped clinical suite — for example, two examination lanes, retinal imaging, and telehealth stations for vision care — operated by a licensed practitioner.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Fully equipped clinical practice.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Immediate patient pipeline from Rural Connect coalition.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Partnerships with local FQHCs and community health organizations.</li>
@@ -63,10 +63,10 @@ export default function LiveWorkPage() {
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Private Residence</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Your Waterfront Home</h2>
-                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   A complete, private waterfront residence with a private entrance, kitchen, bedroom, and direct access to a private rooftop terrace for outdoor living.
                 </p>
-                <ul className="space-y-3 text-slate-300">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private entrance separate from the clinical suite.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Full kitchen and bedroom.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private rooftop terrace for outdoor living.</li>
@@ -83,18 +83,18 @@ export default function LiveWorkPage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Premium</div>
-                <div className="text-slate-400 text-sm">Boat Investment</div>
+                <div className="text-white/70 text-sm">Boat Investment</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Flexible</div>
-                <div className="text-slate-400 text-sm">Equipment & Fit-Out</div>
+                <div className="text-white/70 text-sm">Equipment & Fit-Out</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">E-2 Visa</div>
-                <div className="text-slate-400 text-sm">US Residency via Active Business</div>
+                <div className="text-white/70 text-sm">US Residency via Active Business</div>
               </div>
             </div>
-            <p className="text-slate-300 text-center mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
               International professionals — optometrists, therapists, chefs — seeking US residency through active business ownership. The Live-Work boat satisfies the &quot;active business&quot; requirement while providing a turnkey practice and home.
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function LiveWorkPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-teal-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Live. Work. Thrive.</h2>
-              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Build your rural practice while enjoying a waterfront quality of life — all in one turnkey boat.
               </p>
               <Link href="/" className="inline-block bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-teal-400 transition-colors duration-300 cursor-pointer">
