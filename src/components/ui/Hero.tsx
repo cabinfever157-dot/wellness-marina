@@ -72,10 +72,12 @@ const Hero = () => {
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             </button>
             <a
-              href="/#boats"
+              href="/Newvion_Wellness_Marina.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 border border-white/20 text-white font-medium px-8 py-4 rounded-full hover:border-[#D4AF37]/40 hover:text-[#D4AF37] transition-all duration-500 cursor-pointer"
             >
-              View the Boats
+              The Vision
             </a>
           </motion.div>
 
