@@ -51,7 +51,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="text-lg md:text-xl text-stone mt-6 max-w-xl leading-relaxed"
           >
-            A permanent mixed-use wellness destination built entirely on the water.
+            A mixed-use wellness destination built entirely on the water.
             Healthcare, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
           </motion.p>
 

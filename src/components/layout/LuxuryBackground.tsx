@@ -46,7 +46,7 @@ export function LuxuryBackground() {
         />
         
         {/* Subtle dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/70 via-[#0d1b3e]/30 to-[#0d1b3e]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/30 via-[#0d1b3e]/10 to-[#0d1b3e]/30" />
       </motion.div>
     </div>
   );
