@@ -65,6 +65,10 @@ rhtp-temp/
 AGENTS.md
 CLAUDE.md
 
-# Screenshots
+# Screenshots (but keep public images)
 *.png
 *.webp
+!public/**/*.png
+!public/**/*.webp
+!design-system/**/*.png
+!design-system/**/*.webp
