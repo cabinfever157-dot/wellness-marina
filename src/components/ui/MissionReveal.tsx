@@ -5,7 +5,10 @@ import { motion } from "framer-motion"
 export default function MissionReveal() {
   return (
     <section className="relative py-32 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
+      {/* Subtle 10% glow behind content */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-white/5 via-[#D4AF37]/8 to-white/5 blur-3xl rounded-full" />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Gold label */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}

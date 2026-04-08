@@ -3,39 +3,29 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-interface IntroSequenceProps {
-  onComplete: () => void;
-}
-
-const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
-  const [phase, setPhase] = useState<"video" | "text1" | "text2" | "logo" | "hold" | "fade">("video");
+export default function IntroSequence() {
+  const [phase, setPhase] = useState<"video" | "text" | "logo">("video");
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setPhase("text1"), 1000),
-      setTimeout(() => setPhase("text2"), 2600),
-      setTimeout(() => setPhase("logo"), 4200),
-      setTimeout(() => setPhase("hold"), 5200),
-      setTimeout(() => setPhase("fade"), 7200),
-      setTimeout(() => onComplete(), 8200),
+      // Text fades in (2s) - ALREADY at final position
+      setTimeout(() => setPhase("text"), 2000),
+      // Logo fades in (4s) - ALREADY at final position, NO movement
+      setTimeout(() => setPhase("logo"), 4000),
     ];
+
     return () => timers.forEach(clearTimeout);
-  }, [onComplete]);
+  }, []);
 
   return (
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.5, ease: "easeInOut" }}
-      className="fixed inset-0 z-[300] bg-[#020C1B] overflow-hidden"
+      className="fixed inset-0 z-[300] bg-black overflow-hidden"
     >
-      {/* Video - ONLY the video fades in, nothing else */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute inset-0"
-      >
+      {/* Video - always playing */}
+      <div className="absolute inset-0">
         <video
           autoPlay
           muted
@@ -45,66 +35,74 @@ const IntroSequence = ({ onComplete }: IntroSequenceProps) => {
         >
           <source src="/videos/Hero.mp4" type="video/mp4" />
         </video>
-      </motion.div>
+      </div>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#020C1B]/60 z-10" />
+      {/* Dark overlay - 67% opacity */}
+      <div className="absolute inset-0 bg-black/67 z-10" />
 
-      {/* All content container - centered, stacked vertically with proper spacing */}
-      <div className="absolute inset-0 z-20 flex flex-col items-center justify-start pt-[15vh]">
-        
-        {/* Text 1 - "Rural Waterfront" - Slides up slowly, positioned in upper 3/4 */}
+      {/* ALL ELEMENTS - Absolute positioned, FIXED, NO movement when logo appears */}
+      
+      {/* Text 1 - FIXED at TOP, NEVER moves */}
+      <div className="absolute top-[10%] left-1/2 -translate-x-1/2 z-20 w-full text-center px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: phase !== "video" ? 1 : 0, y: phase !== "video" ? 0 : 200 }}
+          transition={{ duration: 2.5, ease: [0.16, 1, 0.3, 1] }}
+        >
+          {/* WHITE GLOW - 75% reduced */}
+          <div className="relative inline-block">
+            <div className="absolute -inset-12 bg-gradient-to-r from-white/10 via-white/8 to-white/10 blur-3xl rounded-full" />
+            <div className="absolute -inset-8 bg-gradient-to-r from-white/12 via-white/10 to-white/12 blur-2xl rounded-full" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-white/15 via-white/12 to-white/15 blur-xl rounded-full" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-white/20 via-white/15 to-white/20 blur-lg rounded-full" />
+            
+            <h1 className="relative z-10 text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]">
+              Rural Waterfront
+            </h1>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Text 2 - FIXED below Text 1, NEVER moves */}
+      <div className="absolute top-[calc(10%+180px)] left-1/2 -translate-x-1/2 z-20 w-full text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 150 }}
-          animate={phase !== "video" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative"
+          animate={{ opacity: phase === "text" || phase === "logo" ? 1 : 0, y: phase === "text" || phase === "logo" ? 0 : 150 }}
+          transition={{ duration: 2.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Dark glow behind text */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-40 bg-black/60 rounded-full blur-3xl" />
-          <h1 className="relative z-10 text-5xl md:text-7xl lg:text-8xl font-bold font-display tracking-tight text-white text-center">
-            Rural Waterfront
-          </h1>
+          {/* WHITE GLOW - 75% reduced */}
+          <div className="relative inline-block">
+            <div className="absolute -inset-10 bg-gradient-to-r from-white/10 via-white/8 to-white/10 blur-3xl rounded-full" />
+            <div className="absolute -inset-6 bg-gradient-to-r from-white/12 via-white/10 to-white/12 blur-2xl rounded-full" />
+            <div className="absolute -inset-3 bg-gradient-to-r from-white/15 via-white/12 to-white/15 blur-xl rounded-full" />
+            
+            <p className="relative z-10 text-2xl md:text-4xl lg:text-5xl text-white/95 font-display italic drop-shadow-[0_0_6px_rgba(255,255,255,0.7)] drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]">
+              Reimagined
+            </p>
+          </div>
         </motion.div>
+      </div>
 
-        {/* Spacer - AT LEAST 1 inch gap */}
-        <div className="h-16" />
-
-        {/* Text 2 - "Reimagined" - Slides in slowly under Text 1 */}
+      {/* Logo - FIXED at BOTTOM, NEVER moves, NO overlap with text */}
+      <div className="absolute bottom-[15%] left-1/2 -translate-x-1/2 z-20">
         <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={phase === "text2" || phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative"
+          initial={{ opacity: 0, y: 100, scale: 0.7 }}
+          animate={{ opacity: phase === "logo" ? 1 : 0, y: phase === "logo" ? 0 : 100, scale: phase === "logo" ? 1 : 0.7 }}
+          transition={{ duration: 2.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Dark glow behind text */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-24 bg-black/50 rounded-full blur-3xl" />
-          <p className="relative z-10 text-xl md:text-3xl lg:text-4xl text-white/80 font-display italic text-center px-4">
-            Reimagined
-          </p>
-        </motion.div>
-
-        {/* Spacer - AT LEAST 2 inches gap */}
-        <div className="h-16" />
-
-        {/* Logo - Slides in slowly, 2+ inches from tagline, double size with bright glow */}
-        <motion.div
-          initial={{ opacity: 0, y: 80 }}
-          animate={phase === "logo" || phase === "hold" || phase === "fade" ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative"
-        >
-          {/* Bright glow effect behind logo */}
-          <div className="absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-40 bg-gradient-to-r from-[#D4AF37]/50 to-[#FFD700]/30 rounded-full blur-3xl" />
-          <img 
-            src="/images/logo.png" 
-            alt="Newvion" 
-            className="relative z-10 h-40 md:h-56 w-auto"
-          />
+          {/* GOLDEN GLOW - reduced even more */}
+          <div className="relative">
+            <div className="absolute -inset-8 bg-gradient-to-r from-amber-600/8 via-yellow-400/6 to-amber-600/8 blur-3xl rounded-full" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/10 via-yellow-300/8 to-amber-500/10 blur-2xl rounded-full" />
+            
+            <img 
+              src="/images/logo.png" 
+              alt="Newvion" 
+              className="relative z-10 h-40 md:h-56 w-auto drop-shadow-[0_0_5px_rgba(251,191,36,0.8)] drop-shadow-[0_0_10px_rgba(245,158,11,0.6)]"
+            />
+          </div>
         </motion.div>
       </div>
     </motion.div>
   );
-};
-
-export default IntroSequence;
+}

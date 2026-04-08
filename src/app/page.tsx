@@ -24,18 +24,25 @@ export default function Home() {
     }
   }, []);
 
-  const handleIntroComplete = () => {
-    setShowHomepage(true);
-    setTimeout(() => {
-      sessionStorage.setItem("introShown", "true");
-      setShowIntro(false);
-    }, 500);
-  };
+  useEffect(() => {
+    if (showIntro) {
+      // Total intro duration: 6s animations + 1.5s fade out = 7.5s
+      const timer = setTimeout(() => {
+        setShowHomepage(true);
+        setTimeout(() => {
+          setShowIntro(false);
+          sessionStorage.setItem("introShown", "true");
+        }, 1500); // Match exit transition
+      }, 7500);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [showIntro]);
 
   return (
     <>
       <AnimatePresence>
-        {showIntro && <IntroSequence onComplete={handleIntroComplete} />}
+        {showIntro && <IntroSequence />}
       </AnimatePresence>
       
       <AnimatePresence>
@@ -43,12 +50,10 @@ export default function Home() {
           <motion.main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
             className="relative min-h-screen"
           >
-            {/* Hero bleeds edge-to-edge */}
             <Hero />
-            {/* Constrained content sections */}
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <AudienceGrid />
               <ThreePillars />
@@ -56,18 +61,14 @@ export default function Home() {
                 <Boats />
               </div>
             </div>
-            {/* Full-width mission reveal */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <MissionReveal />
             </div>
-            {/* Back to constrained */}
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <DigitalEcosystem />
               <ProofOfConcept />
             </div>
-            {/* Final CTA */}
             <FinalCTA />
-            {/* Footer spacer */}
             <div className="h-16" />
           </motion.main>
         )}

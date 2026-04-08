@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Header from "@/components/ui/Header";
-import IntroWrapper from "@/components/anim/IntroWrapper";
 import { LuxuryBackground } from "@/components/layout/LuxuryBackground";
 import "./globals.css";
 
@@ -29,10 +28,8 @@ export default function RootLayout({
           }}
         />
         <LuxuryBackground />
-        <IntroWrapper>
-          <Header />
-          {children}
-        </IntroWrapper>
+        <Header />
+        {children}
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -9,11 +9,8 @@ const Hero = () => {
   return (
     <>
       <section className="relative w-full h-screen min-h-[600px] max-h-[1000px] overflow-hidden">
-        {/* Cinematic Video Background with Smooth Scale */}
+        {/* Cinematic Video Background - removed opacity animation */}
         <motion.div
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2, ease: "easeOut" }}
           className="absolute inset-[-5%] w-[110%] h-[110%]"
         >
           <div

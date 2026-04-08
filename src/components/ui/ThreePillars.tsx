@@ -12,9 +12,9 @@ const pillars = [
       </svg>
     ),
     color: "text-teal-400",
-    bgColor: "bg-teal-500/5",
-    borderColor: "border-teal-500/20",
-    glowColor: "bg-teal-500/2",
+    bgColor: "bg-teal-500/20",
+    borderColor: "border-teal-500/80",
+    glowColor: "bg-teal-500/8",
   },
   {
     title: "Lifestyle",
@@ -25,9 +25,9 @@ const pillars = [
       </svg>
     ),
     color: "text-amber-400",
-    bgColor: "bg-amber-500/5",
-    borderColor: "border-amber-500/20",
-    glowColor: "bg-amber-500/2",
+    bgColor: "bg-amber-500/20",
+    borderColor: "border-amber-500/80",
+    glowColor: "bg-amber-500/8",
   },
   {
     title: "Connection",
@@ -38,9 +38,9 @@ const pillars = [
       </svg>
     ),
     color: "text-[#FFD700]",
-    bgColor: "bg-[#FFD700]/5",
-    borderColor: "border-[#FFD700]/20",
-    glowColor: "bg-[#FFD700]/2",
+    bgColor: "bg-[#FFD700]/20",
+    borderColor: "border-[#FFD700]/80",
+    glowColor: "bg-[#FFD700]/8",
   },
 ];
 
@@ -85,7 +85,7 @@ const ThreePillars = () => {
               <div className="hidden md:block absolute top-16 -right-4 w-8 h-px bg-gradient-to-r from-white/10 to-transparent z-20" />
             )}
 
-            <div className={`relative rounded-3xl border ${pillar.borderColor} bg-white/[0.01] backdrop-blur-sm p-10 h-full transition-all duration-700 group-hover:bg-white/[0.025] group-hover:shadow-2xl`}>
+            <div className={`relative rounded-3xl border ${pillar.borderColor} bg-white/[0.04] backdrop-blur-sm p-10 h-full transition-all duration-700 group-hover:bg-white/[0.08] group-hover:shadow-2xl`}>
               {/* Hover glow */}
               <div className={`absolute top-0 right-0 w-40 h-40 ${pillar.glowColor} rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
