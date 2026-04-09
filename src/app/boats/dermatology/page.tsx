@@ -7,7 +7,7 @@ export default function DermatologyPage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Dermatology_Boat.png')" }}
+          style={{ backgroundImage: "url('/images/Dermatology_Boat.png')", filter: "brightness(0.5)" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">

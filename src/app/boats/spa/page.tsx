@@ -27,7 +27,7 @@ export default function SpaBoatPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/spa_boat_interior.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/spa_boat_interior.png')", filter: "brightness(0.5)" }} />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
