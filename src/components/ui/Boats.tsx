@@ -77,7 +77,7 @@ const boatItems = [
     tagColor: "bg-pink-600/90 text-white shadow-pink-500/50 shadow-lg",
   },
   {
-    name: "Boutique Hotel Boat",
+    name: "Hotel Boat",
     description: "Waterfront resort experience managed by Lum'ais. Spa, retreats, and corporate events.",
     href: "/boats/boutique-hotel",
     image: "/images/boutique_hotel_final.png",

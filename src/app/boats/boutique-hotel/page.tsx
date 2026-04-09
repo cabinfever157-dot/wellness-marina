@@ -1,7 +1,7 @@
 import FadeIn from "@/components/ui/FadeIn";
 import Link from "next/link";
 
-export default function BoutiqueHotelPage() {
+export default function HotelPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
@@ -14,9 +14,9 @@ export default function BoutiqueHotelPage() {
               <span className="text-purple-400 text-xs font-medium tracking-[0.2em] uppercase">Managed by Lum'ais</span>
               <div className="h-px w-8 bg-purple-400/50" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white">Boutique Hotel & Wellness Retreat Boats</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-white">Hotel & Wellness Retreat Boats</h1>
             <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
-              A boutique waterfront resort experience — authentic, unhurried wellness with unique marina views, managed entirely by Lum&apos;ais.
+              A waterfront resort experience — authentic, unhurried wellness with unique marina views, managed entirely by Lum&apos;ais.
             </p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function BoutiqueHotelPage() {
                   Hotel furnishings, spa treatment rooms, and specialized wellness equipment — designed to feel like an authentic, unhurried wellness destination with unique marina views.
                 </p>
                 <ul className="space-y-3 text-white">
-                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Boutique hotel rooms with waterfront views.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Hotel rooms with waterfront views.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Spa treatment rooms and wellness programming.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Wellness retreat packages and corporate event bookings.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Managed entirely by Lum&apos;ais — premier wellness hospitality operator.</li>
