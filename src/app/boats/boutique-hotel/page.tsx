@@ -5,7 +5,7 @@ export default function BoutiqueHotelPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/2.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/boutique_hotel_final.png')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">

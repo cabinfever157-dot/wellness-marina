@@ -26,14 +26,14 @@ export default function Home() {
 
   useEffect(() => {
     if (showIntro) {
-      // Total intro duration: 6s animations + 1.5s fade out = 7.5s
+      // Total intro duration: 5s animations + 1.5s fade out = 6.5s
       const timer = setTimeout(() => {
         setShowHomepage(true);
         setTimeout(() => {
           setShowIntro(false);
           sessionStorage.setItem("introShown", "true");
         }, 1500); // Match exit transition
-      }, 7500);
+      }, 6000);
       
       return () => clearTimeout(timer);
     }

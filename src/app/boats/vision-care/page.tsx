@@ -7,7 +7,7 @@ export default function VisionCarePage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/6.png')" }}
+          style={{ backgroundImage: "url('/images/vision_Boat.png')" }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
@@ -32,7 +32,7 @@ export default function VisionCarePage() {
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/6.png')" }}
+                  style={{ backgroundImage: "url('/images/vision_Boat.png')" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />

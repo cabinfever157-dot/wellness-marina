@@ -8,7 +8,7 @@ const markets = [
     name: "Moore Haven, Florida",
     role: "Flagship Anchor Market",
     description: "Our founding waterfront deployment at Moore Haven City Marina on the Caloosahatchee River. A fully scaled marina creates 40-75 permanent jobs and generates $3M-$12M in annual healthcare savings.",
-    image: "/images/2.jpg",
+    image: "/images/MooreHaven.png",
     stats: [
       { value: "83%", label: "Transport Barrier to Care" },
       { value: "0", label: "Local Dental/Derm/Vision" },

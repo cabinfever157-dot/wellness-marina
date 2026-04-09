@@ -5,7 +5,7 @@ export default function SpaBoatPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/2.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/spa_boat_interior.png')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
@@ -27,7 +27,7 @@ export default function SpaBoatPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/2.jpg')" }} />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/spa_boat_interior.png')" }} />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>

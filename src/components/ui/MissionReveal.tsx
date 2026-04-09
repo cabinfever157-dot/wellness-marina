@@ -46,7 +46,7 @@ export default function MissionReveal() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg text-stone leading-relaxed max-w-3xl"
+          className="text-lg text-white leading-relaxed max-w-3xl"
         >
           Newvion is the origination engine that connects towns to capital, audience, and vision. We identify overlooked rural waterfront and countryside communities and provide them with the infrastructure to attract capital, audiences, and businesses. From conversation to executable reality.
         </motion.p>
