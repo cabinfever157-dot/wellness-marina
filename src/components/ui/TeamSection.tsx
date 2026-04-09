@@ -51,7 +51,7 @@ const TeamSection = () => {
         className="text-center mb-20"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Meet the Visionaries</h2>
-        <p className="text-white/40 max-w-xl mx-auto">
+        <p className="text-white max-w-xl mx-auto">
           A multidisciplinary team united by a shared vision of transforming rural waterfront into thriving wellness destinations.
         </p>
       </motion.div>
@@ -89,7 +89,7 @@ const TeamSection = () => {
                   <p className="text-[#D4AF37] text-sm font-medium tracking-wide mb-4">
                     {member.role}
                   </p>
-                  <p className="text-white/40 text-sm leading-relaxed">
+                  <p className="text-white text-sm leading-relaxed">
                     {member.bio}
                   </p>
                 </div>
@@ -110,7 +110,7 @@ const TeamSection = () => {
         transition={{ duration: 0.6, delay: 0.5 }}
         className="text-center mt-20"
       >
-        <p className="text-white/40 mb-6">Interested in joining our team?</p>
+        <p className="text-white mb-6">Interested in joining our team?</p>
         <a
           href="/communities"
           className="inline-flex items-center gap-2 text-[#D4AF37] font-medium hover:underline cursor-pointer"

@@ -10,7 +10,7 @@ export default function CulinaryPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/7.png')", filter: "brightness(0.5)" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/70 via-[#0d1b3e]/50 to-[#0d1b3e]/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -19,7 +19,7 @@ export default function CulinaryPage() {
               <div className="h-px w-8 bg-amber-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Culinary Boat</h1>
-            <p className="text-xl text-white/70 mt-4 max-w-2xl mx-auto">
+            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               Food is the most powerful community connector. A triple-purpose model combining chronic disease nutrition education, waterfront dining, and premium private dining.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function CulinaryPage() {
               <div className="h-px w-8 bg-amber-400/50" />
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Three Streams. One Mission.</h2>
-            <p className="text-lg text-white/50 max-w-2xl mx-auto">
+            <p className="text-lg text-white max-w-2xl mx-auto">
               Three distinct revenue and mission streams operate simultaneously across the boat&apos;s floors — making it the most financially sustainable vessel in the marina.
             </p>
           </div>
@@ -67,7 +67,7 @@ export default function CulinaryPage() {
               <div key={item.title} className={`rounded-2xl border ${item.color} ${item.bgColor} backdrop-blur-md p-8 text-center group hover:bg-amber-500/10 transition-all duration-500`}>
                 <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-white text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -82,18 +82,16 @@ export default function CulinaryPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/7.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
                   <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Community Kitchen & Casual Dining</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Where Education Meets Experience</h2>
-                <p className="text-white/60 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   The heart of the Culinary Boat — designed to seamlessly convert from a cooking class environment to a restaurant service, with an open commercial demonstration kitchen that is fully equipped for both.
                 </p>
-                <ul className="space-y-3 text-white/60">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Open commercial demonstration kitchen, fully equipped for classes and restaurant service.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Flexible group class and dining seating for 14 to 18 people.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Built-in telehealth station within the teaching space, allowing a dietitian to connect live during nutrition classes.</li>
@@ -114,18 +112,16 @@ export default function CulinaryPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/8.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Second Floor — Chef's Table & Nutrition Care</span>
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Premium Dining Meets Clinical Care</h2>
-                <p className="text-white/60 text-lg leading-relaxed mb-6">
+                <p className="text-white text-lg leading-relaxed mb-6">
                   An elevated level balancing premium, intimate dining with personalized clinical care — with a private staircase granting direct access to the rooftop pavilion.
                 </p>
-                <ul className="space-y-3 text-white/60">
+                <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Intimate Chef&apos;s Table seating 6 to 8 guests.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Private dining room for 10 to 14 — farm-to-table dinners, corporate retreats, special occasions.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Wine and beverage service, tasting menus, cooking demonstrations, and local farm dinner series.</li>
@@ -144,7 +140,7 @@ export default function CulinaryPage() {
             <div className="text-center mb-8">
                   <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
               <h2 className="text-3xl font-bold text-white mt-4 mb-4">Where the Marina Comes Alive</h2>
-              <p className="text-white/50 text-lg max-w-2xl mx-auto">
+              <p className="text-white text-lg max-w-2xl mx-auto">
                 Accessible from both the main deck and the second floor, the rooftop is an open-air terrace for outdoor waterfront dining, weekly farm-to-table community markets, cooking demonstrations, food festivals, and seasonal community dining events.
               </p>
             </div>
@@ -158,15 +154,15 @@ export default function CulinaryPage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">4-8</div>
-                <div className="text-white/40 text-sm">Permanent Direct Jobs Created</div>
+                <div className="text-white text-sm">Permanent Direct Jobs Created</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">Significant</div>
-                <div className="text-white/40 text-sm">Annual Healthcare Savings from Chronic Disease Prevention</div>
+                <div className="text-white text-sm">Annual Healthcare Savings from Chronic Disease Prevention</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">Local Farms</div>
-                <div className="text-white/40 text-sm">Partnered for USDA Rural Development qualification</div>
+                <div className="text-white text-sm">Partnered for USDA Rural Development qualification</div>
               </div>
             </div>
           </div>
@@ -177,7 +173,7 @@ export default function CulinaryPage() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-amber-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Taste the Difference</h2>
-              <p className="text-xl text-white/60 max-w-2xl mx-auto mb-8">
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 From community nutrition classes to waterfront fine dining — experience food as medicine on the water.
               </p>
               <Link href="/" className="inline-block bg-amber-500 text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-300 cursor-pointer">

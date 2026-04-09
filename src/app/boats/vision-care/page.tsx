@@ -69,7 +69,7 @@ export default function VisionCarePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Main Deck — Clinic</h3>
-                <p className="text-white/70 text-sm">Full optometry practice with all equipment and exam lanes.</p>
+                <p className="text-white text-sm">Full optometry practice with all equipment and exam lanes.</p>
               </div>
               <div className="text-center">
                 <div className="p-4 rounded-xl bg-[#FFD700]/10 inline-block mb-4">
@@ -78,7 +78,7 @@ export default function VisionCarePage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Upper Deck — Residence</h3>
-                <p className="text-white/70 text-sm">Private, turnkey waterfront living for the practitioner.</p>
+                <p className="text-white text-sm">Private, turnkey waterfront living for the practitioner.</p>
               </div>
             </div>
           </div>

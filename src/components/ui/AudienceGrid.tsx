@@ -116,7 +116,7 @@ const AudienceGrid = () => {
               </div>
               <span className="text-[#FFD700]/90 text-xs font-semibold tracking-wider uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{card.subtitle}</span>
               <h3 className="text-2xl md:text-3xl font-bold text-white mt-1 group-hover:text-[#FFD700] transition-colors drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">{card.title}</h3>
-              <p className="text-white/80 text-sm mt-2 max-w-md leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{card.description}</p>
+              <p className="text-white text-sm mt-2 max-w-md leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{card.description}</p>
             </div>
 
             {/* Hover arrow */}

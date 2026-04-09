@@ -36,7 +36,7 @@ export default function MentalHealthPage() {
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Powered by Mentavi Health</span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4">Grand Rapids-Based, Serving 40+ States</h2>
-                <p className="text-white/60 text-lg leading-relaxed">
+                <p className="text-white text-lg leading-relaxed">
                   Founded in 2018 as ADHD Online, Mentavi Health provides evidence-based mental health diagnosis and treatment across the country. The Mental Health Boat serves as a physical extension of Mentavi&apos;s digital platform, bringing their established network of clinicians directly into rural community spaces that pure home-based telehealth cannot effectively reach.
                 </p>
               </div>
@@ -59,8 +59,6 @@ export default function MentalHealthPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Mental_Wellness_2.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -91,8 +89,6 @@ export default function MentalHealthPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Mental_Wellness_3.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -125,7 +121,7 @@ export default function MentalHealthPage() {
               ].map((service) => (
                 <div key={service.title} className="rounded-xl border border-teal-500/10 bg-teal-500/5 p-6 text-center hover:bg-teal-500/10 transition-all duration-300">
                   <h3 className="text-lg font-bold text-teal-400 mb-2">{service.title}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{service.desc}</p>
+                  <p className="text-white text-sm leading-relaxed">{service.desc}</p>
                 </div>
               ))}
             </div>
@@ -141,8 +137,6 @@ export default function MentalHealthPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Mental_Wellness_4.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">

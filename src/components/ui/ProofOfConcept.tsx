@@ -83,7 +83,7 @@ const ProofOfConcept = () => {
                     <h3 className="text-3xl font-bold text-white mt-1">{market.name}</h3>
                   </div>
 
-                  <p className="text-white/60 text-lg leading-relaxed mt-4 lg:mt-6">
+                  <p className="text-white text-lg leading-relaxed mt-4 lg:mt-6">
                     {market.description}
                   </p>
 
@@ -92,7 +92,7 @@ const ProofOfConcept = () => {
                     {market.stats.map((stat) => (
                       <div key={stat.label}>
                         <div className="text-2xl font-bold text-[#FFD700]">{stat.value}</div>
-                        <div className="text-xs text-white/30 mt-1 leading-tight">{stat.label}</div>
+                        <div className="text-xs text-white mt-1 leading-tight">{stat.label}</div>
                       </div>
                     ))}
                   </div>

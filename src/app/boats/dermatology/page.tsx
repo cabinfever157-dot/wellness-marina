@@ -34,8 +34,6 @@ export default function DermatologyPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Dermatology_Boat.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">

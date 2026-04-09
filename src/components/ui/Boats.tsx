@@ -96,7 +96,7 @@ const boatItems = [
     name: "Wellness Retreat Boat",
     description: "Immersive wellness programming — yoga, mindfulness, nutrition, and spa treatments on the water.",
     href: "/boats/wellness-retreat",
-    image: "/images/3.png",
+    image: "/images/Wellness_Retreat_Boat.png",
     tag: "Wellness",
     tagColor: "bg-teal-600/90 text-white shadow-teal-500/50 shadow-lg",
   },

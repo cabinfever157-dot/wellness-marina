@@ -36,8 +36,6 @@ export default function StudioPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/studio_boat.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -102,7 +100,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">FGCU</h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white text-sm">
                   Florida Gulf Coast University — primary educational partner providing student interns and workforce development for media production and digital marketing training.
                 </p>
               </div>
@@ -113,7 +111,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Hendry Regional</h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white text-sm">
                   Hendry Regional Medical Center — collaborates to provide health and wellness content and provider participation, linking media programming to healthcare outcomes.
                 </p>
               </div>
@@ -124,7 +122,7 @@ export default function StudioPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Local Government</h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white text-sm">
                   Glades County, City of Moore Haven, and SWFRPC — providing dock access, regional promotion, and economic development alignment.
                 </p>
               </div>

@@ -119,21 +119,21 @@ export default function InvestorsPage() {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">1</div>
                     <div>
                       <h3 className="text-white font-semibold">Grant Funding</h3>
-                      <p className="text-white/70 text-sm">Federal RHTP, HRSA, USDA Rural Development — non-dilutive capital</p>
+                      <p className="text-white text-sm">Federal RHTP, HRSA, USDA Rural Development — non-dilutive capital</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">2</div>
                     <div>
                       <h3 className="text-white font-semibold">Resort Revenue</h3>
-                      <p className="text-white/70 text-sm">15M+ drive market generating commercial revenue from hospitality</p>
+                      <p className="text-white text-sm">15M+ drive market generating commercial revenue from hospitality</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">3</div>
                     <div>
                       <h3 className="text-white font-semibold">Investment Returns</h3>
-                      <p className="text-white/70 text-sm">OZ tax-free appreciation + E-2 turnkey businesses + Boat Fund</p>
+                      <p className="text-white text-sm">OZ tax-free appreciation + E-2 turnkey businesses + Boat Fund</p>
                     </div>
                   </div>
                 </div>

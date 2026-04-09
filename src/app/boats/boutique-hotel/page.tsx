@@ -57,15 +57,15 @@ export default function BoutiqueHotelPage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-purple-400 mb-2">Vessel</div>
-                <div className="text-white/70 text-sm">Physical Boat Cost</div>
+                <div className="text-white text-sm">Physical Boat Cost</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-purple-400 mb-2">Premium</div>
-                <div className="text-white/70 text-sm">Equipment & Fit-Out</div>
+                <div className="text-white text-sm">Equipment & Fit-Out</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-purple-400 mb-2">Lum'ais</div>
-                <div className="text-white/70 text-sm">Full Hospitality Management</div>
+                <div className="text-white text-sm">Full Hospitality Management</div>
               </div>
             </div>
             <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">

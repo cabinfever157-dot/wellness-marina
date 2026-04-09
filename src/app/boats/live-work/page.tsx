@@ -5,7 +5,7 @@ export default function LiveWorkPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/5.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/5.png')", filter: "brightness(0.5)" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
@@ -27,9 +27,7 @@ export default function LiveWorkPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/5.png')", filter: "brightness(0.5)" }} />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/5.png')" }} />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -54,23 +52,21 @@ export default function LiveWorkPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/6.png')" }} />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/5.png')" }} />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
-                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Private Residence</span>
+                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Private Residence</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Your Waterfront Home</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Live Where You Practice</h2>
                 <p className="text-white text-lg leading-relaxed mb-6">
-                  A complete, private waterfront residence with a private entrance, kitchen, bedroom, and direct access to a private rooftop terrace for outdoor living.
+                  A turnkey waterfront residence above the clinical space — eliminating commute time and creating immediate availability for patient emergencies.
                 </p>
                 <ul className="space-y-3 text-white">
-                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private entrance separate from the clinical suite.</li>
-                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Full kitchen and bedroom.</li>
-                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private rooftop terrace for outdoor living.</li>
-                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Turnkey waterfront lifestyle for the practitioner.</li>
+                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private living quarters with waterfront views.</li>
+                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Full kitchen, bedroom, and bathroom.</li>
+                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Rooftop deck for personal outdoor space.</li>
+                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Immediate availability for patient emergencies.</li>
                 </ul>
               </div>
             </div>
@@ -83,19 +79,19 @@ export default function LiveWorkPage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Premium</div>
-                <div className="text-white/70 text-sm">Boat Investment</div>
+                <div className="text-white text-sm">Boat Investment</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Flexible</div>
-                <div className="text-white/70 text-sm">Equipment & Fit-Out</div>
+                <div className="text-white text-sm">Equipment & Fit-Out</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">E-2 Visa</div>
-                <div className="text-white/70 text-sm">US Residency via Active Business</div>
+                <div className="text-white text-sm">US Residency via Active Business</div>
               </div>
             </div>
             <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
-              International professionals — optometrists, therapists, chefs — seeking US residency through active business ownership. The Live-Work boat satisfies the &quot;active business&quot; requirement while providing a turnkey practice and home.
+              International professionals — optometrists, therapists, chefs — seeking US residency through active business ownership. The Live-Work boat satisfies the "active business" requirement while providing a turnkey practice and home.
             </p>
           </div>
         </FadeIn>

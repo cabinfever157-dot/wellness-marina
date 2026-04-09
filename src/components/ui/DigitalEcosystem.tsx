@@ -23,7 +23,7 @@ const DigitalEcosystem = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">Beyond the Water</h2>
-        <p className="text-lg text-white/70 mt-4 max-w-3xl mx-auto">
+        <p className="text-lg text-white mt-4 max-w-3xl mx-auto">
           A national digital platform connecting rural communities to premium experiences.
         </p>
       </motion.div>
@@ -46,13 +46,13 @@ const DigitalEcosystem = () => {
                 </div>
                 <h3 className="text-3xl font-bold text-[#FFD700]">Newvion Club</h3>
               </div>
-              <blockquote className="text-white/60 text-lg leading-relaxed italic mb-4">
+              <blockquote className="text-white text-lg leading-relaxed italic mb-4">
                 &ldquo;Think American Express Centurion for the rural American experience.&rdquo;
               </blockquote>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 A premium lifestyle membership providing access to live programming, culinary salons, wellness classes, and online concerts.
               </p>
-              <div className="mt-6 flex items-center gap-2 text-sm text-white/30">
+              <div className="mt-6 flex items-center gap-2 text-sm text-white">
                 <div className="w-2 h-2 rounded-full bg-[#FFD700] animate-pulse" />
                 <span>Digital-first, expanding to physical city events</span>
               </div>
@@ -77,13 +77,13 @@ const DigitalEcosystem = () => {
                 </div>
                 <h3 className="text-3xl font-bold text-blue-400">Rural Health Studios</h3>
               </div>
-              <p className="text-white/60 text-lg leading-relaxed mb-4">
+              <p className="text-white text-lg leading-relaxed mb-4">
                 Grant-eligible health and wellness programming for underserved communities.
               </p>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 Partnering with hospital systems and employer groups to bridge critical healthcare gaps through the Rural Connect platform.
               </p>
-              <div className="mt-6 flex items-center gap-2 text-sm text-white/30">
+              <div className="mt-6 flex items-center gap-2 text-sm text-white">
                 <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
                 <span>Grant-funded, FQHC-partnered, community-first</span>
               </div>

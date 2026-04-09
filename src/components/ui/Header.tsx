@@ -47,7 +47,7 @@ const Header = () => {
             />
             <span className="text-lg font-bold text-[#FDFBF7] tracking-tight hidden sm:block relative z-10">
               Newvion
-              <span className="text-white/70 font-light ml-1">Wellness Marina</span>
+              <span className="text-white font-light ml-1">Wellness Marina</span>
             </span>
           </Link>
 
@@ -60,7 +60,7 @@ const Header = () => {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
                   pathname === link.href
                     ? 'text-[#FDFBF7] bg-white/20 backdrop-blur-md'
-                    : 'text-white/80 hover:text-[#FDFBF7] hover:bg-white/10 backdrop-blur-sm'
+                    : 'text-white hover:text-white hover:bg-white/10 backdrop-blur-sm'
                 }`}
               >
                 {link.label}

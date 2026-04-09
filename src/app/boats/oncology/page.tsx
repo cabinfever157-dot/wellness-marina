@@ -34,8 +34,6 @@ export default function OncologyPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Oncology_Boat.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Comprehensive Cancer Support</h2>
@@ -65,7 +63,7 @@ export default function OncologyPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">NorthStar Healthcare</h3>
-                <p className="text-white/70 text-sm">Specialized oncology expertise and clinical protocols.</p>
+                <p className="text-white text-sm">Specialized oncology expertise and clinical protocols.</p>
               </div>
               <div className="text-center">
                 <div className="p-4 rounded-xl bg-blue-500/10 inline-block mb-4">
@@ -74,7 +72,7 @@ export default function OncologyPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Hendry Regional Medical Center</h3>
-                <p className="text-white/70 text-sm">Local hospital partnership for referrals and coordinated care.</p>
+                <p className="text-white text-sm">Local hospital partnership for referrals and coordinated care.</p>
               </div>
             </div>
           </div>

@@ -189,7 +189,7 @@ const Hero = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="mt-6 text-center"
               >
-                <p className="text-white/70 text-sm tracking-wide">The Newvion Wellness Marina Vision</p>
+                <p className="text-white text-sm tracking-wide">The Newvion Wellness Marina Vision</p>
               </motion.div>
             </motion.div>
           </motion.div>

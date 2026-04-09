@@ -81,7 +81,7 @@ export default function SponsorsPage() {
               ].map((stat) => (
                 <div key={stat.label}>
                   <div className="text-3xl md:text-4xl font-bold text-[#FFD700]">{stat.value}</div>
-                  <div className="text-sm text-white/70 mt-2">{stat.label}</div>
+                  <div className="text-sm text-white mt-2">{stat.label}</div>
                 </div>
               ))}
             </div>

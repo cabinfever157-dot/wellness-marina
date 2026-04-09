@@ -5,7 +5,7 @@ export default function WellnessRetreatPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/3.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/Wellness_Retreat_Boat.png')", filter: "brightness(0.5)" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
@@ -27,9 +27,7 @@ export default function WellnessRetreatPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/3.png')", filter: "brightness(0.5)" }} />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/3.png')" }} />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Immersive Wellness Programming</h2>
@@ -56,15 +54,15 @@ export default function WellnessRetreatPage() {
             <div className="grid md:grid-cols-3 gap-8 mt-10 text-center">
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Retreats</div>
-                <div className="text-white/70 text-sm">Weekend & week-long programs</div>
+                <div className="text-white text-sm">Weekend & week-long programs</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Corporate</div>
-                <div className="text-white/70 text-sm">Team-building & wellness days</div>
+                <div className="text-white text-sm">Team-building & wellness days</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-teal-400 mb-2">Spa</div>
-                <div className="text-white/70 text-sm">Therapeutic & wellness services</div>
+                <div className="text-white text-sm">Therapeutic & wellness services</div>
               </div>
             </div>
           </div>

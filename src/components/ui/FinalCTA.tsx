@@ -39,7 +39,7 @@ export default function FinalCTA() {
           </span>
         </h2>
 
-        <p className="text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-xl text-white max-w-2xl mx-auto mb-12 leading-relaxed">
           Moore Haven launches April 2026. Allegan is next. Where will the marina go after that?
         </p>
 

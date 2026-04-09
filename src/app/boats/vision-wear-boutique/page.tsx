@@ -5,7 +5,7 @@ export default function VisionWearBoutiquePage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/6.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/6.png')", filter: "brightness(0.5)" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
@@ -27,9 +27,7 @@ export default function VisionWearBoutiquePage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/6.png')", filter: "brightness(0.5)" }} />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/6.png')" }} />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -56,15 +54,15 @@ export default function VisionWearBoutiquePage() {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">Premium</div>
-                <div className="text-white/70 text-sm">Base Boat</div>
+                <div className="text-white text-sm">Base Boat</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">Custom</div>
-                <div className="text-white/70 text-sm">Fit-Out Options</div>
+                <div className="text-white text-sm">Fit-Out Options</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-amber-400 mb-2">E-2 Qualified</div>
-                <div className="text-white/70 text-sm">Treaty Investor Eligible</div>
+                <div className="text-white text-sm">Treaty Investor Eligible</div>
               </div>
             </div>
             <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
@@ -79,10 +77,10 @@ export default function VisionWearBoutiquePage() {
             <div className="relative z-10">
               <h2 className="text-3xl font-bold text-white mb-4">Open Your Optical Boutique</h2>
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
-                Bring your optical expertise to the waterfront — a turnkey retail boat concept for entrepreneurs.
+                Bring premium eyewear and vision care to a waterfront community.
               </p>
               <Link href="/" className="inline-block bg-amber-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-300 cursor-pointer">
-                Apply to Operate
+                Learn About Opportunities
               </Link>
             </div>
           </div>
