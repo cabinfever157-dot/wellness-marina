@@ -70,7 +70,7 @@ export default function PrimaryCarePage() {
               <div className="relative h-64 rounded-xl overflow-hidden">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/4.png')" }}
+                  style={{ backgroundImage: "url('/images/Primary_CareBoat.png')" }}
                 />
               </div>
             </div>

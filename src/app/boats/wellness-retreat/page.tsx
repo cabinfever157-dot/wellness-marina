@@ -27,7 +27,7 @@ export default function WellnessRetreatPage() {
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/3.png')" }} />
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/Wellness_Retreat_Boat.png')" }} />
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Immersive Wellness Programming</h2>
