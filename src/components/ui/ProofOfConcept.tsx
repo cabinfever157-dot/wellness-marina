@@ -70,8 +70,6 @@ const ProofOfConcept = () => {
                       backgroundImage: `url('${market.image}')`,
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/80 hidden lg:block" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-black/60" />
                   <div className="absolute bottom-6 left-6 lg:hidden">
                     <span className="text-[#FFD700] text-xs font-semibold tracking-wider uppercase">{market.role}</span>
                     <h3 className="text-3xl font-bold text-white mt-1">{market.name}</h3>
