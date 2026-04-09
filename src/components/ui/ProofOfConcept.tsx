@@ -19,7 +19,7 @@ const markets = [
     name: "Allegan, Michigan",
     role: "Inland Proof of Concept",
     description: "On the Kalamazoo River — proving our model is geography-agnostic. Modular studio hubs execute the same vision, backed by major regional health and civic partners.",
-    image: "/images/3.png",
+    image: "/images/Allegan, Michigan.png",
     stats: [
       { value: "Inland", label: "Geography-Agnostic" },
       { value: "Modular", label: "Studio Hub Model" },
@@ -68,7 +68,6 @@ const ProofOfConcept = () => {
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                     style={{
                       backgroundImage: `url('${market.image}')`,
-                      filter: "brightness(1.15) saturate(1.2)",
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/80 hidden lg:block" />
