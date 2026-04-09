@@ -110,7 +110,7 @@ const Boats = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-20"
+        className="text-center mb-10"
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#FFD700]/50" />
@@ -123,6 +123,22 @@ const Boats = () => {
         <p className="text-lg text-white mt-4 max-w-2xl mx-auto">
           Each vessel is a purpose-built, multi-story platform — from clinical healthcare to culinary experiences.
         </p>
+      </motion.div>
+
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-6xl mx-auto px-4 mb-20"
+      >
+        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden border border-white/5 shadow-2xl">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/dock.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/40 to-transparent" />
+        </div>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-4">
