@@ -46,7 +46,7 @@ const ProofOfConcept = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">From Conversation<br className="md:hidden" /> to Commitment</h2>
-        <p className="text-lg text-white/70 mt-4 max-w-3xl mx-auto">
+        <p className="text-lg text-white mt-4 max-w-3xl mx-auto">
           Grounded in executable, investable reality. We deploy in active markets, proving the model with physical assets.
         </p>
       </motion.div>

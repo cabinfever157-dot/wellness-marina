@@ -65,7 +65,7 @@ const ThreePillars = () => {
           <div className="h-px w-8 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-4xl md:text-6xl font-bold text-white">Experience the Wellness Connected Marina.</h2>
-        <p className="text-lg text-white/40 mt-4 max-w-2xl mx-auto">
+        <p className="text-lg text-white mt-4 max-w-2xl mx-auto">
           Every boat, every space, every experience is built around wellness, lifestyle, and connection.
         </p>
       </motion.div>
@@ -94,7 +94,7 @@ const ThreePillars = () => {
                   {pillar.icon}
                 </div>
                 <h3 className={`text-3xl font-bold ${pillar.color} mb-6`}>{pillar.title}</h3>
-                <p className="text-white/70 leading-relaxed text-lg">{pillar.description}</p>
+                <p className="text-white leading-relaxed text-lg">{pillar.description}</p>
               </div>
             </div>
           </motion.div>
