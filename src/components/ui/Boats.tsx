@@ -69,7 +69,7 @@ const boatItems = [
     tagColor: "bg-amber-600/90 text-black shadow-amber-400/50 shadow-lg",
   },
   {
-    name: "Studio Boat",
+    name: "The Innovation Boat",
     description: "Podcast studio, video production, social media workspace. Partnered with FGCU.",
     href: "/boats/studio",
     image: "/images/studio_boat.png",

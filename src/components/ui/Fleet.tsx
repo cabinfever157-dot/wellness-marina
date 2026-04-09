@@ -45,7 +45,7 @@ const fleetItems = [
     tagColor: "bg-amber-600/90 text-black shadow-amber-400/50 shadow-lg",
   },
   {
-    name: "Studio Boat",
+    name: "The Innovation Boat",
     description: "Professional podcast studio, video production suite, and social media workspace for community storytelling.",
     href: "/fleet/studio",
     image: "/images/8.png",

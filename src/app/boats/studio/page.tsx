@@ -43,7 +43,7 @@ export default function StudioPage() {
                 </div>
                 <h2 className="text-3xl font-bold text-white mb-4">Professional Content Creation</h2>
                 <p className="text-white text-lg leading-relaxed mb-6">
-                  The Studio Boat provides local entrepreneurs, small businesses, and community storytellers with professional content creation tools they typically cannot access.
+                  The Innovation Boat provides local entrepreneurs, small businesses, and community storytellers with professional content creation tools they typically cannot access.
                 </p>
                 <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-pink-400 mr-3 mt-1">✦</span> Professional podcast and audio recording studio.</li>
@@ -88,48 +88,6 @@ export default function StudioPage() {
           </div>
         </FadeIn>
 
-        {/* Partnerships */}
-        <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
-            <h2 className="text-3xl font-bold text-white mb-8 text-center">Strategic Partnerships</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="p-4 rounded-xl bg-pink-500/10 inline-block mb-4">
-                  <svg className="w-8 h-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">FGCU</h3>
-                <p className="text-white text-sm">
-                  Florida Gulf Coast University — primary educational partner providing student interns and workforce development for media production and digital marketing training.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="p-4 rounded-xl bg-blue-500/10 inline-block mb-4">
-                  <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Hendry Regional</h3>
-                <p className="text-white text-sm">
-                  Hendry Regional Medical Center — collaborates to provide health and wellness content and provider participation, linking media programming to healthcare outcomes.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="p-4 rounded-xl bg-emerald-500/10 inline-block mb-4">
-                  <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Local Government</h3>
-                <p className="text-white text-sm">
-                  Glades County, City of Moore Haven, and SWFRPC — providing dock access, regional promotion, and economic development alignment.
-                </p>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
-
         {/* Digital Hub Role */}
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
@@ -137,7 +95,7 @@ export default function StudioPage() {
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">The Marina&apos;s Digital Hub</h2>
                 <p className="text-white text-lg leading-relaxed">
-                  Within the marina, the Studio Boat acts as a central digital hub that captures, produces, and distributes health, culinary, and workforce programming from the other Newvion boats — amplifying their reach through the Rural Connect platform.
+                  Within the marina, the Innovation Boat acts as a central digital hub that captures, produces, and distributes health, culinary, and workforce programming from the other Newvion boats — amplifying their reach through the Rural Connect platform.
                 </p>
               </div>
               <div className="relative h-64 rounded-xl overflow-hidden">
