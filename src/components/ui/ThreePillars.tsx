@@ -34,13 +34,13 @@ const ThreePillars = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="relative rounded-[20%] overflow-hidden"
+          className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl mt-12"
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: "url('/images/dock.jpg')" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020C1B] via-[#020C1B]/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/80 via-[#0d1b3e]/20 to-transparent" />
         </motion.div>
       </div>
     </div>

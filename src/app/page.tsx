@@ -11,6 +11,7 @@ import MissionReveal from "@/components/ui/MissionReveal";
 import DigitalEcosystem from "@/components/ui/DigitalEcosystem";
 import ProofOfConcept from "@/components/ui/ProofOfConcept";
 import FinalCTA from "@/components/ui/FinalCTA";
+import WellnessEcosystem from "@/components/ui/WellnessEcosystem";
 
 export default function Home() {
   const [showIntro, setShowIntro] = useState(true);
@@ -60,11 +61,8 @@ export default function Home() {
               <div id="boats">
                 <Boats />
               </div>
-            </div>
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <MissionReveal />
-            </div>
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <WellnessEcosystem />
               <DigitalEcosystem />
               <ProofOfConcept />
             </div>
