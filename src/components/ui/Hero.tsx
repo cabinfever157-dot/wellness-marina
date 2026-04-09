@@ -93,7 +93,7 @@ const Hero = () => {
               >
                 {[
                   { value: "11+", label: "Curated Boats" },
-                  { value: "100", label: "Wellness Consumers" },
+                  { value: "100M+", label: "Wellness Consumers" },
                   { value: "Apr '26", label: "Pilot Launch" },
                 ].map((stat) => (
                   <div key={stat.label} className="group">

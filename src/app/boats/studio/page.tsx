@@ -18,7 +18,7 @@ export default function StudioPage() {
               <span className="text-pink-400 text-xs font-medium tracking-[0.2em] uppercase">The Voice of Rural Communities</span>
               <div className="h-px w-8 bg-pink-400/50" />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white">Studio Boat</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-white">The Innovation Boat</h1>
             <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
               A professional digital media hub for podcasting, video production, and community storytelling — amplifying rural voices through the Rural Connect platform.
             </p>
