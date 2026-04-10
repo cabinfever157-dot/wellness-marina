@@ -69,8 +69,17 @@ const Hero = () => {
                   className="group relative inline-flex items-center gap-2 bg-[#D4AF37] text-[#020C1B] font-semibold px-8 py-4 rounded-full overflow-hidden transition-all hover:scale-105 duration-500 cursor-pointer"
                 >
                   <span className="relative z-10">Explore the Marina</span>
-                  <svg className="w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="2" y="2" width="20" height="20" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                    <rect x="4" y="4" width="3.5" height="2" rx="0.5" />
+                    <rect x="4" y="8" width="3.5" height="2" rx="0.5" />
+                    <rect x="4" y="14" width="3.5" height="2" rx="0.5" />
+                    <rect x="4" y="18" width="3.5" height="2" rx="0.5" />
+                    <rect x="16.5" y="4" width="3.5" height="2" rx="0.5" />
+                    <rect x="16.5" y="8" width="3.5" height="2" rx="0.5" />
+                    <rect x="16.5" y="14" width="3.5" height="2" rx="0.5" />
+                    <rect x="16.5" y="18" width="3.5" height="2" rx="0.5" />
+                    <rect x="9" y="7" width="6" height="10" rx="1" stroke="currentColor" strokeWidth="1" fill="none" />
                   </svg>
                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 </button>
