@@ -1,10 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
+const CYCLE_WORDS = ["Live", "Work", "Connect", "Experience"];
 
 const Hero = () => {
   const [showVideo, setShowVideo] = useState(false);
+  const [wordIndex, setWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((i) => (i + 1) % CYCLE_WORDS.length);
+    }, 2400);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
@@ -24,7 +34,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#020C1B]/30 to-transparent z-10" />
 
         {/* Content */}
-        <div className="relative z-20 h-full flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-20 pt-24">
+        <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-24 pb-20 pt-32">
           <div className="grid lg:grid-cols-2 gap-12 items-end">
             {/* Left Column - Text Content */}
             <div>
@@ -39,6 +49,21 @@ const Hero = () => {
                 Rural Waterfront
                 <br />
                 <span className="text-gradient-gold italic pr-4">Reimagined</span>
+                <span className="inline-flex items-center ml-4 h-[1em] overflow-hidden align-bottom">
+                  <span className="text-lg md:text-2xl lg:text-3xl font-light tracking-[0.25em] uppercase text-white/40 mr-3">—</span>
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={CYCLE_WORDS[wordIndex]}
+                      initial={{ opacity: 0, y: 18, filter: "blur(6px)" }}
+                      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                      exit={{ opacity: 0, y: -18, filter: "blur(6px)" }}
+                      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                      className="text-gradient-gold italic text-3xl md:text-5xl lg:text-6xl font-display inline-block"
+                    >
+                      {CYCLE_WORDS[wordIndex]}
+                    </motion.span>
+                  </AnimatePresence>
+                </span>
               </motion.h1>
 
               <motion.p

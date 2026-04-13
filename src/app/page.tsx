@@ -58,10 +58,10 @@ export default function Home() {
             <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <WellnessEcosystem />
               <ThreePillars />
-              <AudienceGrid />
               <div id="boats">
                 <Boats />
               </div>
+              <AudienceGrid />
               <MissionReveal />
               <DigitalEcosystem />
               <ProofOfConcept />
