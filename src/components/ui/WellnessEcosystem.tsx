@@ -73,12 +73,23 @@ const WellnessEcosystem = () => {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             The Wellness Ecosystem
           </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
-            Living Well — A Rural Community Platform
-          </p>
           <p className="text-lg text-white mt-6 max-w-4xl mx-auto leading-relaxed">
             The Newvion Wellness Marina is built around one simple idea: Living Well. It is not a traditional resort and not a standalone healthcare facility. It is a community-first wellness ecosystem—bringing together healthcare, lifestyle, and economic development into one integrated waterfront destination designed for rural communities.
           </p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full mt-10"
+          >
+            <img
+              src="/images/dock.jpg"
+              alt="Dock at Wellness Marina"
+              className="w-full max-h-[600px] rounded-[25%] object-contain object-center"
+            />
+          </motion.div>
         </motion.div>
 
         {/* Main Sections */}
@@ -157,6 +168,26 @@ const WellnessEcosystem = () => {
               Healthcare is the anchor. The resort is the draw. Living well is the outcome.
             </p>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="relative z-10 text-center mt-20"
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="h-px w-8 bg-[#FFD700]/50" />
+            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
+              Designed for Living Well
+            </span>
+            <div className="h-px w-8 bg-[#FFD700]/50" />
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-white">Experience the Wellness Connected Marina.</h2>
+          <p className="text-lg text-white mt-4 max-w-2xl mx-auto">
+            Every boat, every space, every experience is built around wellness, lifestyle, and connection.
+          </p>
         </motion.div>
       </div>
     </div>
