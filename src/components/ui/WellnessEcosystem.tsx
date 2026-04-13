@@ -50,7 +50,7 @@ const colorMap: Record<string, string> = {
 
 const WellnessEcosystem = () => {
   return (
-    <div className="relative py-32 overflow-hidden">
+    <div className="relative py-32 pt-44 overflow-hidden">
       {/* Background with glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#FFD700]/3 rounded-full blur-[150px]" />
 

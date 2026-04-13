@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative w-full h-screen min-h-[600px] max-h-[1000px] overflow-hidden">
+      <section className="relative w-full min-h-[600px] overflow-hidden" style={{ height: "calc(100vh + 120px)" }}>
         {/* Cinematic Video Background - removed opacity animation */}
         <motion.div
           className="absolute inset-[-5%] w-[110%] h-[110%]"
@@ -35,7 +35,7 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-24 pb-20 pt-40">
-          <div className="grid lg:grid-cols-2 gap-12 items-end">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text Content */}
             <div>
               <div className="mb-16" />
@@ -47,22 +47,23 @@ const Hero = () => {
                 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight max-w-5xl text-white"
               >
                 Wellness Marina
-                <span className="inline-flex items-center ml-4 h-[1em] overflow-hidden align-bottom">
-                  <span className="text-lg md:text-2xl lg:text-3xl font-light tracking-[0.25em] uppercase text-white/40 mr-3">—</span>
-                  <AnimatePresence mode="wait">
-                    <motion.span
-                      key={CYCLE_WORDS[wordIndex]}
-                      initial={{ opacity: 0, y: 18, filter: "blur(6px)" }}
-                      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                      exit={{ opacity: 0, y: -18, filter: "blur(6px)" }}
-                      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-gradient-gold italic text-3xl md:text-5xl lg:text-6xl font-display inline-block"
-                    >
-                      {CYCLE_WORDS[wordIndex]}
-                    </motion.span>
-                  </AnimatePresence>
-                </span>
               </motion.h1>
+
+              <div className="mt-4 inline-flex items-baseline gap-3">
+                <span className="text-lg md:text-2xl lg:text-3xl font-light tracking-[0.25em] uppercase text-white/40">—</span>
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={CYCLE_WORDS[wordIndex]}
+                    initial={{ opacity: 0, y: 18, filter: "blur(6px)" }}
+                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                    exit={{ opacity: 0, y: -18, filter: "blur(6px)" }}
+                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                    className="text-gradient-gold italic text-3xl md:text-5xl lg:text-6xl font-display inline-block"
+                  >
+                    {CYCLE_WORDS[wordIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </div>
 
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
@@ -124,7 +125,7 @@ const Hero = () => {
             </div>
 
             {/* Right Column - Vimeo Video Embed */}
-            <div className="hidden lg:block -mt-[100%]">
+            <div className="hidden lg:block pt-[15%]">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -143,6 +144,9 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Fade-out zone blending into next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#020C1B] to-transparent z-20 pointer-events-none" />
       </section>
 
       {/* Video Modal */}

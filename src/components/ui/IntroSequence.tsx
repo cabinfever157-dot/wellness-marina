@@ -57,34 +57,14 @@ export default function IntroSequence() {
             <div className="absolute -inset-2 bg-gradient-to-r from-white/20 via-white/15 to-white/20 blur-lg rounded-full" />
             
             <h1 className="relative z-10 text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] drop-shadow-[0_0_15px_rgba(255,255,255,0.6)]">
-              Rural Waterfront
+              Wellness Marina
             </h1>
           </div>
         </motion.div>
       </div>
 
-      {/* Text 2 - FIXED below Text 1, NEVER moves */}
-      <div className="absolute top-[calc(10%+180px)] left-1/2 -translate-x-1/2 z-20 w-full text-center px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 150 }}
-          animate={{ opacity: phase === "text" || phase === "logo" ? 1 : 0, y: phase === "text" || phase === "logo" ? 0 : 150 }}
-          transition={{ duration: 2.5, ease: [0.16, 1, 0.3, 1] }}
-        >
-          {/* WHITE GLOW - 75% reduced */}
-          <div className="relative inline-block">
-            <div className="absolute -inset-10 bg-gradient-to-r from-white/10 via-white/8 to-white/10 blur-3xl rounded-full" />
-            <div className="absolute -inset-6 bg-gradient-to-r from-white/12 via-white/10 to-white/12 blur-2xl rounded-full" />
-            <div className="absolute -inset-3 bg-gradient-to-r from-white/15 via-white/12 to-white/15 blur-xl rounded-full" />
-            
-            <p className="relative z-10 text-2xl md:text-4xl lg:text-5xl text-white/95 font-display italic drop-shadow-[0_0_6px_rgba(255,255,255,0.7)] drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]">
-              Reimagined
-            </p>
-          </div>
-        </motion.div>
-      </div>
-
       {/* Logo - FIXED at BOTTOM, NEVER moves, NO overlap with text */}
-      <div className="absolute bottom-[15%] left-1/2 -translate-x-1/2 z-20">
+      <div className="absolute bottom-[28%] left-1/2 -translate-x-1/2 z-20">
         <motion.div
           initial={{ opacity: 0, y: 100, scale: 0.7 }}
           animate={{ opacity: phase === "logo" ? 1 : 0, y: phase === "logo" ? 0 : 100, scale: phase === "logo" ? 1 : 0.7 }}
