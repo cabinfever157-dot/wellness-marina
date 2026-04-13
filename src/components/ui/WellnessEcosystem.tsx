@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 const ecosystemSections = [
   {
@@ -90,6 +91,77 @@ const WellnessEcosystem = () => {
               className="w-full max-h-[600px] rounded-[25%] object-contain object-center"
             />
           </motion.div>
+        </motion.div>
+
+        {/* Podcast Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="mb-12"
+        >
+          <a
+            href="https://vimeo.com/1182746149?share=copy&fl=sv&fe=ci"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block relative overflow-hidden rounded-3xl"
+          >
+            <ShineBorder
+              borderWidth={2}
+              duration={10}
+              shineColor={["#D4AF37", "#E5C158", "#0A192F"]}
+            />
+            <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0a1628]/90 backdrop-blur-xl">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative aspect-video md:aspect-auto overflow-hidden">
+                  <img
+                    src="/images/Newvion_Podcast.jpg"
+                    alt="Newvion Podcast"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="relative">
+                      <div className="absolute -inset-4 bg-[#D4AF37]/30 rounded-full blur-xl group-hover:bg-[#D4AF37]/50 transition-all duration-500" />
+                      <div className="relative w-16 h-16 md:w-20 md:h-20 bg-[#D4AF37] rounded-full flex items-center justify-center shadow-2xl shadow-[#D4AF37]/40 group-hover:scale-110 transition-transform duration-500">
+                        <svg className="w-7 h-7 md:w-8 md:h-8 text-[#020C1B] ml-1" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/50 backdrop-blur-md rounded-full px-3 py-1.5">
+                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                    <span className="text-white text-xs font-medium tracking-wide">NEW EPISODE</span>
+                  </div>
+                </div>
+                <div className="p-8 md:p-10 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <img
+                      src="/images/logo.png"
+                      alt="Newvion"
+                      className="h-8 w-auto"
+                    />
+                    <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase">Podcast</span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
+                    The Newvion Podcast
+                  </h3>
+                  <p className="text-white/70 text-sm md:text-base leading-relaxed mb-6">
+                    Amplifying rural voices — conversations on health, wellness, community, and the waterfront lifestyle that connects them all.
+                  </p>
+                  <div className="flex items-center gap-2 text-[#D4AF37] text-sm font-semibold group-hover:gap-3 transition-all duration-300">
+                    <span>Watch Now</span>
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </motion.div>
 
         {/* Main Sections */}
