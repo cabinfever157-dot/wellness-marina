@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#020C1B]/30 to-transparent z-10" />
 
         {/* Content */}
-        <div className="relative z-20 h-full flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-20">
+        <div className="relative z-20 h-full flex flex-col justify-end px-6 md:px-12 lg:px-24 pb-20 pt-24">
           <div className="grid lg:grid-cols-2 gap-12 items-end">
             {/* Left Column - Text Content */}
             <div>
