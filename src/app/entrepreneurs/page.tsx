@@ -78,20 +78,18 @@ export default function EntrepreneursPage() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/4.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
                 
               </div>
               <div className="p-10 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-white mb-4">8 Boat Concepts. One Ecosystem.</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Curating Boat Concepts. One Ecosystem.</h2>
                 <p className="text-white text-lg leading-relaxed mb-6">
                   From Pilates studios and culinary kitchens to podcast suites and healthcare clinics — each boat is a turnkey business designed for career reinventors, lifestyle entrepreneurs, and E-2 treaty investors.
                 </p>
-                <Link href="/#boats" className="inline-flex items-center gap-2 text-[#FFD700] font-semibold hover:underline cursor-pointer">
-                  Explore all boats
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
+                <div className="flex flex-wrap gap-3">
+                  {["Healthcare", "Retail", "Lifestyle", "Discovery", "Hotel"].map((cat) => (
+                    <span key={cat} className="px-4 py-2 rounded-full border border-[#FFD700]/30 bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium">{cat}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

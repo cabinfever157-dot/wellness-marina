@@ -38,7 +38,7 @@ export default function OncologyPage() {
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Comprehensive Cancer Support</h2>
                 <p className="text-white text-lg leading-relaxed mb-6">
-                  A pilot with NorthStar Healthcare and Hendry Regional Medical Center bringing oncology services to rural waterfronts.
+                  Bringing oncology services to rural waterfronts.
                 </p>
                 <ul className="space-y-3 text-white">
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Cancer screenings and early detection programs.</li>
