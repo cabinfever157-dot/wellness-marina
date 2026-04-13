@@ -1,7 +1,144 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ShineBorder } from "@/components/ui/shine-border";
+
+const VIMEO_ID = "1182746149";
+
+const PodcastPlayer = () => {
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const readyRef = useRef(false);
+
+  const postToPlayer = (method: string, value?: any) => {
+    const win = iframeRef.current?.contentWindow;
+    if (!win) return;
+    win.postMessage(JSON.stringify({ method, value }), "*");
+  };
+
+  useEffect(() => {
+    const handleMessage = (e: MessageEvent) => {
+      if (e.origin !== "https://player.vimeo.com") return;
+      try {
+        const data = typeof e.data === "string" ? JSON.parse(e.data) : e.data;
+        if (data.event === "loaded" && !readyRef.current) {
+          readyRef.current = true;
+          postToPlayer("addEventListener", "play");
+          postToPlayer("addEventListener", "pause");
+          postToPlayer("addEventListener", "timeupdate");
+          postToPlayer("addEventListener", "ended");
+          postToPlayer("getDuration");
+        }
+        if (data.event === "play") setPlaying(true);
+        if (data.event === "pause") setPlaying(false);
+        if (data.event === "timeupdate" && data.data) {
+          if (duration > 0) setProgress(data.data.seconds / duration * 100);
+        }
+        if (data.method === "getDuration" && data.value) {
+          setDuration(data.value);
+        }
+      } catch {}
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, [duration]);
+
+  const togglePlay = () => {
+    if (playing) {
+      postToPlayer("pause");
+      setPlaying(false);
+    } else {
+      postToPlayer("play");
+      setPlaying(true);
+    }
+  };
+
+  const seekTo = (pct: number) => {
+    if (!duration) return;
+    postToPlayer("seekTo", pct / 100 * duration);
+    setProgress(pct);
+  };
+
+  return (
+    <div className="group block relative overflow-hidden rounded-3xl">
+      <ShineBorder borderWidth={2} duration={10} shineColor={["#D4AF37", "#E5C158", "#0A192F"]} />
+      <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0a1628]/90 backdrop-blur-xl">
+        <div className="flex flex-col md:flex-row gap-0">
+          <div className="relative w-full md:w-1/2 overflow-hidden">
+            <img
+              src="/images/Newvion_Podcast.jpg"
+              alt="Newvion Podcast"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute top-3 left-3 flex items-center gap-2 bg-black/50 backdrop-blur-md rounded-full px-2.5 py-1">
+              <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />
+              <span className="text-white text-[10px] font-medium tracking-wide">NEW EPISODE</span>
+            </div>
+          </div>
+          <div className="p-6 md:p-8 flex flex-col justify-center md:w-1/2">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-white/30 rounded-full blur-md" />
+                <img
+                  src="/images/logo.png"
+                  alt="Newvion"
+                  className="relative h-7 w-auto"
+                />
+              </div>
+              <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase">Podcast</span>
+            </div>
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">
+              The Newvion Podcast
+            </h3>
+            <p className="text-white/70 text-sm leading-relaxed mb-4">
+              Amplifying rural voices — conversations on health, wellness, community, and the waterfront lifestyle that connects them all.
+            </p>
+
+            <div className="flex items-center gap-3">
+              <button
+                onClick={togglePlay}
+                className="w-10 h-10 bg-[#D4AF37] hover:bg-[#E5C158] rounded-full flex items-center justify-center shrink-0 transition-colors cursor-pointer"
+              >
+                {playing ? (
+                  <svg className="w-4 h-4 text-[#020C1B]" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="6" y="4" width="4" height="16" rx="1" />
+                    <rect x="14" y="4" width="4" height="16" rx="1" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4 text-[#020C1B] ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                )}
+              </button>
+              <div
+                className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden cursor-pointer"
+                onClick={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  seekTo((e.clientX - rect.left) / rect.width * 100);
+                }}
+              >
+                <div className="h-full bg-[#D4AF37] rounded-full transition-all duration-200" style={{ width: `${progress}%` }} />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Hidden Vimeo iframe for audio */}
+        <div className="absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none">
+          <iframe
+            ref={iframeRef}
+            src={`https://player.vimeo.com/video/${VIMEO_ID}?title=0&byline=0&portrait=0&transparent=0`}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const ecosystemSections = [
   {
@@ -101,67 +238,7 @@ const WellnessEcosystem = () => {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="mb-12"
         >
-          <a
-            href="https://vimeo.com/1182746149?share=copy&fl=sv&fe=ci"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block relative overflow-hidden rounded-3xl"
-          >
-            <ShineBorder
-              borderWidth={2}
-              duration={10}
-              shineColor={["#D4AF37", "#E5C158", "#0A192F"]}
-            />
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 bg-[#0a1628]/90 backdrop-blur-xl">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative aspect-video md:aspect-auto overflow-hidden">
-                  <img
-                    src="/images/Newvion_Podcast.jpg"
-                    alt="Newvion Podcast"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/30 to-transparent" />
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="absolute -inset-4 bg-[#D4AF37]/30 rounded-full blur-xl group-hover:bg-[#D4AF37]/50 transition-all duration-500" />
-                      <div className="relative w-16 h-16 md:w-20 md:h-20 bg-[#D4AF37] rounded-full flex items-center justify-center shadow-2xl shadow-[#D4AF37]/40 group-hover:scale-110 transition-transform duration-500">
-                        <svg className="w-7 h-7 md:w-8 md:h-8 text-[#020C1B] ml-1" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/50 backdrop-blur-md rounded-full px-3 py-1.5">
-                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    <span className="text-white text-xs font-medium tracking-wide">NEW EPISODE</span>
-                  </div>
-                </div>
-                <div className="p-8 md:p-10 flex flex-col justify-center">
-                  <div className="flex items-center gap-3 mb-4">
-                    <img
-                      src="/images/logo.png"
-                      alt="Newvion"
-                      className="h-8 w-auto"
-                    />
-                    <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase">Podcast</span>
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
-                    The Newvion Podcast
-                  </h3>
-                  <p className="text-white/70 text-sm md:text-base leading-relaxed mb-6">
-                    Amplifying rural voices — conversations on health, wellness, community, and the waterfront lifestyle that connects them all.
-                  </p>
-                  <div className="flex items-center gap-2 text-[#D4AF37] text-sm font-semibold group-hover:gap-3 transition-all duration-300">
-                    <span>Watch Now</span>
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
+          <PodcastPlayer />
         </motion.div>
 
         {/* Main Sections */}

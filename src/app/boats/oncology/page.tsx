@@ -53,28 +53,7 @@ export default function OncologyPage() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-4 text-center">Partnership Network</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="text-center">
-                <div className="p-4 rounded-xl bg-purple-500/10 inline-block mb-4">
-                  <svg className="w-8 h-8 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">NorthStar Healthcare</h3>
-                <p className="text-white text-sm">Specialized oncology expertise and clinical protocols.</p>
-              </div>
-              <div className="text-center">
-                <div className="p-4 rounded-xl bg-blue-500/10 inline-block mb-4">
-                  <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Hendry Regional Medical Center</h3>
-                <p className="text-white text-sm">Local hospital partnership for referrals and coordinated care.</p>
-              </div>
-            </div>
+          <div className="hidden">
           </div>
         </FadeIn>
 
