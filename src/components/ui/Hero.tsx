@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#020C1B]/30 to-transparent z-10" />
 
         {/* Content */}
-        <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-24 pb-20 pt-32">
+        <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 lg:px-24 pb-20 pt-40">
           <div className="grid lg:grid-cols-2 gap-12 items-end">
             {/* Left Column - Text Content */}
             <div>
@@ -46,9 +46,7 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight max-w-5xl text-white"
               >
-                Rural Waterfront
-                <br />
-                <span className="text-gradient-gold italic pr-4">Reimagined</span>
+                Wellness Marina
                 <span className="inline-flex items-center ml-4 h-[1em] overflow-hidden align-bottom">
                   <span className="text-lg md:text-2xl lg:text-3xl font-light tracking-[0.25em] uppercase text-white/40 mr-3">—</span>
                   <AnimatePresence mode="wait">
