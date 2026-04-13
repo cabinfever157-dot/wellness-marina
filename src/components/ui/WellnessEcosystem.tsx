@@ -169,26 +169,6 @@ const WellnessEcosystem = () => {
             </p>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="relative z-10 text-center mt-20"
-        >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-8 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
-              Designed for Living Well
-            </span>
-            <div className="h-px w-8 bg-[#FFD700]/50" />
-          </div>
-          <h2 className="text-4xl md:text-6xl font-bold text-white">Experience the Wellness Connected Marina.</h2>
-          <p className="text-lg text-white mt-4 max-w-2xl mx-auto">
-            Every boat, every space, every experience is built around wellness, lifestyle, and connection.
-          </p>
-        </motion.div>
       </div>
     </div>
   );
