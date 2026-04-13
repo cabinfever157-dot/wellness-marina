@@ -7,9 +7,9 @@ export default function OncologyPage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Oncology_Boat.png')", filter: "brightness(0.5)" }}
+          style={{ backgroundImage: "url('/images/Oncology_Boat.png')",  }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -27,7 +27,7 @@ export default function OncologyPage() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-24 space-y-16">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
@@ -53,7 +53,7 @@ export default function OncologyPage() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-white/5 backdrop-blur-md p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-4 text-center">Partnership Network</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center">
@@ -86,7 +86,7 @@ export default function OncologyPage() {
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access cancer screenings, survivorship support, and oncology care — all on the water, close to home.
               </p>
-              <Link href="/" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">
+              <Link href="/#boats" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">
                 Learn About Access
               </Link>
             </div>

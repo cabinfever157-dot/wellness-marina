@@ -35,7 +35,7 @@ const DigitalEcosystem = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative overflow-hidden rounded-3xl border border-[#FFD700]/10 bg-white/[0.10] backdrop-blur-sm p-10 h-full group hover:border-[#FFD700]/30 transition-all duration-700">
+          <div className="relative overflow-hidden rounded-3xl border border-[#FFD700]/10 bg-white/[0.30] backdrop-blur-sm p-10 h-full group hover:border-[#FFD700]/30 transition-all duration-700">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">
@@ -66,7 +66,7 @@ const DigitalEcosystem = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative overflow-hidden rounded-3xl border border-blue-500/10 bg-white/[0.10] backdrop-blur-sm p-10 h-full group hover:border-blue-500/30 transition-all duration-700">
+          <div className="relative overflow-hidden rounded-3xl border border-blue-500/10 bg-white/[0.30] backdrop-blur-sm p-10 h-full group hover:border-blue-500/30 transition-all duration-700">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">

@@ -8,9 +8,9 @@ export default function CulinaryPage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/7.png')", filter: "brightness(0.5)" }}
+          style={{ backgroundImage: "url('/images/7.png')",  }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -75,12 +75,12 @@ export default function CulinaryPage() {
 
         {/* Main Deck */}
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/7.png')" }}
+                  style={{ backgroundImage: "url('/images/8.png')" }}
                 />
               </div>
               <div className="p-10 flex flex-col justify-center">
@@ -105,12 +105,12 @@ export default function CulinaryPage() {
 
         {/* Second Floor */}
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url('/images/8.png')" }}
+                  style={{ backgroundImage: "url('/images/7.png')" }}
                 />
               </div>
               <div className="p-10 flex flex-col justify-center">
@@ -136,7 +136,7 @@ export default function CulinaryPage() {
 
         {/* Rooftop Pavilion */}
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <div className="text-center mb-8">
                   <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
               <h2 className="text-3xl font-bold text-white mt-4 mb-4">Where the Marina Comes Alive</h2>
@@ -149,7 +149,7 @@ export default function CulinaryPage() {
 
         {/* Impact */}
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Impact & Partnerships</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
@@ -176,7 +176,7 @@ export default function CulinaryPage() {
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 From community nutrition classes to waterfront fine dining — experience food as medicine on the water.
               </p>
-              <Link href="/" className="inline-block bg-amber-500 text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-300 cursor-pointer">
+              <Link href="/#boats" className="inline-block bg-amber-500 text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-300 cursor-pointer">
                 Reserve a Table
               </Link>
             </div>

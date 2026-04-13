@@ -11,7 +11,7 @@ const markets = [
     image: "/images/MooreHaven.png",
     stats: [
       { value: "83%", label: "Transport Barrier to Care" },
-      { value: "0", label: "Local Dental/Derm/Vision" },
+      { value: "40-75", label: "Permanent Jobs Created" },
       { value: "OZ", label: "Qualified Opportunity Zone" },
     ],
   },
@@ -19,11 +19,22 @@ const markets = [
     name: "Allegan, Michigan",
     role: "Inland Proof of Concept",
     description: "On the Kalamazoo River — proving our model is geography-agnostic. Modular studio hubs execute the same vision, backed by major regional health and civic partners.",
-    image: "/images/Allegan, Michigan.png",
+    image: "/images/Allegan_Michigan.png",
     stats: [
       { value: "Inland", label: "Geography-Agnostic" },
-      { value: "Modular", label: "Studio Hub Model" },
-      { value: "Regional", label: "Health Partners" },
+      { value: "60+", label: "Healthcare Access Points" },
+      { value: "OZ", label: "Qualified Opportunity Zone" },
+    ],
+  },
+  {
+    name: "Clewiston, Florida",
+    role: "Sugar City Expansion",
+    description: "On the southern shore of Lake Okeechobee — a rural agricultural community ready to transform its waterfront into a wellness destination, bridging healthcare gaps for farmworkers and seasonal residents.",
+    image: "/images/Clewiston.png",
+    stats: [
+      { value: "15K+", label: "Underserved Residents" },
+      { value: "$4.2M", label: "Potential Annual Healthcare Savings" },
+      { value: "OZ", label: "Qualified Opportunity Zone" },
     ],
   },
 ];
@@ -60,12 +71,12 @@ const ProofOfConcept = () => {
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, delay: index * 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.10] backdrop-blur-sm group hover:border-white/10 transition-all duration-700">
+            <div className="relative overflow-hidden rounded-3xl border border-white/5 bg-white/[0.30] backdrop-blur-sm group hover:border-white/10 transition-all duration-700">
               <div className="grid lg:grid-cols-2">
                 {/* Image Side */}
-                <div className="relative h-72 lg:h-[400px] overflow-hidden">
+                <div className="relative min-h-[280px] lg:min-h-0 overflow-hidden bg-[#0a1628]">
                   <div
-                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{
                       backgroundImage: `url('${market.image}')`,
                     }}
@@ -124,7 +135,7 @@ const ProofOfConcept = () => {
           </Link>
           <Link
             href="/investors"
-            className="inline-flex items-center gap-3 border border-white/15 text-white font-medium text-lg px-10 py-5 rounded-full hover:border-[#FFD700]/40 hover:bg-white/5 transition-all duration-500 cursor-pointer"
+            className="inline-flex items-center gap-3 border border-white/15 text-white font-medium text-lg px-10 py-5 rounded-full hover:border-[#FFD700]/40 hover:bg-white/25 transition-all duration-500 cursor-pointer"
           >
             Investor Prospectus
           </Link>

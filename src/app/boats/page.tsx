@@ -8,7 +8,7 @@ export default function BoatsPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/1.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">

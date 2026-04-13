@@ -87,14 +87,13 @@ const Fleet = () => {
             transition={{ duration: 0.6, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
           >
             <Link href={item.href} className="group block h-full">
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm h-full transition-all duration-500 hover:border-[#FFD700]/30 hover:shadow-2xl hover:shadow-[#FFD700]/5">
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-sm h-full transition-all duration-500 hover:border-[#FFD700]/30 hover:shadow-2xl hover:shadow-[#FFD700]/5">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
                     style={{ backgroundImage: `url('${item.image}')` }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
                   <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md ${item.tagColor} shadow-lg`}>
                     {item.tag}
                   </span>

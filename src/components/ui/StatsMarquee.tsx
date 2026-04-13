@@ -43,7 +43,7 @@ export default function StatsMarquee() {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/5 bg-white/[0.10] backdrop-blur-sm mx-2"
+              className="flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/5 bg-white/[0.30] backdrop-blur-sm mx-2"
             >
               <div className="text-2xl font-bold text-[#FFD700] whitespace-nowrap">{stat.value}</div>
               <div className="text-xs text-white max-w-[160px] leading-tight">{stat.label}</div>

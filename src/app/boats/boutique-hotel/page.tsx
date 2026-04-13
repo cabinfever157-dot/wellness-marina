@@ -5,8 +5,8 @@ export default function HotelPage() {
   return (
     <main className="relative min-h-screen">
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/boutique_hotel_final.png')", filter: "brightness(0.5)" }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/boutique_hotel_final.png')",  }} />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -24,7 +24,7 @@ export default function HotelPage() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-24 space-y-16">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px] overflow-hidden rounded-l-2xl">
                 <iframe
@@ -33,7 +33,7 @@ export default function HotelPage() {
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
                 />
-                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0d1b3e]/80 via-transparent to-transparent pointer-events-none" />
+                
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Waterfront Resort Experience</h2>
@@ -52,7 +52,7 @@ export default function HotelPage() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Engine 2: Resort & Recreation Revenue</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
@@ -82,7 +82,7 @@ export default function HotelPage() {
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Experience an authentic, unhurried waterfront wellness retreat — where healthcare meets hospitality.
               </p>
-              <Link href="/" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">
+              <Link href="/#boats" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">
                 Learn About Retreats
               </Link>
             </div>

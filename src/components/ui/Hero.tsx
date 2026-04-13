@@ -28,14 +28,7 @@ const Hero = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-end">
             {/* Left Column - Text Content */}
             <div>
-              <motion.p
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="text-xs font-bold text-[#D4AF37] tracking-[0.3em] uppercase mb-16"
-              >
-                Moore Haven, Florida — April 2026
-              </motion.p>
+              <div className="mb-16" />
 
               <motion.h1
                 initial={{ opacity: 0, y: 50 }}

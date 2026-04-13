@@ -7,9 +7,9 @@ export default function DermatologyPage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/Dermatology_Boat.png')", filter: "brightness(0.5)" }}
+          style={{ backgroundImage: "url('/images/Dermatology_Boat.png')",  }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -27,7 +27,7 @@ export default function DermatologyPage() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-24 space-y-16">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
@@ -55,15 +55,14 @@ export default function DermatologyPage() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/Dermatology_Boat.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <div className="mb-4">
@@ -92,7 +91,7 @@ export default function DermatologyPage() {
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Where essential skin cancer screening is funded by premium wellness experiences — a sustainable model for rural healthcare.
               </p>
-              <Link href="/" className="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-emerald-400 transition-colors duration-300 cursor-pointer">
+              <Link href="/#boats" className="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-emerald-400 transition-colors duration-300 cursor-pointer">
                 Learn About Access
               </Link>
             </div>

@@ -92,10 +92,10 @@ const WellnessEcosystem = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="relative"
             >
-              <div className="rounded-[20%] border border-white/10 bg-white/[0.08] backdrop-blur-md overflow-hidden">
+              <div className="rounded-[20%] border border-white/10 bg-white/[0.28] backdrop-blur-md overflow-hidden">
                 <div className="grid lg:grid-cols-5 gap-0">
                   {/* Icon Section */}
-                  <div className="lg:col-span-1 p-8 flex items-center justify-center bg-white/[0.03]">
+                  <div className="lg:col-span-1 p-8 flex items-center justify-center bg-[#0a1628]/80">
                     <div className={`p-4 rounded-2xl ${section.color === 'teal' ? 'bg-teal-500/20' : section.color === 'amber' ? 'bg-amber-500/20' : 'bg-[#FFD700]/20'} ${colorMap[section.color]}`}>
                       {section.icon}
                     </div>
@@ -103,12 +103,12 @@ const WellnessEcosystem = () => {
                   
                   {/* Content Section */}
                   <div className="lg:col-span-4 p-8 lg:p-12">
-                    <h3 className={`text-2xl md:text-3xl font-bold ${colorMap[section.color]} mb-6`}>
+                    <h3 className={`text-2xl md:text-3xl font-bold ${colorMap[section.color]} mb-6 text-glow-subtle`}>
                       {section.title}
                     </h3>
                     
                     {section.content && (
-                      <p className="text-white text-lg leading-relaxed mb-6">
+                      <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                         {section.content}
                       </p>
                     )}
@@ -118,10 +118,10 @@ const WellnessEcosystem = () => {
                         {section.items.map((item) => (
                           <div
                             key={item.label}
-                            className="p-4 rounded-2xl border border-white/10 bg-white/[0.05] hover:bg-white/[0.1] transition-all duration-300"
+                            className="p-4 rounded-2xl border border-white/10 bg-white/[0.25] hover:bg-white/[0.30] transition-all duration-300"
                           >
-                            <div className="text-[#FFD700] font-semibold mb-1">{item.label}</div>
-                            <div className="text-white text-sm">{item.desc}</div>
+                            <div className="text-[#FFD700] font-semibold mb-1 text-glow-subtle">{item.label}</div>
+                            <div className="text-white text-sm text-glow-subtle">{item.desc}</div>
                           </div>
                         ))}
                       </div>

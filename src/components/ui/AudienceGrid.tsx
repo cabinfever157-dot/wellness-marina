@@ -9,7 +9,7 @@ const bentoCards = [
     subtitle: "Transform Your Town",
     description: "Activate the waterfront with our 3-stage development model - From Vision Plan to making the economic development connections.",
     href: "/communities",
-    image: "/images/2.jpg",
+    image: "/images/For_Communities.png",
     span: "col-span-1 md:col-span-2 row-span-2",
     accent: "from-[#FFD700]/20 to-transparent",
     accentBorder: "border-[#FFD700]/10",
@@ -39,7 +39,7 @@ const bentoCards = [
     subtitle: "Untapped Markets",
     description: "OZ tax benefits + E-2 Treaty.",
     href: "/investors",
-    image: "/images/5.png",
+    image: "/images/For_Investors.png",
     span: "col-span-1",
     accent: "from-purple-500/20 to-transparent",
     accentBorder: "border-purple-500/10",
@@ -94,32 +94,26 @@ const AudienceGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className={`${card.span} relative overflow-hidden rounded-2xl border ${card.accentBorder} bg-white/[0.10] backdrop-blur-sm group cursor-pointer`}
+            className={`${card.span} relative overflow-hidden rounded-2xl border border-white/10 bg-black group cursor-pointer`}
           >
             <Link href={card.href} className="absolute inset-0 z-20" />
 
-            {/* Background Image */}
             <div
-              className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+              className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700 ease-out"
               style={{
                 backgroundImage: `url('${card.image}')`,
-                filter: "brightness(1.2) saturate(1.3)",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e]/80 via-[#0d1b3e]/50 to-[#0d1b3e]/30" />
-            <div className={`absolute inset-0 bg-gradient-to-br ${card.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
-            {/* Content */}
             <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
-              <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm w-fit mb-4 transition-all duration-500 group-hover:bg-[#FFD700]/20 group-hover:scale-110">
+              <div className="p-3 rounded-xl bg-white/10 w-fit mb-4">
                 <div className="text-[#FFD700]">{card.icon}</div>
               </div>
-              <span className="text-[#FFD700]/90 text-xs font-semibold tracking-wider uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{card.subtitle}</span>
-              <h3 className="text-2xl md:text-3xl font-bold text-white mt-1 group-hover:text-[#FFD700] transition-colors drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">{card.title}</h3>
-              <p className="text-white text-sm mt-2 max-w-md leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{card.description}</p>
+              <span className="text-[#FFD700]/90 text-xs font-semibold tracking-wider uppercase text-glow-black">{card.subtitle}</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mt-1 text-glow-black">{card.title}</h3>
+              <p className="text-white text-sm mt-2 max-w-md leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-glow-black">{card.description}</p>
             </div>
 
-            {/* Hover arrow */}
             <div className="absolute top-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-2 group-hover:translate-x-0">
               <svg className="w-6 h-6 text-[#FFD700]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />

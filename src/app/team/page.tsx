@@ -8,7 +8,7 @@ export default function TeamPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/blur-bg.png')" }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/70 via-[#0d1b3e]/50 to-[#0d1b3e]" />
+        
         <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37]/5 to-transparent" />
         
         <div className="relative z-10 h-full flex items-center justify-center">

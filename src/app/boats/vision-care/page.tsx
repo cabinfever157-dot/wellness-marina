@@ -7,9 +7,9 @@ export default function VisionCarePage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/vision_Boat.png')", filter: "brightness(0.5)" }}
+          style={{ backgroundImage: "url('/images/vision_Boat.png')",  }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0d1b3e]/50 via-[#0d1b3e]/30 to-[#0d1b3e]/80" />
+        <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -27,15 +27,14 @@ export default function VisionCarePage() {
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-24 space-y-16">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
             <div className="grid lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto min-h-[300px]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: "url('/images/vision_Boat.png')" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d1b3e]/90 hidden lg:block" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d1b3e] to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0d1b3e]/40" />
+
               </div>
               <div className="p-10 flex flex-col justify-center">
                 <h2 className="text-3xl font-bold text-white mb-4">Complete Optometry Clinic</h2>
@@ -55,7 +54,7 @@ export default function VisionCarePage() {
         </FadeIn>
 
         <FadeIn>
-          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-10">
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-4 text-center">Live-Work Vision Care Boat</h2>
             <p className="text-white text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
               For practitioners seeking to live and work on the water — the Live-Work Vision Care Boat features a full optometry clinic on the main deck and a private, turnkey waterfront residence on the upper deck. Explicitly positioned for E-2 Treaty Investors.
@@ -92,7 +91,7 @@ export default function VisionCarePage() {
               <p className="text-xl text-white max-w-2xl mx-auto mb-8">
                 Access comprehensive eye care and diabetic retinopathy screening — all on the water, close to home.
               </p>
-              <Link href="/" className="inline-block bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
+              <Link href="/#boats" className="inline-block bg-blue-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-blue-400 transition-colors duration-300 cursor-pointer">
                 Learn About Access
               </Link>
             </div>

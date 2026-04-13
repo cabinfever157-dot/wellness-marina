@@ -60,7 +60,7 @@ const Header = () => {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer ${
                   pathname === link.href
                     ? 'text-[#FDFBF7] bg-white/20 backdrop-blur-md'
-                    : 'text-white hover:text-white hover:bg-white/10 backdrop-blur-sm'
+                    : 'text-white hover:text-white hover:bg-white/30 backdrop-blur-sm'
                 }`}
               >
                 {link.label}
