@@ -99,7 +99,92 @@ export default function CommunitiesPage() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.4}>
+        {/* Marina Models Section */}
+        <FadeIn delay={0.35}>
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="h-px w-12 bg-[#FFD700]/50" />
+              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">Marina Models</span>
+              <div className="h-px w-12 bg-[#FFD700]/50" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">Scalable. Flexible. Designed for Every Waterfront.</h2>
+            <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+              Newvion Wellness Marina is built as a modular system that can be deployed across a range of waterfront communities — from small pilot locations to full destination-scale developments. Each marina is tailored to its market, with the ability to scale, phase, and evolve over time.
+            </p>
+          </div>
+        </FadeIn>
+
+        <div className="grid lg:grid-cols-3 gap-6">
+          {/* Small Marina */}
+          <FadeIn delay={0.38}>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10 h-full flex flex-col group hover:border-[#FFD700]/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="relative z-10">
+                <span className="bg-white/20 text-white shadow-white/20 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Small Marina</span>
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Curated Foundation Model</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed">A carefully curated mix of core boats designed to establish a strong, welcoming waterfront experience.</p>
+                <div className="space-y-3 text-white text-sm">
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Coffee / Café</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Pilates or Fitness</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Spa / Recovery</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Culinary or Food Boat</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Select Retail or Discovery</div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Medium Marina */}
+          <FadeIn delay={0.42}>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10 h-full flex flex-col group hover:border-[#FFD700]/30 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="relative z-10">
+                <span className="bg-[#FFD700]/90 text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Medium Marina</span>
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Connected Community Model</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed">A connected system of boats creating a full-day destination blending wellness, culinary, lifestyle, and creative experiences.</p>
+                <div className="space-y-3 text-white text-sm">
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Wellness (Pilates, Spa, Fitness)</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Culinary + Coffee</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail + Marketplace</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Creative (Music, Art, Media)</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Office / Co-Working</div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          {/* Large Marina */}
+          <FadeIn delay={0.46}>
+            <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-white/25 backdrop-blur-md p-10 h-full flex flex-col group hover:border-[#FFD700]/40 transition-all duration-500">
+              <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="relative z-10">
+                <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Large Marina</span>
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Fully Connected Destination</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed">A fully connected waterfront district designed as a regional or national destination.</p>
+                <div className="space-y-3 text-white text-sm">
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Full Wellness & Lifestyle Ecosystem</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Culinary + Food Experiences</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail District on the Water</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Creative + Discovery Programming</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Office / Innovation + Media</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Hospitality (Hotel & Live-Work Boats)</div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
+        {/* Designed for Flexibility */}
+        <FadeIn delay={0.5}>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.08] backdrop-blur-md p-8 md:p-10">
+            <h3 className="text-2xl font-bold text-white mb-3 text-glow-subtle">Designed for Flexibility</h3>
+            <p className="text-white/80 leading-relaxed">
+              Every Newvion Wellness Marina is designed through a detailed market and feasibility study. Boat types, program mix, phasing strategy, and operator opportunities are curated based on each community&apos;s needs. Each marina is a curated and connected environment, designed to reflect the character, needs, and opportunity of its community while operating within a proven, scalable system.
+            </p>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.55}>
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[#FFD700]/5 rounded-full blur-3xl" />
             <div className="relative z-10">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const managementStructure = [
@@ -80,36 +81,121 @@ const lumaisLeadership = [
   },
 ];
 
-const advisoryNetwork = [
-  {
-    name: "Lum'ais",
-    desc: "Resort management, wellness operations, Hotel & Retreat Boats, spa and wellness programming",
-  },
-  {
-    name: "Florida Association of Community Health Centers",
-    desc: "Statewide FQHC network access",
-  },
-  {
-    name: "Florida Gulf Coast University",
-    desc: "Clinical training, research, and workforce development",
-  },
-  {
-    name: "University of South Florida",
-    desc: "Mental health counseling clinical partnerships",
-  },
-  {
-    name: "Moffitt Cancer Center",
-    desc: "Cancer screening boat clinical protocols and telehealth network",
-  },
-  {
-    name: "Healthcare Network of Southwest Florida",
-    desc: "Southwest Florida FQHC partnership and RHTP subaward pathway",
-  },
-  {
-    name: "Family Health Centers of Southwest Florida",
-    desc: "Lee and Charlotte County FQHC partnership",
-  },
-];
+const PartnerNetworkSection = () => {
+  const [formState, setFormState] = useState({ name: "", email: "", organization: "", message: "" });
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+      if (res.ok) {
+        setStatus("sent");
+        setFormState({ name: "", email: "", organization: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  const inputClass = "w-full rounded-xl border border-white/10 bg-white/[0.08] backdrop-blur-md px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-[#FFD700]/50 focus:ring-1 focus:ring-[#FFD700]/30 transition-all";
+  const labelClass = "block text-white/80 text-sm font-medium mb-2";
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="text-center mb-12">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="h-px w-12 bg-[#FFD700]/50" />
+          <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Network</span>
+          <div className="h-px w-12 bg-[#FFD700]/50" />
+        </div>
+        <h2 className="text-3xl md:text-5xl font-bold text-white text-glow-subtle">Our Partner Network</h2>
+      </div>
+
+      <div className="max-w-2xl mx-auto rounded-3xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-8 md:p-12">
+        <p className="text-white text-lg leading-relaxed text-center text-glow-black mb-8">
+          We are actively building our partner network. If you are interested in partnering with Newvion Wellness Marina, we would love to hear from you.
+        </p>
+
+        {status === "sent" ? (
+          <div className="text-center py-6">
+            <div className="text-[#FFD700] text-4xl mb-3">✓</div>
+            <p className="text-white text-lg font-medium">Thank you for your interest!</p>
+            <p className="text-white/70 mt-2">We will be in touch soon.</p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label className={labelClass}>Name *</label>
+              <input
+                type="text"
+                required
+                value={formState.name}
+                onChange={(e) => setFormState((s) => ({ ...s, name: e.target.value }))}
+                className={inputClass}
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label className={labelClass}>Email *</label>
+              <input
+                type="email"
+                required
+                value={formState.email}
+                onChange={(e) => setFormState((s) => ({ ...s, email: e.target.value }))}
+                className={inputClass}
+                placeholder="you@organization.com"
+              />
+            </div>
+            <div>
+              <label className={labelClass}>Organization</label>
+              <input
+                type="text"
+                value={formState.organization}
+                onChange={(e) => setFormState((s) => ({ ...s, organization: e.target.value }))}
+                className={inputClass}
+                placeholder="Organization name (optional)"
+              />
+            </div>
+            <div>
+              <label className={labelClass}>Message *</label>
+              <textarea
+                required
+                rows={4}
+                value={formState.message}
+                onChange={(e) => setFormState((s) => ({ ...s, message: e.target.value }))}
+                className={`${inputClass} resize-none`}
+                placeholder="Tell us about your organization and how you'd like to partner..."
+              />
+            </div>
+            {status === "error" && (
+              <p className="text-red-400 text-sm text-center">Something went wrong. Please try again.</p>
+            )}
+            <button
+              type="submit"
+              disabled={status === "sending"}
+              className="w-full bg-[#FFD700] text-[#020C1B] font-bold text-lg px-8 py-4 rounded-xl hover:bg-[#E5C158] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+            >
+              {status === "sending" ? "Sending..." : "Contact Us"}
+            </button>
+          </form>
+        )}
+      </div>
+    </motion.div>
+  );
+};
 
 const TeamSection = () => {
   return (
@@ -289,44 +375,8 @@ const TeamSection = () => {
         </div>
       </motion.div>
 
-      {/* Advisory & Partnership Network */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="h-px w-12 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Network</span>
-            <div className="h-px w-12 bg-[#FFD700]/50" />
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white text-glow-subtle">Advisory & Partnership Network</h2>
-        </div>
-
-        <div className="max-w-4xl mx-auto space-y-4">
-          {advisoryNetwork.map((item, i) => (
-            <motion.div
-              key={item.name}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="rounded-2xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-6 hover:border-[#FFD700]/30 transition-all duration-500"
-            >
-              <div className="flex items-start gap-3">
-                <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
-                <div>
-                  <strong className="text-white text-lg text-glow-subtle">{item.name}</strong>
-                  <span className="text-white/60 mx-2">—</span>
-                  <span className="text-white/80 text-glow-black">{item.desc}</span>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      {/* Building Our Partner Network */}
+      <PartnerNetworkSection />
     </div>
   );
 };
