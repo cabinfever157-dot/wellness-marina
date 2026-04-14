@@ -33,11 +33,11 @@ export default function VisionWearBoutiquePage() {
                 <div className="mb-4">
                   <span className="bg-amber-600 text-black shadow-amber-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">The Boutique</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Curated Optical Retail</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Curated Optical Retail</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   A single-floor, fully accessible optical boutique designed for the marina dock with a unique open-deck rooftop for testing sunglasses in natural marine light.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Curated selection of prescription frames and fashion eyewear.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Performance sunglasses and readers.</li>
                   <li className="flex items-start"><span className="text-amber-400 mr-3 mt-1">✦</span> Frame fitting services and prescription lens coordination with regional labs.</li>
@@ -50,22 +50,22 @@ export default function VisionWearBoutiquePage() {
 
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">Business Model</h2>
+            <h2 className="text-2xl font-bold text-white mb-6 text-center text-glow-subtle">Business Model</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-amber-400 mb-2">Premium</div>
-                <div className="text-white text-sm">Base Boat</div>
+<div className="text-3xl font-bold text-amber-400 mb-2 text-glow-amber">Premium</div>
+                 <div className="text-white text-sm text-glow-black-light">Base Boat</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-400 mb-2">Custom</div>
-                <div className="text-white text-sm">Fit-Out Options</div>
+<div className="text-3xl font-bold text-amber-400 mb-2 text-glow-amber">Custom</div>
+                 <div className="text-white text-sm text-glow-black-light">Fit-Out Options</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-400 mb-2">E-2 Qualified</div>
-                <div className="text-white text-sm">Treaty Investor Eligible</div>
+<div className="text-3xl font-bold text-amber-400 mb-2 text-glow-amber">E-2 Qualified</div>
+                 <div className="text-white text-sm text-glow-black-light">Treaty Investor Eligible</div>
               </div>
             </div>
-            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed text-glow-black">
               Fully commercially sustainable from opening day with no grant dependency. Revenue from built-in patient referrals from the adjacent Vision Care Boat, walk-in impulse sales from hotel guests, fishing guides, and the local community.
             </p>
           </div>
@@ -75,8 +75,8 @@ export default function VisionWearBoutiquePage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-amber-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Open Your Optical Boutique</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+<h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Open Your Optical Boutique</h2>
+               <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Bring premium eyewear and vision care to a waterfront community.
               </p>
               <Link href="/#boats" className="inline-block bg-amber-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-amber-400 transition-colors duration-300 cursor-pointer">

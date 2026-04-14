@@ -11,6 +11,7 @@ import MissionReveal from "@/components/ui/MissionReveal";
 import DigitalEcosystem from "@/components/ui/DigitalEcosystem";
 import ProofOfConcept from "@/components/ui/ProofOfConcept";
 import FinalCTA from "@/components/ui/FinalCTA";
+import MarinaModels from "@/components/ui/MarinaModels";
 import WellnessEcosystem from "@/components/ui/WellnessEcosystem";
 
 export default function Home() {
@@ -61,6 +62,7 @@ export default function Home() {
               <div id="boats">
                 <Boats />
               </div>
+              <MarinaModels />
               <AudienceGrid />
               <MissionReveal />
               <DigitalEcosystem />

@@ -86,12 +86,12 @@ const PodcastPlayer = () => {
                   className="relative h-7 w-auto"
                 />
               </div>
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase">Podcast</span>
+              <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase text-glow-gold-subtle">Podcast</span>
             </div>
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2 text-glow-subtle">
               The Newvion Podcast
             </h3>
-            <p className="text-white/70 text-sm leading-relaxed mb-4">
+            <p className="text-white/70 text-sm leading-relaxed mb-4 text-glow-black-light">
               Amplifying rural voices — conversations on health, wellness, community, and the waterfront lifestyle that connects them all.
             </p>
 
@@ -171,6 +171,36 @@ const ecosystemSections = [
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+      </svg>
+    ),
+    color: "gold",
+  },
+  {
+    title: "Tourism & Economic Impact",
+    subtitle: "A New Waterfront Destination",
+    content: "Newvion Wellness Marina is a curated destination combining wellness, culinary, lifestyle, and cultural experiences — a place people choose to visit, stay, and return to.",
+    visitItems: [
+      "Culinary experiences & chef-led events",
+      "Wellness & fitness programming",
+      "Music, art, & cultural events",
+      "Rooftop & social gatherings",
+    ],
+    stats: [
+      { metric: "Annual Visitors", value: "25K–75K+" },
+      { metric: "Visitor Spending", value: "$2M–$8M+" },
+      { metric: "Jobs Created", value: "25–75+" },
+      { metric: "Overnight Stays", value: "5K–15K+/yr" },
+      { metric: "Business Impact", value: "Significant uplift" },
+      { metric: "Tax Revenue", value: "Increased base" },
+    ],
+    extensions: [
+      { label: "Extended Stay & Hospitality", desc: "Hotel boats and live-work residences support overnight stays, weekend travel, and multi-day retreats." },
+      { label: "Year-Round Activity", desc: "Daily, weekly, and seasonal programming ensures consistent visitor engagement throughout the year." },
+    ],
+    communityBenefit: "Newvion drives visitor traffic, supports local businesses, creates jobs, and enhances the identity of the waterfront — transforming it into a destination with new reasons to visit, stay, and return.",
+    icon: (
+      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-6.75v4.5m4.5-4.5v4.5m4.5-4.5v4.5m4.5-4.5v4.5M3.75 6.75h16.5M12 3v3.75m0 0h.008v.008H12V6.75zm0 0H7.5m4.5 0h4.5" />
       </svg>
     ),
     color: "gold",
@@ -305,9 +335,57 @@ const WellnessEcosystem = () => {
                       </motion.div>
                     )}
                     
+                    {"subtitle" in section && section.subtitle && (
+                      <p className="text-white/70 text-sm font-medium tracking-[0.15em] uppercase mb-4 text-glow-black-light">{section.subtitle}</p>
+                    )}
                     {section.content && (
                       <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                         {section.content}
+                      </p>
+                    )}
+                    
+                    {"visitItems" in section && (
+                      <div className="mb-6">
+                        <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
+                        <ul className="space-y-2">
+                          {(section.visitItems as string[]).map((item) => (
+                            <li key={item} className="flex items-start gap-2.5 text-white/80 text-base leading-relaxed text-glow-black">
+                              <span className="text-[#FFD700] mt-1 shrink-0">✦</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {"extensions" in section && (
+                      <div className="grid md:grid-cols-2 gap-4 mb-6">
+                        {(section.extensions as {label: string; desc: string}[]).map((ext) => (
+                          <div key={ext.label} className="p-4 rounded-2xl border border-white/10 bg-white/[0.25] hover:bg-white/[0.30] transition-all duration-300">
+                            <div className="text-[#FFD700] font-semibold mb-1 text-glow-subtle">{ext.label}</div>
+                            <div className="text-white text-sm text-glow-subtle">{ext.desc}</div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {"stats" in section && (
+                      <div className="mb-6">
+                        <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Projected Economic Impact (Per Marina)</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                          {(section.stats as {metric: string; value: string}[]).map((s) => (
+                            <div key={s.metric} className="p-3 rounded-xl border border-[#FFD700]/20 bg-[#FFD700]/5">
+                              <div className="text-[#FFD700] text-xl md:text-2xl font-bold text-glow-gold-subtle">{s.value}</div>
+                              <div className="text-white/60 text-xs mt-1 text-glow-black-light">{s.metric}</div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {"communityBenefit" in section && (
+                      <p className="text-white/80 text-base leading-relaxed mb-2 text-glow-black italic border-l-2 border-[#FFD700]/40 pl-4">
+                        {String(section.communityBenefit)}
                       </p>
                     )}
                     
@@ -340,18 +418,18 @@ const WellnessEcosystem = () => {
           className="mt-12"
         >
           <div className="rounded-[20%] border border-[#FFD700]/30 bg-[#FFD700]/10 backdrop-blur-md p-8 md:p-12 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 text-glow-subtle">
               Powered by Partnerships
             </h3>
-            <p className="text-white text-lg max-w-3xl mx-auto leading-relaxed mb-6">
+            <p className="text-white text-lg max-w-3xl mx-auto leading-relaxed mb-6 text-glow-black">
               Universities, regional planning organizations, and healthcare providers work together to deliver care, training, and long-term community impact. This is more than a destination—it is a platform for rural health access and community revitalization.
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="h-px w-8 bg-[#FFD700]/30" />
-              <span className="text-[#FFD700] font-semibold text-lg">Living Well — The Outcome</span>
+              <span className="text-[#FFD700] font-semibold text-lg text-glow-gold">Living Well — The Outcome</span>
               <div className="h-px w-8 bg-[#FFD700]/30" />
             </div>
-            <p className="text-white mt-4 text-sm">
+            <p className="text-white mt-4 text-sm text-glow-black-light">
               Healthcare is the anchor. The resort is the draw. Living well is the outcome.
             </p>
           </div>

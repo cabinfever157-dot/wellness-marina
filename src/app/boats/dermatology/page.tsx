@@ -39,11 +39,11 @@ export default function DermatologyPage() {
                 <div className="mb-4">
                   <span className="bg-emerald-600 text-white shadow-emerald-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Dermatology</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Skin Cancer Screening & Care</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Skin Cancer Screening & Care</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   Essential dermatological services for rural communities where access to skin specialists is virtually non-existent.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Clinical skin cancer screenings.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Biopsies and lesion removal.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Teledermatology consultations.</li>
@@ -68,11 +68,11 @@ export default function DermatologyPage() {
                 <div className="mb-4">
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Second Floor — Medical Aesthetics</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Revenue-Generating Wellness Spa</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Revenue-Generating Wellness Spa</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   A medical aesthetics and skin wellness spa for resort guests — the revenue from which sustains the clinical dermatology services below.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Medical-grade skincare treatments.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Anti-aging and cosmetic procedures.</li>
                   <li className="flex items-start"><span className="text-emerald-400 mr-3 mt-1">✦</span> Wellness spa services for marina visitors.</li>
@@ -87,8 +87,8 @@ export default function DermatologyPage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-emerald-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Clinical Care Meets Wellness</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+<h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Clinical Care Meets Wellness</h2>
+               <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Where essential skin cancer screening is funded by premium wellness experiences — a sustainable model for rural healthcare.
               </p>
               <Link href="/#boats" className="inline-block bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-emerald-400 transition-colors duration-300 cursor-pointer">

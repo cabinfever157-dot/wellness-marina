@@ -82,19 +82,19 @@ const ProofOfConcept = () => {
                     }}
                   />
                   <div className="absolute bottom-6 left-6 lg:hidden">
-                    <span className="text-[#FFD700] text-xs font-semibold tracking-wider uppercase">{market.role}</span>
-                    <h3 className="text-3xl font-bold text-white mt-1">{market.name}</h3>
+                    <span className="text-[#FFD700] text-xs font-semibold tracking-wider uppercase text-glow-gold-subtle">{market.role}</span>
+                    <h3 className="text-3xl font-bold text-white mt-1 text-glow-subtle">{market.name}</h3>
                   </div>
                 </div>
 
                 {/* Content Side */}
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="hidden lg:block mb-2">
-                    <span className="text-[#FFD700] text-xs font-semibold tracking-wider uppercase">{market.role}</span>
-                    <h3 className="text-3xl font-bold text-white mt-1">{market.name}</h3>
+                    <span className="text-[#FFD700] text-xs font-semibold tracking-wider uppercase text-glow-gold-subtle">{market.role}</span>
+                    <h3 className="text-3xl font-bold text-white mt-1 text-glow-subtle">{market.name}</h3>
                   </div>
 
-                  <p className="text-white text-lg leading-relaxed mt-4 lg:mt-6">
+                  <p className="text-white text-lg leading-relaxed mt-4 lg:mt-6 text-glow-black">
                     {market.description}
                   </p>
 
@@ -102,8 +102,8 @@ const ProofOfConcept = () => {
                   <div className="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-white/5">
                     {market.stats.map((stat) => (
                       <div key={stat.label}>
-                        <div className="text-2xl font-bold text-[#FFD700]">{stat.value}</div>
-                        <div className="text-xs text-white mt-1 leading-tight">{stat.label}</div>
+                        <div className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle">{stat.value}</div>
+                        <div className="text-xs text-white mt-1 leading-tight text-glow-black-light">{stat.label}</div>
                       </div>
                     ))}
                   </div>

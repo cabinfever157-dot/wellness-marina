@@ -107,9 +107,9 @@ const AudienceGrid = () => {
 
             <div className="relative z-10 h-full flex flex-col justify-end p-6 md:p-8">
               <div className="p-3 rounded-xl bg-white/10 w-fit mb-4">
-                <div className="text-[#FFD700]">{card.icon}</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle">{card.icon}</div>
               </div>
-              <span className="text-[#FFD700]/90 text-xs font-semibold tracking-wider uppercase text-glow-black">{card.subtitle}</span>
+              <span className="text-[#FFD700]/90 text-xs font-semibold tracking-wider uppercase text-glow-gold-subtle">{card.subtitle}</span>
               <h3 className="text-2xl md:text-3xl font-bold text-white mt-1 text-glow-black">{card.title}</h3>
               <p className="text-white text-sm mt-2 max-w-md leading-relaxed transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-glow-black">{card.description}</p>
             </div>

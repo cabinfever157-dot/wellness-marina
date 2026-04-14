@@ -60,7 +60,7 @@ const Boats = () => {
                 <p className="text-white text-lg max-w-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-glow-black">
                   {category.description}
                 </p>
-                <div className="mt-4 flex items-center gap-2 text-[#FFD700] text-sm font-medium transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-200">
+                <div className="mt-4 flex items-center gap-2 text-[#FFD700] text-sm font-medium transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-200 text-glow-gold-subtle">
                   <span>{category.boats.length} Vessel{category.boats.length > 1 ? "s" : ""}</span>
                   <svg
                     className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"

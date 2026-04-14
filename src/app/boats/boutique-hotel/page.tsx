@@ -36,11 +36,11 @@ export default function HotelPage() {
                 
               </div>
               <div className="p-10 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-white mb-4">Waterfront Resort Experience</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Waterfront Resort Experience</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   Hotel furnishings, spa treatment rooms, and specialized wellness equipment — designed to feel like an authentic, unhurried wellness destination with unique marina views.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Hotel rooms with waterfront views.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Spa treatment rooms and wellness programming.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Wellness retreat packages and corporate event bookings.</li>
@@ -53,22 +53,22 @@ export default function HotelPage() {
 
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">Engine 2: Resort & Recreation Revenue</h2>
+            <h2 className="text-2xl font-bold text-white mb-6 text-center text-glow-subtle">Engine 2: Resort & Recreation Revenue</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">Vessel</div>
-                <div className="text-white text-sm">Physical Boat Cost</div>
+<div className="text-3xl font-bold text-purple-400 mb-2 text-glow-purple">Vessel</div>
+                 <div className="text-white text-sm text-glow-black-light">Physical Boat Cost</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">Premium</div>
-                <div className="text-white text-sm">Equipment & Fit-Out</div>
+<div className="text-3xl font-bold text-purple-400 mb-2 text-glow-purple">Premium</div>
+                 <div className="text-white text-sm text-glow-black-light">Equipment & Fit-Out</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-400 mb-2">Lum'ais</div>
-                <div className="text-white text-sm">Full Hospitality Management</div>
+<div className="text-3xl font-bold text-purple-400 mb-2 text-glow-purple">Lum'ais</div>
+                 <div className="text-white text-sm text-glow-black-light">Full Hospitality Management</div>
               </div>
             </div>
-            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed text-glow-black">
               These boats generate direct daily revenue through nightly rates, wellness retreat packages, corporate event bookings, and spa programming fees — a critical piece of the marina&apos;s long-term sustainability without endless grant dependency.
             </p>
           </div>
@@ -78,8 +78,8 @@ export default function HotelPage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-purple-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Escape to the Marina</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+<h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Escape to the Marina</h2>
+               <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Experience an authentic, unhurried waterfront wellness retreat — where healthcare meets hospitality.
               </p>
               <Link href="/#boats" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">

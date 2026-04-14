@@ -102,7 +102,7 @@ const Fleet = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-start justify-between">
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors">
+                    <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors text-glow-subtle">
                       {item.name}
                     </h3>
                     <svg
@@ -115,7 +115,7 @@ const Fleet = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                   </div>
-                  <p className="text-slate-400 mt-3 text-sm leading-relaxed">
+                  <p className="text-slate-400 mt-3 text-sm leading-relaxed text-glow-black-light">
                     {item.description}
                   </p>
                 </div>

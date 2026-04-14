@@ -33,11 +33,11 @@ export default function LiveWorkPage() {
                 <div className="mb-4">
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Clinical Suite</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Your Practice on the Water</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Your Practice on the Water</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   A fully equipped clinical suite — for example, two examination lanes, retinal imaging, and telehealth stations for vision care — operated by a licensed practitioner.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Fully equipped clinical practice.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Immediate patient pipeline from Rural Connect coalition.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Partnerships with local FQHCs and community health organizations.</li>
@@ -58,11 +58,11 @@ export default function LiveWorkPage() {
                 <div className="mb-4">
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Private Residence</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-4">Live Where You Practice</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Live Where You Practice</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   A turnkey waterfront residence above the clinical space — eliminating commute time and creating immediate availability for patient emergencies.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Private living quarters with waterfront views.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Full kitchen, bedroom, and bathroom.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Rooftop deck for personal outdoor space.</li>
@@ -75,22 +75,22 @@ export default function LiveWorkPage() {
 
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">E-2 Treaty Investor Pathway</h2>
+            <h2 className="text-2xl font-bold text-white mb-6 text-center text-glow-subtle">E-2 Treaty Investor Pathway</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-bold text-teal-400 mb-2">Premium</div>
-                <div className="text-white text-sm">Boat Investment</div>
+<div className="text-3xl font-bold text-teal-400 mb-2 text-glow-teal">Premium</div>
+                 <div className="text-white text-sm text-glow-black-light">Boat Investment</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-teal-400 mb-2">Flexible</div>
-                <div className="text-white text-sm">Equipment & Fit-Out</div>
+<div className="text-3xl font-bold text-teal-400 mb-2 text-glow-teal">Flexible</div>
+                 <div className="text-white text-sm text-glow-black-light">Equipment & Fit-Out</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-teal-400 mb-2">E-2 Visa</div>
-                <div className="text-white text-sm">US Residency via Active Business</div>
+<div className="text-3xl font-bold text-teal-400 mb-2 text-glow-teal">E-2 Visa</div>
+                 <div className="text-white text-sm text-glow-black-light">US Residency via Active Business</div>
               </div>
             </div>
-            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-white text-center mt-8 max-w-3xl mx-auto leading-relaxed text-glow-black">
               International professionals — optometrists, therapists, chefs — seeking US residency through active business ownership. The Live-Work boat satisfies the "active business" requirement while providing a turnkey practice and home.
             </p>
           </div>
@@ -100,8 +100,8 @@ export default function LiveWorkPage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-teal-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Live. Work. Thrive.</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+<h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Live. Work. Thrive.</h2>
+               <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Build your rural practice while enjoying a waterfront quality of life — all in one turnkey boat.
               </p>
               <Link href="/#boats" className="inline-block bg-teal-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-teal-400 transition-colors duration-300 cursor-pointer">

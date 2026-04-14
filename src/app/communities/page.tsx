@@ -35,12 +35,12 @@ export default function CommunitiesPage() {
                 <div className="mb-6">
                   <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 1</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-3">The Vision Plan</h2>
+                <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">The Vision Plan</h2>
                 
-                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   A comprehensive 60-90 day discovery process designed to unearth your community&apos;s true potential, bypass consulting theories, and deliver a deployable roadmap.
                 </p>
-                <ul className="space-y-4 text-white">
+                <ul className="space-y-4 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Community asset assessment & gap analysis.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Crafting a compelling destination story.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Selection of 3-5 high-impact anchor concepts.</li>
@@ -58,12 +58,12 @@ export default function CommunitiesPage() {
                 <div className="mb-6">
                   <span className="bg-blue-600 text-white shadow-blue-500/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 2</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-3">The Community Platform</h2>
+                <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">The Community Platform</h2>
                 
-                <p className="text-white mb-8 text-lg leading-relaxed flex-grow">
+                <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   A fully branded digital destination that acts as your modern economic development infrastructure, replacing outdated methods with a national marketing engine.
                 </p>
-                <ul className="space-y-4 text-white">
+                <ul className="space-y-4 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Replaces or enhances existing economic development departments.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> National digital marketing campaigns to attract remote workers.</li>
                   <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey investor attraction infrastructure.</li>
@@ -90,8 +90,8 @@ export default function CommunitiesPage() {
                 <div className="mb-4">
                   <span className="bg-emerald-600 text-white shadow-emerald-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Phase 3</span>
                 </div>
-                <h2 className="text-3xl font-bold text-white mb-3">Physical Activation</h2>
-                <p className="text-white text-lg leading-relaxed">
+                <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Physical Activation</h2>
+                <p className="text-white text-lg leading-relaxed text-glow-black">
                   Deploying physical assets — Innovation Hub boats for waterfronts, or modular studio spaces for inland communities — to anchor your community&apos;s new vision and draw visitors, residents, and investment.
                 </p>
               </div>
@@ -121,9 +121,9 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-white/20 text-white shadow-white/20 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Small Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Curated Foundation Model</h3>
-                <p className="text-white/70 text-sm mb-6 leading-relaxed">A carefully curated mix of core boats designed to establish a strong, welcoming waterfront experience.</p>
-                <div className="space-y-3 text-white text-sm">
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Curated Foundation Model</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A carefully curated mix of core boats designed to establish a strong, welcoming waterfront experience.</p>
+                <div className="space-y-3 text-white text-sm text-glow-black-light">
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Coffee / Café</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Pilates or Fitness</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Spa / Recovery</div>
@@ -140,9 +140,9 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-[#FFD700]/90 text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Medium Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Connected Community Model</h3>
-                <p className="text-white/70 text-sm mb-6 leading-relaxed">A connected system of boats creating a full-day destination blending wellness, culinary, lifestyle, and creative experiences.</p>
-                <div className="space-y-3 text-white text-sm">
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Connected Community Model</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A connected system of boats creating a full-day destination blending wellness, culinary, lifestyle, and creative experiences.</p>
+                <div className="space-y-3 text-white text-sm text-glow-black-light">
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Wellness (Pilates, Spa, Fitness)</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Culinary + Coffee</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail + Marketplace</div>
@@ -159,9 +159,9 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Large Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-subtle">Fully Connected Destination</h3>
-                <p className="text-white/70 text-sm mb-6 leading-relaxed">A fully connected waterfront district designed as a regional or national destination.</p>
-                <div className="space-y-3 text-white text-sm">
+                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Fully Connected Destination</h3>
+                <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A fully connected waterfront district designed as a regional or national destination.</p>
+                <div className="space-y-3 text-white text-sm text-glow-black-light">
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Full Wellness & Lifestyle Ecosystem</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Culinary + Food Experiences</div>
                   <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail District on the Water</div>
@@ -178,7 +178,7 @@ export default function CommunitiesPage() {
         <FadeIn delay={0.5}>
           <div className="rounded-2xl border border-white/10 bg-white/[0.08] backdrop-blur-md p-8 md:p-10">
             <h3 className="text-2xl font-bold text-white mb-3 text-glow-subtle">Designed for Flexibility</h3>
-            <p className="text-white/80 leading-relaxed">
+            <p className="text-white/80 leading-relaxed text-glow-black-light">
               Every Newvion Wellness Marina is designed through a detailed market and feasibility study. Boat types, program mix, phasing strategy, and operator opportunities are curated based on each community&apos;s needs. Each marina is a curated and connected environment, designed to reflect the character, needs, and opportunity of its community while operating within a proven, scalable system.
             </p>
           </div>
@@ -188,8 +188,8 @@ export default function CommunitiesPage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-[#FFD700]/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Activate Your Waterfront?</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+              <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Ready to Activate Your Waterfront?</h2>
+              <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Join pioneering communities like Moore Haven, FL and Allegan, MI in deploying the Newvion model. Stop studying and start building.
               </p>
               <Link href="/" className="inline-block bg-[#FFD700] text-[#0d1b3e] font-bold text-lg px-8 py-4 rounded-full hover:bg-white transition-colors duration-300 cursor-pointer">

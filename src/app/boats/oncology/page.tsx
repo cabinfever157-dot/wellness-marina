@@ -36,11 +36,11 @@ export default function OncologyPage() {
                 />
               </div>
               <div className="p-10 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-white mb-4">Comprehensive Cancer Support</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Comprehensive Cancer Support</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   Bringing oncology services to rural waterfronts.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Cancer screenings and early detection programs.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Telehealth oncology consultations.</li>
                   <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Low-acuity infusion care.</li>
@@ -61,8 +61,8 @@ export default function OncologyPage() {
           <div className="relative overflow-hidden rounded-2xl border border-[#FFD700]/30 bg-gradient-to-r from-[#0d1b3e] via-slate-800/50 to-[#0d1b3e] p-12 text-center shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-purple-500/5 rounded-full blur-3xl" />
             <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Early Detection Saves Lives</h2>
-              <p className="text-xl text-white max-w-2xl mx-auto mb-8">
+<h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Early Detection Saves Lives</h2>
+               <p className="text-xl text-white max-w-2xl mx-auto mb-8 text-glow-black">
                 Access cancer screenings, survivorship support, and oncology care — all on the water, close to home.
               </p>
               <Link href="/#boats" className="inline-block bg-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-purple-400 transition-colors duration-300 cursor-pointer">

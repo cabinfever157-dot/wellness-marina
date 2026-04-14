@@ -148,6 +148,30 @@ body {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
+.text-glow-gold-subtle {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5), 0 0 25px rgba(212, 175, 55, 0.3), 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.text-glow-teal {
+  text-shadow: 0 0 8px rgba(20, 184, 166, 0.4), 0 0 20px rgba(20, 184, 166, 0.2), 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.4), 0 0 20px rgba(96, 165, 250, 0.2), 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4), 0 0 20px rgba(251, 191, 36, 0.2), 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 8px rgba(192, 132, 252, 0.4), 0 0 20px rgba(192, 132, 252, 0.2), 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
 .text-gradient-gold {
   background: linear-gradient(135deg, #E5C158, #D4AF37, #AA8C2C);
   -webkit-background-clip: text;

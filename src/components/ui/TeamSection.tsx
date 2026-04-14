@@ -131,9 +131,9 @@ const PartnerNetworkSection = () => {
 
         {status === "sent" ? (
           <div className="text-center py-6">
-            <div className="text-[#FFD700] text-4xl mb-3">✓</div>
-            <p className="text-white text-lg font-medium">Thank you for your interest!</p>
-            <p className="text-white/70 mt-2">We will be in touch soon.</p>
+            <div className="text-[#FFD700] text-4xl mb-3 text-glow-gold-subtle">✓</div>
+            <p className="text-white text-lg font-medium text-glow-subtle">Thank you for your interest!</p>
+            <p className="text-white/70 mt-2 text-glow-black-light">We will be in touch soon.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -288,7 +288,7 @@ const TeamSection = () => {
                     <h3 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 mb-2 text-glow-subtle">
                       {member.name}
                     </h3>
-                    <p className="text-[#FFD700] text-sm font-medium tracking-wide mb-4">
+                    <p className="text-[#FFD700] text-sm font-medium tracking-wide mb-4 text-glow-gold-subtle">
                       {member.role}
                     </p>
                     <p className="text-white text-sm leading-relaxed text-glow-black">
@@ -319,7 +319,7 @@ const TeamSection = () => {
                 <div className="h-px w-12 bg-[#FFD700]/50" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-glow-subtle">Lum&apos;ais</h2>
-              <p className="text-[#FFD700] text-lg font-medium">Resort Management & Wellness Operations Partner</p>
+              <p className="text-[#FFD700] text-lg font-medium text-glow-gold-subtle">Resort Management & Wellness Operations Partner</p>
             </div>
 
             <div className="space-y-6 text-white leading-relaxed text-lg text-glow-black">
@@ -329,7 +329,7 @@ const TeamSection = () => {
               <p>
                 As the Wellness Marina&apos;s resort management and operations partner, Lum&apos;ais is responsible for the Hotel & Retreat Boats, Wellness Retreat Boats, and all spa and wellness programming across the marina — bringing a level of hospitality excellence and wellness expertise that no other rural waterfront destination in America can match.
               </p>
-              <p className="text-white/80 text-base border-l-2 border-[#FFD700]/40 pl-4 italic">
+              <p className="text-white/80 text-base border-l-2 border-[#FFD700]/40 pl-4 italic text-glow-black-light">
                 The Lum&apos;ais partnership brings the Newvion Wellness Marina an immediately credible, operationally proven wellness hospitality capability — giving investors, grant funders, and marina partners confidence that the destination experience will be delivered at the highest possible standard from day one.
               </p>
             </div>

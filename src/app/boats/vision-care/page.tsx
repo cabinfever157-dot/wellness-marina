@@ -37,11 +37,11 @@ export default function VisionCarePage() {
 
               </div>
               <div className="p-10 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-white mb-4">Complete Optometry Clinic</h2>
-                <p className="text-white text-lg leading-relaxed mb-6">
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Complete Optometry Clinic</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
                   Bringing essential eye care to communities where vision providers are scarce — zero local vision care providers in Glades County.
                 </p>
-                <ul className="space-y-3 text-white">
+                <ul className="space-y-3 text-white text-glow-black-light">
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Two fully-equipped exam lanes.</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Digital retinal imaging technology.</li>
                   <li className="flex items-start"><span className="text-blue-400 mr-3 mt-1">✦</span> Diabetic retinopathy screening.</li>
@@ -55,8 +55,8 @@ export default function VisionCarePage() {
 
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-4 text-center">Live-Work Vision Care Boat</h2>
-            <p className="text-white text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8">
+            <h2 className="text-2xl font-bold text-white mb-4 text-center text-glow-subtle">Live-Work Vision Care Boat</h2>
+            <p className="text-white text-lg leading-relaxed text-center max-w-3xl mx-auto mb-8 text-glow-black">
               For practitioners seeking to live and work on the water — the Live-Work Vision Care Boat features a full optometry clinic on the main deck and a private, turnkey waterfront residence on the upper deck. Explicitly positioned for E-2 Treaty Investors.
             </p>
             <div className="grid md:grid-cols-2 gap-8">

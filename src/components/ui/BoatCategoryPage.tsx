@@ -77,7 +77,7 @@ const BoatCategoryPage = ({
 
                   <div className="p-6">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors duration-300 text-glow-subtle">
                         {item.name}
                       </h3>
                       <svg
@@ -94,7 +94,7 @@ const BoatCategoryPage = ({
                         />
                       </svg>
                     </div>
-                    <p className="text-white mt-3 text-sm leading-relaxed group-hover:text-white/60 transition-colors">
+                    <p className="text-white mt-3 text-sm leading-relaxed group-hover:text-white/60 transition-colors text-glow-black-light">
                       {item.description}
                     </p>
                   </div>
