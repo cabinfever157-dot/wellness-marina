@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Geist } from "next/font/google";
 import Header from "@/components/ui/Header";
 import { LuxuryBackground } from "@/components/layout/LuxuryBackground";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
@@ -18,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.className} ${playfair.className}`}>
+    <html lang="en" className={cn(inter.className, playfair.className, "font-sans", geist.variable)}>
       <body className="min-h-full antialiased text-text selection:bg-gold/30 selection:text-gold overflow-x-hidden">
         {/* Grain texture overlay */}
         <div
@@ -30,6 +33,18 @@ export default function RootLayout({
         <LuxuryBackground />
         <Header />
         {children}
+        <footer className="relative z-10 py-6 border-t border-white/10">
+          <div className="max-w-6xl mx-auto px-4 text-center">
+            <a
+              href="https://advancedai-solutions.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 text-sm hover:text-white/80 transition-colors"
+            >
+              &copy; {new Date().getFullYear()} Advanced A.I. Solutions. Redefining what&apos;s possible
+            </a>
+          </div>
+        </footer>
       </body>
     </html>
   );
