@@ -74,10 +74,7 @@ const PodcastPlayer = () => {
               alt="Newvion Podcast"
               className="w-full h-auto object-cover"
             />
-            <div className="absolute top-3 left-3 flex items-center gap-2 bg-black/50 backdrop-blur-md rounded-full px-2.5 py-1">
-              <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse" />
-              <span className="text-white text-[10px] font-medium tracking-wide">NEW EPISODE</span>
-            </div>
+
           </div>
           <div className="p-6 md:p-8 flex flex-col justify-center md:w-1/2">
             <div className="flex items-center gap-3 mb-3">
@@ -178,6 +175,12 @@ const ecosystemSections = [
     ),
     color: "gold",
   },
+  {
+    title: "Examining the Evolving Landscape of the Global Wellness Market",
+    content: "The evolving landscape of the global wellness market, highlighting a transition toward science-backed solutions and holistic health. Research from McKinsey and Morgan Health emphasizes how consumers are prioritizing clinical efficacy and accountable care, utilizing biomonitoring wearables and at-home diagnostics to manage their well-being. In the hospitality sector, boutique hotels are responding to these shifts by integrating personalized wellness itineraries, biophilic design, and nutritional programming into the guest experience. Additionally, reports on experiential trends suggest that future luxury value will be defined by exclusive access and community-focused initiatives. Collectively, the texts illustrate a future where technology, sustainability, and medical credibility converge to meet the sophisticated demands of health-conscious consumers.",
+    vimeoId: "1182814075",
+    color: "gold",
+  },
 ];
 
 const colorMap: Record<string, string> = {
@@ -254,18 +257,53 @@ const WellnessEcosystem = () => {
             >
               <div className="rounded-[20%] border border-white/10 bg-white/[0.28] backdrop-blur-md overflow-hidden">
                 <div className="grid lg:grid-cols-5 gap-0">
-                  {/* Icon Section */}
-                  <div className="lg:col-span-1 p-8 flex items-center justify-center bg-[#0a1628]/80">
-                    <div className={`p-4 rounded-2xl ${section.color === 'teal' ? 'bg-teal-500/20' : section.color === 'amber' ? 'bg-amber-500/20' : 'bg-[#FFD700]/20'} ${colorMap[section.color]}`}>
-                      {section.icon}
-                    </div>
+                  {/* Icon / Mic Section */}
+                  <div className="lg:col-span-1 lg:row-span-2 p-4 flex items-center justify-center bg-[#0a1628]/80">
+                    {"vimeoId" in section ? (
+                      <div className={`p-4 rounded-2xl bg-[#FFD700]/20 text-[#FFD700]`}>
+                        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+                        </svg>
+                      </div>
+                    ) : (
+                      <div className={`p-4 rounded-2xl ${section.color === 'teal' ? 'bg-teal-500/20' : section.color === 'amber' ? 'bg-amber-500/20' : 'bg-[#FFD700]/20'} ${colorMap[section.color]}`}>
+                        {section.icon}
+                      </div>
+                    )}
                   </div>
                   
                   {/* Content Section */}
                   <div className="lg:col-span-4 p-8 lg:p-12">
                     <h3 className={`text-2xl md:text-3xl font-bold ${colorMap[section.color]} mb-6 text-glow-subtle`}>
-                      {section.title}
+                      {"vimeoId" in section ? (
+                        <>
+                          Examining the Evolving Landscape of<br />the Global Wellness Market
+                        </>
+                      ) : (
+                        section.title
+                      )}
                     </h3>
+
+                    {"vimeoId" in section && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                        className="mb-6"
+                      >
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 max-w-[508px] w-full">
+                          <div className="aspect-[16/9]">
+                            <iframe
+                              src={`https://player.vimeo.com/video/${section.vimeoId}?title=0&byline=0&portrait=0`}
+                              className="w-full h-full"
+                              allow="autoplay; fullscreen; picture-in-picture"
+                              allowFullScreen
+                            />
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
                     
                     {section.content && (
                       <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
