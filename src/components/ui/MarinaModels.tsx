@@ -74,6 +74,24 @@ const MarinaModels = () => {
           <p className="text-lg text-white/80 max-w-4xl mx-auto leading-relaxed text-glow-black">
             Newvion Wellness Marina is built as a modular system that can be deployed across a range of waterfront communities — from small pilot locations to full destination-scale developments. Each marina is tailored to its market, with the ability to scale, phase, and evolve over time through a series of curated and connected models.
           </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-8 flex justify-center"
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 max-w-[508px] w-full">
+              <div className="aspect-[16/9]">
+                <iframe
+                  src="https://player.vimeo.com/video/1183187127?title=0&byline=0&portrait=0"
+                  className="w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
