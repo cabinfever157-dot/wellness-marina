@@ -18,8 +18,8 @@ export default function TeamPage() {
               <span className="text-[#D4AF37] text-xs font-medium tracking-[0.3em] uppercase">The Visionaries</span>
               <div className="h-px w-12 bg-[#D4AF37]/50" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">The Team</h1>
-            <p className="text-xl text-white max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 text-glow-subtle">The Team</h1>
+            <p className="text-xl text-white max-w-2xl mx-auto text-glow-black">
               Leadership, partnerships, and expertise driving the Wellness Marina vision
             </p>
           </div>
