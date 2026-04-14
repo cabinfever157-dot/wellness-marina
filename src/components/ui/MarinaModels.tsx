@@ -15,7 +15,7 @@ const marinaModels = [
       "Culinary or Food Boat",
       "Select Retail or Discovery Boats",
     ],
-    badgeClass: "bg-white/20 text-white shadow-white/20 shadow-lg",
+    badgeClass: "bg-[#FFD700]/60 text-[#020C1B] shadow-[#FFD700]/40 shadow-lg text-glow-gold-subtle",
   },
   {
     tier: "Medium Marina",
@@ -109,7 +109,7 @@ const MarinaModels = () => {
                   <span className={`${model.badgeClass} px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase w-fit`}>
                     {model.tier}
                   </span>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mt-5 mb-3 text-glow-subtle">{model.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#FFD700] mt-5 mb-3 text-glow-gold-subtle">{model.title}</h3>
                   <p className="text-white/80 text-sm mb-6 leading-relaxed flex-1 text-glow-black-light">{model.description}</p>
                   <div className="space-y-3">
                     {model.items.map((item) => (
