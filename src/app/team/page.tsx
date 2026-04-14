@@ -20,7 +20,7 @@ export default function TeamPage() {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">The Team</h1>
             <p className="text-xl text-white max-w-2xl mx-auto">
-              The minds behind the marina
+              Leadership, partnerships, and expertise driving the Wellness Marina vision
             </p>
           </div>
         </div>

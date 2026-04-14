@@ -38,11 +38,11 @@ export default function SponsorsPage() {
                   National and regional brands can sponsor individual live-work boat concepts, securing naming rights, co-branding, and product placement, while actively funding health and economic development.
                 </p>
                 <ul className="space-y-4 text-white">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Pharmacy & Healthcare:</strong> Perrigo, Bayer, CVS Health, regional health systems.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Dental:</strong> Colgate, Aspen Dental, equipment brands.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Culinary:</strong> Food/beverage brands, kitchen equipment, regional grocers.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Pilates & Wellness:</strong> Athletic apparel, fitness equipment, spa brands.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Creator & Podcast:</strong> Technology, microphone, and camera companies.</li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Pharmacy & Healthcare</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Regional health systems.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Dental</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Colgate, Aspen Dental, equipment brands.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Culinary</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Food/beverage brands, kitchen equipment, regional grocers.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Pilates & Wellness</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Athletic apparel, fitness equipment, spa brands.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Creator & Podcast</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Technology, microphone, and camera companies.</span></div></li>
                 </ul>
               </div>
             </div>
@@ -58,11 +58,11 @@ export default function SponsorsPage() {
                   Directly fund access to critical health content for underserved populations through our Rural Connect platform. 83% of rural residents cite transportation as a barrier to care.
                 </p>
                 <ul className="space-y-4 text-white">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Community Champion:</strong> 416 free memberships + content series naming rights.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Health Partner:</strong> 166 free memberships + primary logo placement.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Program Supporter:</strong> 83 free memberships + featured local listing.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Event Sponsor:</strong> Underwrites one live community health event.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> <strong>Webinar Underwriting:</strong> Brand in front of a national audience of city managers.</li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Community Champion</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">416 free memberships + content series naming rights.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Health Partner</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">166 free memberships + primary logo placement.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Program Supporter</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">83 free memberships + featured local listing.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Event Sponsor</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Underwrites one live community health event.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Webinar Underwriting</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Brand in front of a national audience of city managers.</span></div></li>
                 </ul>
               </div>
             </div>
