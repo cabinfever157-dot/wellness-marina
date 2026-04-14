@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShineBorder } from "@/components/ui/shine-border";
 
 const managementStructure = [
   {
@@ -42,7 +41,7 @@ const leadershipTeam = [
     color: "from-teal-500 to-teal-700",
   },
   {
-    name: "Bret Hawkins",
+    name: "Brent Hawkins",
     role: "Targeted Marketing",
     bio: "Converts deployments into nationally visible opportunities, building investor and operator pipelines from day one.",
     initials: "BH",
@@ -226,7 +225,6 @@ const TeamSection = () => {
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="max-w-5xl mx-auto">
-          <ShineBorder borderWidth={2} duration={10} shineColor={["#D4AF37", "#E5C158", "#0A192F"]} />
           <div className="rounded-3xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-8 md:p-12">
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
