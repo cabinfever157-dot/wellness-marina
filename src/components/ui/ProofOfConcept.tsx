@@ -15,17 +15,17 @@ const markets = [
       { value: "OZ", label: "Qualified Opportunity Zone" },
     ],
   },
-  {
-    name: "Allegan, Michigan",
-    role: "Inland Proof of Concept",
-    description: "On the Kalamazoo River — proving our model is geography-agnostic. Modular studio hubs execute the same vision, backed by major regional health and civic partners.",
-    image: "/images/Allegan_Michigan.png",
-    stats: [
-      { value: "Inland", label: "Geography-Agnostic" },
-      { value: "60+", label: "Healthcare Access Points" },
-      { value: "OZ", label: "Qualified Opportunity Zone" },
-    ],
-  },
+  // {
+  //   name: "Allegan, Michigan",
+  //   role: "Inland Proof of Concept",
+  //   description: "On the Kalamazoo River — proving our model is geography-agnostic. Modular studio hubs execute the same vision, backed by major regional health and civic partners.",
+  //   image: "/images/Allegan_Michigan.png",
+  //   stats: [
+  //     { value: "Inland", label: "Geography-Agnostic" },
+  //     { value: "60+", label: "Healthcare Access Points" },
+  //     { value: "OZ", label: "Qualified Opportunity Zone" },
+  //   ],
+  // },
   {
     name: "Clewiston, Florida",
     role: "Sugar City Expansion",

@@ -32,23 +32,19 @@ const Header = () => {
         ? 'bg-white/[0.15] backdrop-blur-2xl border-b border-white/20 shadow-lg shadow-black/10' 
         : 'bg-transparent'
     }`}>
-      <nav className="w-full px-6 md:px-8 py-3">
+      <nav className="w-full px-6 md:px-8 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 relative">
-            <div className="absolute inset-0 bg-[#D4AF37]/10 rounded-full blur-xl scale-150" />
+          <Link href="/" className="flex items-center relative">
+            <div className="absolute inset-0 bg-[#D4AF37]/25 rounded-full blur-2xl scale-150" />
             <Image
               src="/images/logo.png"
               alt="Newvion"
-              width={40}
-              height={40}
+              width={80}
+              height={80}
               className="object-contain relative z-10"
               style={{ width: 'auto', height: 'auto' }}
             />
-            <span className="text-lg font-bold text-[#FDFBF7] tracking-tight hidden sm:block relative z-10">
-              Newvion
-              <span className="text-white font-light ml-1">Wellness Marina</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}

@@ -197,6 +197,7 @@ const ecosystemSections = [
       { label: "Extended Stay & Hospitality", desc: "Hotel boats and live-work residences support overnight stays, weekend travel, and multi-day retreats." },
       { label: "Year-Round Activity", desc: "Daily, weekly, and seasonal programming ensures consistent visitor engagement throughout the year." },
     ],
+    vimeoId: "1183187127",
     communityBenefit: "Newvion drives visitor traffic, supports local businesses, creates jobs, and enhances the identity of the waterfront — transforming it into a destination with new reasons to visit, stay, and return.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -314,7 +315,7 @@ const WellnessEcosystem = () => {
                       )}
                     </h3>
 
-                    {"vimeoId" in section && (
+                    {"vimeoId" in section && !("visitItems" in section) && (
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -345,16 +346,32 @@ const WellnessEcosystem = () => {
                     )}
                     
                     {"visitItems" in section && (
-                      <div className="mb-6">
-                        <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
-                        <ul className="space-y-2">
-                          {(section.visitItems as string[]).map((item) => (
-                            <li key={item} className="flex items-start gap-2.5 text-white/80 text-base leading-relaxed text-glow-black">
-                              <span className="text-[#FFD700] mt-1 shrink-0">✦</span>
-                              {item}
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                          <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
+                          <ul className="space-y-2">
+                            {(section.visitItems as string[]).map((item) => (
+                              <li key={item} className="flex items-start gap-2.5 text-white/80 text-base leading-relaxed text-glow-black">
+                                <span className="text-[#FFD700] mt-1 shrink-0">✦</span>
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        {"vimeoId" in section && section.vimeoId && (
+                          <div>
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 w-full">
+                              <div className="aspect-[16/9]">
+                                <iframe
+                                  src={`https://player.vimeo.com/video/${section.vimeoId}?title=0&byline=0&portrait=0`}
+                                  className="w-full h-full"
+                                  allow="autoplay; fullscreen; picture-in-picture"
+                                  allowFullScreen
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     )}
 

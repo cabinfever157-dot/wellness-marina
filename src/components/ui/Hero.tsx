@@ -46,8 +46,16 @@ const Hero = () => {
                 transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="text-5xl md:text-7xl lg:text-8xl font-bold font-display leading-[0.95] tracking-tight max-w-5xl text-white"
               >
-                Wellness Marina
+                Newvion
               </motion.h1>
+              <motion.h2
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                className="text-3xl md:text-5xl lg:text-6xl font-bold font-display leading-[0.95] tracking-tight text-white/80 mt-1"
+              >
+                Wellness Marina
+              </motion.h2>
 
               <div className="mt-4 inline-flex items-baseline gap-3">
                 <span className="text-lg md:text-2xl lg:text-3xl font-light tracking-[0.25em] uppercase text-white/40">—</span>
@@ -58,7 +66,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     exit={{ opacity: 0, y: -18, filter: "blur(6px)" }}
                     transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-gradient-gold italic text-3xl md:text-5xl lg:text-6xl font-display inline-block"
+                    className="text-gradient-gold italic text-2xl md:text-[2.25rem] lg:text-[2.75rem] font-display inline-block"
                   >
                     {CYCLE_WORDS[wordIndex]}
                   </motion.span>
@@ -72,7 +80,7 @@ const Hero = () => {
                 className="text-lg md:text-xl text-white mt-6 max-w-xl leading-relaxed"
               >
                 A mixed-use wellness destination built entirely on the water.
-                Healthcare, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
+                Health, hospitality, community, a place where people gather, heal, create and connect — designed for living well.
               </motion.p>
 
               <motion.div
@@ -83,45 +91,29 @@ const Hero = () => {
               >
                 <button
                   onClick={() => setShowVideo(true)}
-                  className="group relative inline-flex items-center gap-2 bg-[#D4AF37] text-[#020C1B] font-semibold px-8 py-4 rounded-full overflow-hidden transition-all hover:scale-105 duration-500 cursor-pointer"
+                  className="group relative inline-flex flex-col items-center gap-1.5 bg-[#D4AF37] text-[#020C1B] font-semibold px-8 py-4 rounded-full overflow-hidden transition-all hover:scale-105 duration-500 cursor-pointer"
                 >
-                  <span className="relative z-10">Explore the Marina</span>
-                  <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor">
-                    <rect x="2" y="2" width="20" height="20" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" />
-                    <rect x="4" y="4" width="3.5" height="2" rx="0.5" />
-                    <rect x="4" y="8" width="3.5" height="2" rx="0.5" />
-                    <rect x="4" y="14" width="3.5" height="2" rx="0.5" />
-                    <rect x="4" y="18" width="3.5" height="2" rx="0.5" />
-                    <rect x="16.5" y="4" width="3.5" height="2" rx="0.5" />
-                    <rect x="16.5" y="8" width="3.5" height="2" rx="0.5" />
-                    <rect x="16.5" y="14" width="3.5" height="2" rx="0.5" />
-                    <rect x="16.5" y="18" width="3.5" height="2" rx="0.5" />
-                    <rect x="9" y="7" width="6" height="10" rx="1" stroke="currentColor" strokeWidth="1" fill="none" />
-                  </svg>
+                  <span className="relative z-10 inline-flex items-center gap-2">
+                    Explore the Marina
+                    <svg className="w-5 h-5 relative z-10" viewBox="0 0 24 24" fill="currentColor">
+                      <rect x="2" y="2" width="20" height="20" rx="1" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                      <rect x="4" y="4" width="3.5" height="2" rx="0.5" />
+                      <rect x="4" y="8" width="3.5" height="2" rx="0.5" />
+                      <rect x="4" y="14" width="3.5" height="2" rx="0.5" />
+                      <rect x="4" y="18" width="3.5" height="2" rx="0.5" />
+                      <rect x="16.5" y="4" width="3.5" height="2" rx="0.5" />
+                      <rect x="16.5" y="8" width="3.5" height="2" rx="0.5" />
+                      <rect x="16.5" y="14" width="3.5" height="2" rx="0.5" />
+                      <rect x="16.5" y="18" width="3.5" height="2" rx="0.5" />
+                      <rect x="9" y="7" width="6" height="10" rx="1" stroke="currentColor" strokeWidth="1" fill="none" />
+                    </svg>
+                  </span>
+                  <span className="relative z-10 text-xs italic opacity-80">(click to watch)</span>
                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 </button>
               </motion.div>
 
-              {/* Stats */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.1, ease: [0.16, 1, 0.3, 1] }}
-                className="flex flex-wrap gap-8 md:gap-16 mt-12 pt-8 border-t border-white/10"
-              >
-                {[
-                  { value: "11+", label: "Curated Boats" },
-                  { value: "100M+", label: "Wellness Consumers" },
-                  { value: "Apr '26", label: "Pilot Launch" },
-                ].map((stat) => (
-                  <div key={stat.label} className="group">
-                    <div className="text-3xl font-bold text-[#D4AF37] transition-transform duration-300 group-hover:scale-110">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-white mt-1 tracking-wide">{stat.label}</div>
-                  </div>
-                ))}
-              </motion.div>
+
             </div>
 
             {/* Right Column - Vimeo Video Embed */}
@@ -145,8 +137,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Fade-out zone blending into next section */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#020C1B] to-transparent z-20 pointer-events-none" />
+
       </section>
 
       {/* Video Modal */}

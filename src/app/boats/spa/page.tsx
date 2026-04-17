@@ -46,6 +46,20 @@ export default function SpaBoatPage() {
         </FadeIn>
 
         <FadeIn>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/3]">
+              <img src="/images/spa1.png" alt="Spa interior" className="w-full h-full object-cover" />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/3]">
+              <img src="/images/spa2.png" alt="Spa treatment" className="w-full h-full object-cover" />
+            </div>
+            <div className="relative overflow-hidden rounded-2xl border border-white/10 aspect-[4/3]">
+              <img src="/images/spa3.png" alt="Spa relaxation" className="w-full h-full object-cover" />
+            </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Spa Boat Details</h2>
             <div className="grid md:grid-cols-3 gap-8 text-center">
