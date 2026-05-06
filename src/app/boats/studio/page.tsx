@@ -33,7 +33,7 @@ export default function StudioPage() {
               <div className="w-[66%] relative rounded-2xl overflow-hidden shadow-2xl shadow-pink-500/20 border border-white/10">
                 <div className="aspect-[16/9]">
                   <iframe
-                    src="https://player.vimeo.com/video/1189589994?title=0&byline=0&portrait=0"
+                    src="https://player.vimeo.com/video/1189824567?title=0&byline=0&portrait=0"
                     className="w-full h-full"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
