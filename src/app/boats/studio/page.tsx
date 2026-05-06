@@ -5,23 +5,42 @@ export default function StudioPage() {
   return (
     <main className="relative min-h-screen">
       {/* Hero Banner */}
-      <div className="relative h-[400px] overflow-hidden">
+      <div className="relative min-h-[500px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/studio_boat.png')",  }}
         />
         <div className="absolute inset-0 bg-[#020C1B]/60" />
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center px-4">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="h-px w-8 bg-pink-400/50" />
-              <span className="text-pink-400 text-xs font-medium tracking-[0.2em] uppercase">The Voice of Rural Communities</span>
-              <div className="h-px w-8 bg-pink-400/50" />
+        <div className="relative z-10 h-full flex items-center px-6 md:px-12 lg:px-24 py-20">
+          <div className="w-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Text */}
+            <div className="pt-[10%]">
+              <div className="flex items-center gap-3 mb-4 relative">
+                <div className="absolute inset-0 bg-white/15 blur-md rounded-full" />
+                <div className="relative z-10 flex items-center gap-3">
+                  <div className="h-px w-8 bg-pink-400/50" />
+                  <span className="text-pink-400 text-xs font-medium tracking-[0.2em] uppercase">The Voice of Rural Communities</span>
+                </div>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-white">The Innovation Boat</h1>
+              <p className="text-xl text-white mt-4 max-w-xl leading-relaxed">
+                A professional digital media hub for podcasting, video production, and community storytelling — amplifying rural voices through the Rural Connect platform.
+              </p>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold text-white">The Innovation Boat</h1>
-            <p className="text-xl text-white mt-4 max-w-2xl mx-auto">
-              A professional digital media hub for podcasting, video production, and community storytelling — amplifying rural voices through the Rural Connect platform.
-            </p>
+
+            {/* Right Column - Vimeo Video */}
+            <div className="hidden lg:flex items-center justify-center pt-[10%]">
+              <div className="w-[66%] relative rounded-2xl overflow-hidden shadow-2xl shadow-pink-500/20 border border-white/10">
+                <div className="aspect-[16/9]">
+                  <iframe
+                    src="https://player.vimeo.com/video/1189589994?title=0&byline=0&portrait=0"
+                    className="w-full h-full"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
