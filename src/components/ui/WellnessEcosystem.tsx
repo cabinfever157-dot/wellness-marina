@@ -137,6 +137,56 @@ const PodcastPlayer = () => {
   );
 };
 
+const VideoThumbnail = ({ vimeoId, thumbnailSrc }: { vimeoId: string; thumbnailSrc: string }) => {
+  const [playing, setPlaying] = useState(false);
+
+  if (playing) {
+    return (
+      <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 max-w-[508px] w-full">
+        <div className="aspect-[16/9]">
+          <iframe
+            src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0&autoplay=1`}
+            className="w-full h-full"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className="mb-6"
+    >
+      <div
+        className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 max-w-[508px] w-full cursor-pointer group"
+        onClick={() => setPlaying(true)}
+      >
+        <div className="aspect-[16/9]">
+          <img
+            src={thumbnailSrc}
+            alt="Video thumbnail"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 bg-[#D4AF37] hover:bg-[#E5C158] rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-lg shadow-[#D4AF37]/40">
+              <svg className="w-7 h-7 text-[#020C1B] ml-1" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 const ecosystemSections = [
   {
     title: "Healthcare is the Anchor",
@@ -316,24 +366,7 @@ const WellnessEcosystem = () => {
                     </h3>
 
                     {"vimeoId" in section && !("visitItems" in section) && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                        className="mb-6"
-                      >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#D4AF37]/20 border border-white/10 max-w-[508px] w-full">
-                          <div className="aspect-[16/9]">
-                            <iframe
-                              src={`https://player.vimeo.com/video/${section.vimeoId}?title=0&byline=0&portrait=0`}
-                              className="w-full h-full"
-                              allow="autoplay; fullscreen; picture-in-picture"
-                              allowFullScreen
-                            />
-                          </div>
-                        </div>
-                      </motion.div>
+                      <VideoThumbnail vimeoId={section.vimeoId!} thumbnailSrc="/images/coffee.png" />
                     )}
                     
                     {"subtitle" in section && section.subtitle && (
