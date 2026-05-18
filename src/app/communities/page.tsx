@@ -15,7 +15,7 @@ export default function CommunitiesPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">For Communities</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">For Communities</span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Transform Your Town</h1>
@@ -41,11 +41,11 @@ export default function CommunitiesPage() {
                   A comprehensive 60-90 day discovery process designed to unearth your community&apos;s true potential, bypass consulting theories, and deliver a deployable roadmap.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Community asset assessment & gap analysis.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Crafting a compelling destination story.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Selection of 3-5 high-impact anchor concepts.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Production-quality community film.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Opportunity Zone (OZ) investor narrative creation.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Community asset assessment & gap analysis.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Crafting a compelling destination story.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Selection of 3-5 high-impact anchor concepts.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Production-quality community film.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Opportunity Zone (OZ) investor narrative creation.</li>
                 </ul>
               </div>
             </div>
@@ -64,11 +64,11 @@ export default function CommunitiesPage() {
                   A fully branded digital destination that acts as your modern economic development infrastructure, replacing outdated methods with a national marketing engine.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Replaces or enhances existing economic development departments.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> National digital marketing campaigns to attract remote workers.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey investor attraction infrastructure.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Grant support documentation and alignment.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Predictable, SaaS-adjacent recurring support.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Replaces or enhances existing economic development departments.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> National digital marketing campaigns to attract remote workers.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Turnkey investor attraction infrastructure.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Grant support documentation and alignment.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Predictable, SaaS-adjacent recurring support.</li>
                 </ul>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function CommunitiesPage() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-12 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">Marina Models</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">Marina Models</span>
               <div className="h-px w-12 bg-[#FFD700]/50" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-3">Scalable. Flexible. Designed for Every Waterfront.</h2>
@@ -121,14 +121,14 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-white/20 text-white shadow-white/20 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Small Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Curated Foundation Model</h3>
+                <h3 className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle mt-4 mb-2 text-glow-gold-subtle">Curated Foundation Model</h3>
                 <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A carefully curated mix of core boats designed to establish a strong, welcoming waterfront experience.</p>
                 <div className="space-y-3 text-white text-sm text-glow-black-light">
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Coffee / Café</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Pilates or Fitness</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Spa / Recovery</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Culinary or Food Boat</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Select Retail or Discovery</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Coffee / Café</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Pilates or Fitness</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Spa / Recovery</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Culinary or Food Boat</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Select Retail or Discovery</div>
                 </div>
               </div>
             </div>
@@ -140,14 +140,14 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-[#FFD700]/90 text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Medium Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Connected Community Model</h3>
+                <h3 className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle mt-4 mb-2 text-glow-gold-subtle">Connected Community Model</h3>
                 <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A connected system of boats creating a full-day destination blending wellness, culinary, lifestyle, and creative experiences.</p>
                 <div className="space-y-3 text-white text-sm text-glow-black-light">
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Wellness (Pilates, Spa, Fitness)</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Culinary + Coffee</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail + Marketplace</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Creative (Music, Art, Media)</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Office / Co-Working</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Expanded Wellness (Pilates, Spa, Fitness)</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Culinary + Coffee</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Retail + Marketplace</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Creative (Music, Art, Media)</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Office / Co-Working</div>
                 </div>
               </div>
             </div>
@@ -159,15 +159,15 @@ export default function CommunitiesPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase">Large Marina</span>
-                <h3 className="text-2xl font-bold text-[#FFD700] mt-4 mb-2 text-glow-gold-subtle">Fully Connected Destination</h3>
+                <h3 className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle mt-4 mb-2 text-glow-gold-subtle">Fully Connected Destination</h3>
                 <p className="text-white/70 text-sm mb-6 leading-relaxed text-glow-black-light">A fully connected waterfront district designed as a regional or national destination.</p>
                 <div className="space-y-3 text-white text-sm text-glow-black-light">
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Full Wellness & Lifestyle Ecosystem</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Expanded Culinary + Food Experiences</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Retail District on the Water</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Creative + Discovery Programming</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Office / Innovation + Media</div>
-                  <div className="flex items-center gap-2"><span className="text-[#FFD700]">✦</span> Hospitality (Hotel & Live-Work Boats)</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Full Wellness & Lifestyle Ecosystem</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Expanded Culinary + Food Experiences</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Retail District on the Water</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Creative + Discovery Programming</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Office / Innovation + Media</div>
+                  <div className="flex items-center gap-2"><span className="text-[#FFD700] text-glow-gold-subtle ">✦</span> Hospitality (Hotel & Live-Work Boats)</div>
                 </div>
               </div>
             </div>

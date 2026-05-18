@@ -150,7 +150,7 @@ body {
 }
 
 .text-glow-gold-subtle {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 12px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85), 0 0 18px rgba(212, 175, 55, 0.4), 0 0 30px rgba(212, 175, 55, 0.15);
 }
 
 .text-glow-gold {

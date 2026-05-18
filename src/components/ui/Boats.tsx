@@ -16,7 +16,7 @@ const Boats = () => {
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#FFD700]/50" />
-          <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
+          <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">
             The Boats
           </span>
           <div className="h-px w-8 bg-[#FFD700]/50" />
@@ -54,13 +54,13 @@ const Boats = () => {
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
               />
               <div className="absolute inset-0 p-10 flex flex-col justify-end">
-                <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-[#FFD700] transition-colors duration-300 text-glow-black">
+                <h3 className="text-3xl font-bold text-white mb-3 group-hover:text-[#FFD700] text-glow-gold-subtle transition-colors duration-300 text-glow-black">
                   {category.title}
                 </h3>
                 <p className="text-white text-lg max-w-md transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100 text-glow-black">
                   {category.description}
                 </p>
-                <div className="mt-4 flex items-center gap-2 text-[#FFD700] text-sm font-medium transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-200 text-glow-gold-subtle">
+                <div className="mt-4 flex items-center gap-2 text-[#FFD700] text-glow-gold-subtle text-sm font-medium transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-200 text-glow-gold-subtle">
                   <span>{category.boats.length} Vessel{category.boats.length > 1 ? "s" : ""}</span>
                   <svg
                     className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"

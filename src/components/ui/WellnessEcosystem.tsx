@@ -86,7 +86,7 @@ const PodcastPlayer = () => {
                   className="relative h-7 w-auto"
                 />
               </div>
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.25em] uppercase text-glow-gold-subtle">Podcast</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.25em] uppercase text-glow-gold-subtle">Podcast</span>
             </div>
             <h3 className="text-lg md:text-xl font-bold text-white mb-2 text-glow-subtle">
               The Newvion Podcast
@@ -267,7 +267,7 @@ const ecosystemSections = [
 const colorMap: Record<string, string> = {
   teal: "text-teal-400",
   amber: "text-amber-400",
-  gold: "text-[#FFD700]",
+  gold: "text-[#FFD700] text-glow-gold-subtle ",
 };
 
 const WellnessEcosystem = () => {
@@ -287,7 +287,7 @@ const WellnessEcosystem = () => {
         >
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-px w-12 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
+            <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">
               The Model
             </span>
             <div className="h-px w-12 bg-[#FFD700]/50" />
@@ -341,7 +341,7 @@ const WellnessEcosystem = () => {
                   {/* Icon / Mic Section */}
                   <div className="lg:col-span-1 lg:row-span-2 p-4 flex items-center justify-center bg-[#0a1628]/80">
                     {"vimeoId" in section ? (
-                      <div className={`p-4 rounded-2xl bg-[#FFD700]/20 text-[#FFD700]`}>
+                      <div className={`p-4 rounded-2xl bg-[#FFD700]/20 text-[#FFD700] text-glow-gold-subtle `}>
                         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
                         </svg>
@@ -381,11 +381,11 @@ const WellnessEcosystem = () => {
                     {"visitItems" in section && (
                       <div className="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
-                          <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
+                          <h4 className="text-[#FFD700]/80 text-glow-gold-subtle text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
                           <ul className="space-y-2">
                             {(section.visitItems as string[]).map((item) => (
                               <li key={item} className="flex items-start gap-2.5 text-white/80 text-base leading-relaxed text-glow-black">
-                                <span className="text-[#FFD700] mt-1 shrink-0">✦</span>
+                                <span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span>
                                 {item}
                               </li>
                             ))}
@@ -412,7 +412,7 @@ const WellnessEcosystem = () => {
                       <div className="grid md:grid-cols-2 gap-4 mb-6">
                         {(section.extensions as {label: string; desc: string}[]).map((ext) => (
                           <div key={ext.label} className="p-4 rounded-2xl border border-white/10 bg-white/[0.25] hover:bg-white/[0.30] transition-all duration-300">
-                            <div className="text-[#FFD700] font-semibold mb-1 text-glow-subtle">{ext.label}</div>
+                            <div className="text-[#FFD700] text-glow-gold-subtle font-semibold mb-1 text-glow-subtle">{ext.label}</div>
                             <div className="text-white text-sm text-glow-subtle">{ext.desc}</div>
                           </div>
                         ))}
@@ -421,11 +421,11 @@ const WellnessEcosystem = () => {
 
                     {"stats" in section && (
                       <div className="mb-6">
-                        <h4 className="text-[#FFD700]/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Projected Economic Impact (Per Marina)</h4>
+                        <h4 className="text-[#FFD700]/80 text-glow-gold-subtle text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Projected Economic Impact (Per Marina)</h4>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                           {(section.stats as {metric: string; value: string}[]).map((s) => (
                             <div key={s.metric} className="p-3 rounded-xl border border-[#FFD700]/20 bg-[#FFD700]/5">
-                              <div className="text-[#FFD700] text-xl md:text-2xl font-bold text-glow-gold-subtle">{s.value}</div>
+                              <div className="text-[#FFD700] text-glow-gold-subtle text-xl md:text-2xl font-bold text-glow-gold-subtle">{s.value}</div>
                               <div className="text-white/60 text-xs mt-1 text-glow-black-light">{s.metric}</div>
                             </div>
                           ))}
@@ -446,7 +446,7 @@ const WellnessEcosystem = () => {
                             key={item.label}
                             className="p-4 rounded-2xl border border-white/10 bg-white/[0.25] hover:bg-white/[0.30] transition-all duration-300"
                           >
-                            <div className="text-[#FFD700] font-semibold mb-1 text-glow-subtle">{item.label}</div>
+                            <div className="text-[#FFD700] text-glow-gold-subtle font-semibold mb-1 text-glow-subtle">{item.label}</div>
                             <div className="text-white text-sm text-glow-subtle">{item.desc}</div>
                           </div>
                         ))}
@@ -476,7 +476,7 @@ const WellnessEcosystem = () => {
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="h-px w-8 bg-[#FFD700]/30" />
-              <span className="text-[#FFD700] font-semibold text-lg text-glow-gold">Living Well — The Outcome</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle font-semibold text-lg text-glow-gold">Living Well — The Outcome</span>
               <div className="h-px w-8 bg-[#FFD700]/30" />
             </div>
             <p className="text-white mt-4 text-sm text-glow-black-light">

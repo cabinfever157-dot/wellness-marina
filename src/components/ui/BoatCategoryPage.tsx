@@ -29,7 +29,7 @@ const BoatCategoryPage = ({
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">
                 Designed for Living Well
               </span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
@@ -77,11 +77,11 @@ const BoatCategoryPage = ({
 
                   <div className="p-6">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors duration-300 text-glow-subtle">
+                      <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] text-glow-gold-subtle transition-colors duration-300 text-glow-subtle">
                         {item.name}
                       </h3>
                       <svg
-                        className="w-5 h-5 text-white/20 mt-1 transition-all duration-300 group-hover:text-[#FFD700] group-hover:translate-x-1 group-hover:-translate-y-1"
+                        className="w-5 h-5 text-white/20 mt-1 transition-all duration-300 group-hover:text-[#FFD700] text-glow-gold-subtle group-hover:translate-x-1 group-hover:-translate-y-1"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -109,7 +109,7 @@ const BoatCategoryPage = ({
         <div className="mt-16 text-center">
           <Link
             href="/#boats"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#FFD700]/30 text-[#FFD700] hover:bg-[#FFD700]/10 transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#FFD700]/30 text-[#FFD700] text-glow-gold-subtle hover:bg-[#FFD700]/10 transition-all duration-300"
           >
             <svg
               className="w-4 h-4"

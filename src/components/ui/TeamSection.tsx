@@ -35,10 +35,10 @@ const leadershipTeam = [
     color: "from-[#D4AF37] to-[#E5C158]",
   },
   {
-    name: "Greg Tron",
+    name: "Advanced AI Solutions Inc.",
     role: "AI Solutions",
-    bio: "Translates community and demographic data into compelling destination stories and development roadmaps.",
-    initials: "GT",
+    bio: "The architect of revolutionary artificial intelligence systems that don't just optimize - they redefine what's possible.",
+    initials: "AAISI",
     color: "from-teal-500 to-teal-700",
   },
   {
@@ -118,11 +118,60 @@ const PartnerNetworkSection = () => {
       <div className="text-center mb-12">
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-12 bg-[#FFD700]/50" />
-          <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Network</span>
+          <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase text-glow-gold-subtle">Network</span>
           <div className="h-px w-12 bg-[#FFD700]/50" />
         </div>
         <h2 className="text-3xl md:text-5xl font-bold text-white text-glow-subtle">Our Partner Network</h2>
       </div>
+
+        <div className="max-w-5xl mx-auto mb-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="rounded-3xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-4 md:p-5 flex flex-col items-center gap-3">
+            <div className="flex-shrink-0">
+              <img
+                src="/images/newvion-logo.png"
+                alt="Newvion Boat Company logo"
+                className="w-56 h-56 md:w-64 md:h-64 object-contain rounded-2xl"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-white text-glow-subtle mb-2">Newvion Boat Company</h3>
+              <p className="text-white/80 text-glow-black-light leading-relaxed mb-3">
+                Purpose-built luxury vessels designed for the Wellness Marina experience. From concept to craftsmanship, Newvion Boat Company creates the floating sanctuaries that make each marina destination unforgettable.
+              </p>
+              <a
+                href="https://newvionboatco.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#FFD700] text-glow-gold-subtle hover:text-[#E5C158] font-medium transition-colors duration-300"
+              >
+                Visit Newvion Boat Company →
+              </a>
+            </div>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-4 md:p-5 flex flex-col items-center gap-3">
+            <div className="flex-shrink-0">
+              <img
+                src="/images/aaisi-logo.png"
+                alt="Advanced AI Solutions Inc. logo"
+                className="w-56 h-56 md:w-64 md:h-64 object-contain rounded-2xl"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl md:text-2xl font-bold text-white text-glow-subtle mb-2">Advanced AI Solutions Inc.</h3>
+              <p className="text-white/80 text-glow-black-light leading-relaxed mb-3">
+                We architect revolutionary artificial intelligence systems that don't just optimize — they redefine what's possible. From specialized AI agents to enterprise solutions, our work is quietly reshaping entire industries.
+              </p>
+              <a
+                href="https://advancedai-solutions.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[#FFD700] text-glow-gold-subtle hover:text-[#E5C158] font-medium transition-colors duration-300"
+              >
+                Visit Advanced AI Solutions →
+              </a>
+            </div>
+          </div>
+        </div>
 
       <div className="max-w-2xl mx-auto rounded-3xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-8 md:p-12">
         <p className="text-white text-lg leading-relaxed text-center text-glow-black mb-8">
@@ -131,7 +180,7 @@ const PartnerNetworkSection = () => {
 
         {status === "sent" ? (
           <div className="text-center py-6">
-            <div className="text-[#FFD700] text-4xl mb-3 text-glow-gold-subtle">✓</div>
+            <div className="text-[#FFD700] text-glow-gold-subtle text-4xl mb-3 text-glow-gold-subtle">✓</div>
             <p className="text-white text-lg font-medium text-glow-subtle">Thank you for your interest!</p>
             <p className="text-white/70 mt-2 text-glow-black-light">We will be in touch soon.</p>
           </div>
@@ -223,7 +272,7 @@ const TeamSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-12 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Structure</span>
+            <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">Structure</span>
             <div className="h-px w-12 bg-[#FFD700]/50" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white text-glow-subtle">Management Structure</h2>
@@ -240,7 +289,7 @@ const TeamSection = () => {
               className="rounded-2xl border border-white/10 bg-white/[0.28] backdrop-blur-md p-6 hover:border-[#FFD700]/30 transition-all duration-500"
             >
               <div className="flex items-start gap-3">
-                <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
+                <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>
                 <div>
                   <strong className="text-white text-lg text-glow-subtle">{item.name}</strong>
                   <span className="text-white/60 mx-2">—</span>
@@ -257,7 +306,7 @@ const TeamSection = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-12 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Leadership</span>
+            <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">Leadership</span>
             <div className="h-px w-12 bg-[#FFD700]/50" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-white text-glow-subtle">Leadership Team</h2>
@@ -288,7 +337,7 @@ const TeamSection = () => {
                     <h3 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 mb-2 text-glow-subtle">
                       {member.name}
                     </h3>
-                    <p className="text-[#FFD700] text-sm font-medium tracking-wide mb-4 text-glow-gold-subtle">
+                    <p className="text-[#FFD700] text-glow-gold-subtle text-sm font-medium tracking-wide mb-4 text-glow-gold-subtle">
                       {member.role}
                     </p>
                     <p className="text-white text-sm leading-relaxed text-glow-black">
@@ -315,11 +364,11 @@ const TeamSection = () => {
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="h-px w-12 bg-[#FFD700]/50" />
-                <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">Partner</span>
+                <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">Partner</span>
                 <div className="h-px w-12 bg-[#FFD700]/50" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-glow-subtle">Lum&apos;ais</h2>
-              <p className="text-[#FFD700] text-lg font-medium text-glow-gold-subtle">Resort Management & Wellness Operations Partner</p>
+              <p className="text-[#FFD700] text-glow-gold-subtle text-lg font-medium text-glow-gold-subtle">Resort Management & Wellness Operations Partner</p>
             </div>
 
             <div className="space-y-6 text-white leading-relaxed text-lg text-glow-black">
@@ -359,7 +408,7 @@ const TeamSection = () => {
                         <h4 className="text-lg font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 mb-1 text-glow-subtle">
                           {member.name}
                         </h4>
-                        <p className="text-[#FFD700] text-sm font-medium tracking-wide mb-3">
+                        <p className="text-[#FFD700] text-glow-gold-subtle text-sm font-medium tracking-wide mb-3 text-glow-gold-subtle">
                           {member.role}
                         </p>
                         <p className="text-white text-sm leading-relaxed text-glow-black">

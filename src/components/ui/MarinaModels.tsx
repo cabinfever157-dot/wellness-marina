@@ -63,7 +63,7 @@ const MarinaModels = () => {
         >
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-px w-12 bg-[#FFD700]/50" />
-            <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
+            <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">
               Marina Models
             </span>
             <div className="h-px w-12 bg-[#FFD700]/50" />
@@ -91,12 +91,12 @@ const MarinaModels = () => {
                   <span className={`${model.badgeClass} px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase w-fit`}>
                     {model.tier}
                   </span>
-                  <h3 className="text-2xl font-bold text-[#FFD700] mt-5 mb-3 text-glow-gold-subtle">{model.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle mt-5 mb-3 text-glow-gold-subtle">{model.title}</h3>
                   <p className="text-white/80 text-sm mb-6 leading-relaxed flex-1 text-glow-black-light">{model.description}</p>
                   <div className="space-y-3">
                     {model.items.map((item) => (
                       <div key={item} className="flex items-center gap-2.5 text-white text-sm text-glow-black-light">
-                        <span className="text-[#FFD700]">✦</span>
+                        <span className="text-[#FFD700] text-glow-gold-subtle ">✦</span>
                         {item}
                       </div>
                     ))}
@@ -123,7 +123,7 @@ const MarinaModels = () => {
             </p>
             <div className="flex items-center justify-center gap-3 mt-6">
               <div className="h-px w-8 bg-[#FFD700]/30" />
-              <span className="text-[#FFD700] font-semibold text-sm tracking-wider uppercase text-glow-gold-subtle">Scalable by Design</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle font-semibold text-sm tracking-wider uppercase text-glow-gold-subtle">Scalable by Design</span>
               <div className="h-px w-8 bg-[#FFD700]/30" />
             </div>
           </div>

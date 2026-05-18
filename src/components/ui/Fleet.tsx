@@ -66,7 +66,7 @@ const Fleet = () => {
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#FFD700]/50" />
-          <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">
+          <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">
             The Fleet
           </span>
           <div className="h-px w-8 bg-[#FFD700]/50" />
@@ -102,11 +102,11 @@ const Fleet = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-start justify-between">
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] transition-colors text-glow-subtle">
+                    <h3 className="text-xl font-bold text-white group-hover:text-[#FFD700] text-glow-gold-subtle transition-colors text-glow-subtle">
                       {item.name}
                     </h3>
                     <svg
-                      className="w-5 h-5 text-slate-500 mt-1 transition-all duration-300 group-hover:text-[#FFD700] group-hover:translate-x-1"
+                      className="w-5 h-5 text-slate-500 mt-1 transition-all duration-300 group-hover:text-[#FFD700] text-glow-gold-subtle group-hover:translate-x-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -135,7 +135,7 @@ const Fleet = () => {
       >
         <p className="text-slate-400 text-sm">
           Plus Vision Wear Boutique and Live-Work Vision Care boats.{" "}
-          <Link href="/fleet" className="text-[#FFD700] hover:underline cursor-pointer">
+          <Link href="/fleet" className="text-[#FFD700] text-glow-gold-subtle hover:underline cursor-pointer">
             View the complete fleet →
           </Link>
         </p>

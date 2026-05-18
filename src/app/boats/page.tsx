@@ -13,7 +13,7 @@ export default function BoatsPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">Designed for Living Well</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">Designed for Living Well</span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">The Boats</h1>

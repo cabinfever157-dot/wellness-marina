@@ -15,7 +15,7 @@ export default function SponsorsPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">For Sponsors</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">For Sponsors</span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Reach Authentic Rural Markets</h1>
@@ -33,16 +33,16 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Physical Boat Naming Rights</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">Build Offsets Available</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Build Offsets Available</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   National and regional brands can sponsor individual live-work boat concepts, securing naming rights, co-branding, and product placement, while actively funding health and economic development.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Pharmacy & Healthcare</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Regional health systems.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Dental</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Colgate, Aspen Dental, equipment brands.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Culinary</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Food/beverage brands, kitchen equipment, regional grocers.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Pilates & Wellness</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Athletic apparel, fitness equipment, spa brands.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Creator & Podcast</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Technology, microphone, and camera companies.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Pharmacy & Healthcare</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Regional health systems.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Dental</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Colgate, Aspen Dental, equipment brands.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Culinary</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Food/beverage brands, kitchen equipment, regional grocers.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Pilates & Wellness</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Athletic apparel, fitness equipment, spa brands.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Creator & Podcast</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Technology, microphone, and camera companies.</span></div></li>
                 </ul>
               </div>
             </div>
@@ -53,16 +53,16 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Digital Ecosystem Sponsorships</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">Tiered Sponsorship Options</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Tiered Sponsorship Options</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   Directly fund access to critical health content for underserved populations through our Rural Connect platform. 83% of rural residents cite transportation as a barrier to care.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Community Champion</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">416 free memberships + content series naming rights.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Health Partner</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">166 free memberships + primary logo placement.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Program Supporter</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">83 free memberships + featured local listing.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Event Sponsor</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Underwrites one live community health event.</span></div></li>
-                  <li className="flex items-start gap-3"><span className="text-[#FFD700] mt-1 shrink-0">✦</span><div><strong className="text-white">Webinar Underwriting</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Brand in front of a national audience of city managers.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Community Champion</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">416 free memberships + content series naming rights.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Health Partner</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">166 free memberships + primary logo placement.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Program Supporter</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">83 free memberships + featured local listing.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Event Sponsor</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Underwrites one live community health event.</span></div></li>
+                  <li className="flex items-start gap-3"><span className="text-[#FFD700] text-glow-gold-subtle mt-1 shrink-0">✦</span><div><strong className="text-white">Webinar Underwriting</strong><span className="text-white/60 mx-1.5">—</span><span className="text-white/80">Brand in front of a national audience of city managers.</span></div></li>
                 </ul>
               </div>
             </div>

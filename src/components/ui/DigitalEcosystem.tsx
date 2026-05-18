@@ -17,7 +17,7 @@ const DigitalEcosystem = () => {
       >
         <div className="flex items-center justify-center gap-3 mb-4">
           <div className="h-px w-8 bg-[#FFD700]/50" />
-          <span className="text-[#FFD700] text-xs font-medium tracking-[0.3em] uppercase">
+          <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">
             Digital Ecosystem
           </span>
           <div className="h-px w-8 bg-[#FFD700]/50" />
@@ -40,11 +40,11 @@ const DigitalEcosystem = () => {
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-6">
                 <div className="p-4 rounded-2xl bg-[#FFD700]/10 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
-                  <svg className="w-8 h-8 text-[#FFD700]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                  <svg className="w-8 h-8 text-[#FFD700] text-glow-gold-subtle " fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                   </svg>
                 </div>
-                <h3 className="text-3xl font-bold text-[#FFD700] text-glow-gold">Newvion Club</h3>
+                <h3 className="text-3xl font-bold text-[#FFD700] text-glow-gold-subtle  text-glow-gold">Newvion Club</h3>
               </div>
               <p className="text-white leading-relaxed mb-5 text-glow-black-light">
                 A multi-tiered membership ecosystem that integrates digital wellness with physical marina experiences — designed to scale from national digital engagement to exclusive, location-based communities.
@@ -54,15 +54,15 @@ const DigitalEcosystem = () => {
                 <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-[#FFD700]/80 text-glow-gold-subtle">Membership Tiers</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
-                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] shrink-0 text-glow-gold-subtle">Digital</div>
+                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] text-glow-gold-subtle shrink-0 text-glow-gold-subtle">Digital</div>
                     <div className="text-white/80 text-sm leading-relaxed text-glow-black-light"><span className="text-white font-semibold">Scalable Access</span> — Virtual wellness classes, culinary content, and early event access.</div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] shrink-0 text-glow-gold-subtle">Marina</div>
+                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] text-glow-gold-subtle shrink-0 text-glow-gold-subtle">Marina</div>
                     <div className="text-white/80 text-sm leading-relaxed text-glow-black-light"><span className="text-white font-semibold">Local Experience</span> — On-site fitness boats, rooftop social spaces, and priority booking.</div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] shrink-0 text-glow-gold-subtle">Founding</div>
+                    <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] text-glow-gold-subtle shrink-0 text-glow-gold-subtle">Founding</div>
                     <div className="text-white/80 text-sm leading-relaxed text-glow-black-light"><span className="text-white font-semibold">Exclusivity</span> — Limited early-access, preferred pricing, and private VIP events.</div>
                   </div>
                 </div>
@@ -72,19 +72,19 @@ const DigitalEcosystem = () => {
                 <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-[#FFD700]/80 text-glow-gold-subtle">Core Offerings</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-white/80 text-sm leading-relaxed text-glow-black-light">
-                    <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>
                     <span><span className="text-white font-semibold">Wellness & Fitness</span> — A blend of live/recorded digital content and physical wellness boats at specific marinas.</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-white/80 text-sm leading-relaxed text-glow-black-light">
-                    <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>
                     <span><span className="text-white font-semibold">Culinary & Social</span> — Programming featuring guest chefs, lifestyle workshops, and premium social spaces.</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-white/80 text-sm leading-relaxed text-glow-black-light">
-                    <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>
                     <span><span className="text-white font-semibold">Strategic Partnerships</span> — Collaboration with tastemakers, wellness leaders, and content creators to drive programming.</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-white/80 text-sm leading-relaxed text-glow-black-light">
-                    <span className="text-[#FFD700] mt-0.5 shrink-0">✦</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>
                     <span><span className="text-white font-semibold">Experiential Access</span> — Membership-only benefits and individual ticketed workshops or private sessions.</span>
                   </li>
                 </ul>

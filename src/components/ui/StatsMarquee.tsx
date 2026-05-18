@@ -34,7 +34,7 @@ export default function StatsMarquee() {
       <div className="mb-8">
         <div className="flex items-center justify-center gap-3 mb-8">
           <div className="h-px w-8 bg-[#FFD700]/30" />
-          <span className="text-[#FFD700]/60 text-xs font-medium tracking-[0.3em] uppercase">
+          <span className="text-[#FFD700]/60 text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">
             The Impact
           </span>
           <div className="h-px w-8 bg-[#FFD700]/30" />
@@ -45,7 +45,7 @@ export default function StatsMarquee() {
               key={stat.label}
               className="flex items-center gap-4 px-8 py-4 rounded-2xl border border-white/5 bg-white/[0.30] backdrop-blur-sm mx-2"
             >
-              <div className="text-2xl font-bold text-[#FFD700] whitespace-nowrap text-glow-gold-subtle">{stat.value}</div>
+              <div className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle whitespace-nowrap text-glow-gold-subtle">{stat.value}</div>
               <div className="text-xs text-white max-w-[160px] leading-tight text-glow-black-light">{stat.label}</div>
             </div>
           ))}

@@ -35,7 +35,7 @@ const Header = () => {
       <nav className="w-full px-6 md:px-8 py-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center relative">
+          <a href="https://newvion.com" target="_blank" rel="noopener noreferrer" className="flex items-center relative">
             <div className="absolute inset-0 bg-[#D4AF37]/25 rounded-full blur-2xl scale-150" />
             <Image
               src="/images/logo.png"
@@ -45,7 +45,7 @@ const Header = () => {
               className="object-contain relative z-10"
               style={{ width: 'auto', height: 'auto' }}
             />
-          </Link>
+          </a>
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-1">
@@ -60,7 +60,7 @@ const Header = () => {
                 }`}
               >
                 {link.label}
-              </Link>
+            </Link>
             ))}
           </div>
 

@@ -15,7 +15,7 @@ export default function EntrepreneursPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">For Entrepreneurs</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">For Entrepreneurs</span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Launch Your Business on the Water</h1>
@@ -33,16 +33,16 @@ export default function EntrepreneursPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Capital-Efficient Ownership</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">Turnkey Assets</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Turnkey Assets</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   Avoid zoning headaches, massive build-out costs, and construction delays by launching a mobile, scalable waterfront business with a standard 50&apos;-0&quot; x 15&apos;-9&quot; footprint.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Immediate physical activation with multi-level floating assets.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Strategic manufacturing partnership with East Coast Houseboats LLC.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Favorable 3% lease financing available to qualified operators.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Modular design scales from culinary kitchens to medical clinics.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Break-even requiring only 15-20 hours of work per week.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Immediate physical activation with multi-level floating assets.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Strategic manufacturing partnership with East Coast Houseboats LLC.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Favorable 3% lease financing available to qualified operators.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Modular design scales from culinary kitchens to medical clinics.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Break-even requiring only 15-20 hours of work per week.</li>
                 </ul>
               </div>
             </div>
@@ -53,16 +53,16 @@ export default function EntrepreneursPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">The Complete License Package</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">More Than Just a Boat</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">More Than Just a Boat</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   You aren&apos;t just buying maritime real estate — you&apos;re acquiring a proven, curated business model with an integrated digital marketing platform.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Full Newvion brand identity, logo usage, and standards guide.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Pre-configured equipment packages (e.g., Pilates studio with Technogym).</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Integrated Starlink, networking, and streaming systems.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Direct integration into the Newvion national digital marketing ecosystem.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Built-in audience through the Newvion Club network.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Full Newvion brand identity, logo usage, and standards guide.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Pre-configured equipment packages (e.g., Pilates studio with Technogym).</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Integrated Starlink, networking, and streaming systems.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Direct integration into the Newvion national digital marketing ecosystem.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Built-in audience through the Newvion Club network.</li>
                 </ul>
               </div>
             </div>
@@ -87,7 +87,7 @@ export default function EntrepreneursPage() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {["Healthcare", "Retail", "Lifestyle", "Discovery", "Hotel"].map((cat) => (
-                    <span key={cat} className="px-4 py-2 rounded-full border border-[#FFD700]/30 bg-[#FFD700]/10 text-[#FFD700] text-sm font-medium text-glow-gold-subtle">{cat}</span>
+                    <span key={cat} className="px-4 py-2 rounded-full border border-[#FFD700]/30 bg-[#FFD700]/10 text-[#FFD700] text-glow-gold-subtle text-sm font-medium text-glow-gold-subtle">{cat}</span>
                   ))}
                 </div>
               </div>

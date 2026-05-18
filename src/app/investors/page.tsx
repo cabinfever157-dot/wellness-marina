@@ -15,7 +15,7 @@ export default function InvestorsPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-[#FFD700]/50" />
-              <span className="text-[#FFD700] text-xs font-medium tracking-[0.2em] uppercase">For Investors</span>
+              <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.2em] uppercase">For Investors</span>
               <div className="h-px w-8 bg-[#FFD700]/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Discover Untapped Markets</h1>
@@ -33,16 +33,16 @@ export default function InvestorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Rural OZ Business Funds</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">Tax-Advantaged Returns</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Tax-Advantaged Returns</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   Themed, grouped Opportunity Zone funds targeting designated rural waterfronts and inland hubs. Move away from speculative real estate and into active, operating businesses.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Massive federal tax benefits for accredited investors and family offices.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Deferral of capital gains and elimination of tax on new gains (10+ year hold).</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Direct investment into high-impact, revenue-generating boat deployments.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Immediate capital deployment via turnkey boat assets.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Predictable recurring platform revenue backing the ecosystem.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Massive federal tax benefits for accredited investors and family offices.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Deferral of capital gains and elimination of tax on new gains (10+ year hold).</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Direct investment into high-impact, revenue-generating boat deployments.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Immediate capital deployment via turnkey boat assets.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Predictable recurring platform revenue backing the ecosystem.</li>
                 </ul>
               </div>
             </div>
@@ -53,16 +53,16 @@ export default function InvestorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">E-2 Treaty Investor Visas</h2>
-                <div className="text-[#FFD700] text-2xl font-light mb-6 text-glow-gold-subtle">US Residency via Investment</div>
+                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">US Residency via Investment</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   A seamless pathway for international capital (Canada, UK, Germany, Japan, etc.) seeking US residency through direct business investment in a supported ecosystem.
                 </p>
                 <ul className="space-y-4 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Turnkey boat concepts satisfy the &quot;active business&quot; requirement.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Newvion acts as the operational support system and brand licensor.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Removes the friction of starting an unproven concept in a new country.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Integrates the investor into a national network of like-minded operators.</li>
-                  <li className="flex items-start"><span className="text-[#FFD700] mr-4 mt-1">✦</span> Built-in audience through the Newvion Community Platform.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Turnkey boat concepts satisfy the &quot;active business&quot; requirement.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Newvion acts as the operational support system and brand licensor.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Removes the friction of starting an unproven concept in a new country.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Integrates the investor into a national network of like-minded operators.</li>
+                  <li className="flex items-start"><span className="text-[#FFD700] text-glow-gold-subtle mr-4 mt-1">✦</span> Built-in audience through the Newvion Community Platform.</li>
                 </ul>
               </div>
             </div>
@@ -87,12 +87,12 @@ export default function InvestorsPage() {
 
             <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10 h-full flex flex-col justify-center group hover:border-[#FFD700]/30 transition-all duration-500">
               <div className="relative z-10">
-                <h2 className="text-2xl font-bold text-[#FFD700] mb-3 text-glow-gold">Rural OZ Investment Summit</h2>
+                <h2 className="text-2xl font-bold text-[#FFD700] text-glow-gold-subtle mb-3 text-glow-gold">Rural OZ Investment Summit</h2>
                 <p className="text-lg text-white mb-6 text-glow-black">
                   Join our premium, exclusive sessions for family offices and institutional capital. Gain direct access to high-quality rural OZ deal flow and 1:1 introductions to pre-qualified municipal leaders.
                 </p>
                 <div className="text-2xl font-light text-white mb-6 text-glow-subtle">Limited Seating (15-40 Capacity)</div>
-                <Link href="/" className="inline-block border border-[#FFD700] text-[#FFD700] font-bold text-lg px-8 py-3 rounded-full hover:bg-[#FFD700] hover:text-[#0d1b3e] transition-colors cursor-pointer self-start">
+                <Link href="/" className="inline-block border border-[#FFD700] text-[#FFD700] text-glow-gold-subtle font-bold text-lg px-8 py-3 rounded-full hover:bg-[#FFD700] hover:text-[#0d1b3e] transition-colors cursor-pointer self-start">
                   Reserve Your Seat
                 </Link>
               </div>
@@ -114,21 +114,21 @@ export default function InvestorsPage() {
                 <h2 className="text-3xl font-bold text-white mb-6 text-glow-subtle">The Three-Engine Economic Model</h2>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">1</div>
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] text-glow-gold-subtle font-bold text-sm">1</div>
                     <div>
 <h3 className="text-white font-semibold text-glow-subtle">Grant Funding</h3>
                        <p className="text-white text-sm text-glow-black-light">Federal RHTP, HRSA, USDA Rural Development — non-dilutive capital</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">2</div>
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] text-glow-gold-subtle font-bold text-sm">2</div>
                     <div>
 <h3 className="text-white font-semibold text-glow-subtle">Resort Revenue</h3>
                        <p className="text-white text-sm text-glow-black-light">15M+ drive market generating commercial revenue from hospitality</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] font-bold text-sm">3</div>
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFD700]/20 flex items-center justify-center text-[#FFD700] text-glow-gold-subtle font-bold text-sm">3</div>
                     <div>
 <h3 className="text-white font-semibold text-glow-subtle">Investment Returns</h3>
                        <p className="text-white text-sm text-glow-black-light">OZ tax-free appreciation + E-2 turnkey businesses + Boat Fund</p>
