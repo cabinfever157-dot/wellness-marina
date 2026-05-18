@@ -27,24 +27,28 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (showIntro) {
-      // Total intro duration: 5s animations + 1.5s fade out = 6.5s
+    if (showIntro && !showHomepage) {
       const timer = setTimeout(() => {
         setShowHomepage(true);
         setTimeout(() => {
           setShowIntro(false);
           sessionStorage.setItem("introShown", "true");
-        }, 1500); // Match exit transition
+        }, 1500);
       }, 6000);
       
       return () => clearTimeout(timer);
     }
-  }, [showIntro]);
+  }, [showIntro, showHomepage]);
+
+  const handleSkip = () => {
+    setShowHomepage(true);
+    setTimeout(() => setShowIntro(false), 1500);
+  };
 
   return (
     <>
       <AnimatePresence>
-        {showIntro && <IntroSequence />}
+        {showIntro && <IntroSequence onSkip={handleSkip} />}
       </AnimatePresence>
       
       <AnimatePresence>
