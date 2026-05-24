@@ -12,7 +12,6 @@ const stats = [
 ];
 
 const partners = [
-  "Mentavi Health",
   "NorthStar Healthcare",
   "Hendry Regional Medical Center",
   "Florida Gulf Coast University",

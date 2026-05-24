@@ -15,7 +15,7 @@ export default function MentalHealthPage() {
           <div className="text-center px-4">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="h-px w-8 bg-teal-400/50" />
-              <span className="text-teal-400 text-xs font-medium tracking-[0.2em] uppercase">Powered by Mentavi Health</span>
+              <span className="text-teal-400 text-xs font-medium tracking-[0.2em] uppercase">Mental Health</span>
               <div className="h-px w-8 bg-teal-400/50" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-white">Mental Health Boat</h1>
@@ -33,11 +33,11 @@ export default function MentalHealthPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <div className="mb-4">
-                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Powered by Mentavi Health</span>
+                  <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Mental Health</span>
                 </div>
                 <h2 className="text-2xl font-bold text-white mb-4 text-glow-subtle">Grand Rapids-Based, Serving 40+ States</h2>
                 <p className="text-white text-lg leading-relaxed text-glow-black">
-                  Founded in 2018 as ADHD Online, Mentavi Health provides evidence-based mental health diagnosis and treatment across the country. The Mental Health Boat serves as a physical extension of Mentavi&apos;s digital platform, bringing their established network of clinicians directly into rural community spaces that pure home-based telehealth cannot effectively reach.
+                  The Mental Health Boat delivers evidence-based mental health diagnosis and treatment directly into rural community spaces, bringing an established network of clinicians to waterfront locations that pure home-based telehealth cannot effectively reach.
                 </p>
               </div>
               <div className="relative h-64 rounded-xl overflow-hidden">
@@ -99,7 +99,7 @@ export default function MentalHealthPage() {
                   A preventative wellness floor offering screening, coaching, and employer benefit programming — making mental health care accessible before it becomes a crisis.
                 </p>
                 <ul className="space-y-3 text-white text-glow-black-light">
-                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Mentavi Mental Wellness Snapshot — screening across 15 clinically validated conditions.</li>
+                  <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Mental Wellness Snapshot — screening across 15 clinically validated conditions.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Mental wellness coaching and sleep coaching.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Employer benefit mental health programming.</li>
                   <li className="flex items-start"><span className="text-teal-400 mr-3 mt-1">✦</span> Support services for university students.</li>
@@ -112,7 +112,7 @@ export default function MentalHealthPage() {
         {/* Mentavi Services */}
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
-            <h2 className="text-2xl font-bold text-white mb-8 text-center text-glow-subtle">Mentavi Health Services</h2>
+            <h2 className="text-2xl font-bold text-white mb-8 text-center text-glow-subtle">Mental Health Services</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { title: "Individual Therapy", desc: "Doctorate-level psychologists providing evidence-based treatment for a wide range of conditions." },

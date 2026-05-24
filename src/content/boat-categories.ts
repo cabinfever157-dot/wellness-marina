@@ -32,7 +32,7 @@ export const boatCategories: BoatCategory[] = [
       },
       {
         name: "Mental Health Boat",
-        description: "Powered by Mentavi Health. Soundproofed counseling rooms, private check-in, rooftop yoga pavilion.",
+        description: "Soundproofed counseling rooms, private check-in, rooftop yoga pavilion.",
         href: "/boats/mental-health",
         image: "/images/Mental_Health.png",
         tag: "Wellness",

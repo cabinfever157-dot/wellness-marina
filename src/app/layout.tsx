@@ -41,7 +41,7 @@ export default function RootLayout({
               rel="noopener noreferrer"
               className="text-white/50 text-sm hover:text-white/80 transition-colors"
             >
-              &copy; {new Date().getFullYear()} Advanced A.I. Solutions. Redefining what&apos;s possible
+              {`© ${new Date().getFullYear()} Advanced A.I. Solutions. Redefining what's possible.`}
             </a>
           </div>
         </footer>
