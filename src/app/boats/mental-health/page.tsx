@@ -27,7 +27,7 @@ export default function MentalHealthPage() {
       </div>
 
       <div className="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 pb-24 space-y-16">
-        {/* Mentavi Partnership */}
+        {/* Partnership */}
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-teal-500/20 bg-white/25 backdrop-blur-md p-10">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -35,7 +35,7 @@ export default function MentalHealthPage() {
                 <div className="mb-4">
                   <span className="bg-teal-600 text-white shadow-teal-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Mental Health</span>
                 </div>
-                <h2 className="text-2xl font-bold text-white mb-4 text-glow-subtle">Grand Rapids-Based, Serving 40+ States</h2>
+                <h2 className="text-2xl font-bold text-white mb-4 text-glow-subtle">Accessible Mental Health Care</h2>
                 <p className="text-white text-lg leading-relaxed text-glow-black">
                   The Mental Health Boat delivers evidence-based mental health diagnosis and treatment directly into rural community spaces, bringing an established network of clinicians to waterfront locations that pure home-based telehealth cannot effectively reach.
                 </p>
@@ -109,7 +109,7 @@ export default function MentalHealthPage() {
           </div>
         </FadeIn>
 
-        {/* Mentavi Services */}
+        {/* Services */}
         <FadeIn>
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
             <h2 className="text-2xl font-bold text-white mb-8 text-center text-glow-subtle">Mental Health Services</h2>
@@ -191,6 +191,145 @@ export default function MentalHealthPage() {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/images/Mental_Health.png')" }}
               />
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* Brain Wellness Boat — Powered by One Hype Wellness */}
+        <div className="relative pt-8">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="h-px w-12 bg-purple-400/50" />
+            <span className="text-purple-400 text-xs font-medium tracking-[0.2em] uppercase">Also Available</span>
+            <div className="h-px w-12 bg-purple-400/50" />
+          </div>
+          <h2 className="text-4xl font-bold text-white text-center mb-2 text-glow-subtle">Brain Wellness Boat</h2>
+          <p className="text-purple-300 text-sm font-medium text-center mb-12 tracking-wide uppercase">Powered by One Hype Wellness</p>
+        </div>
+
+        <FadeIn>
+          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-white/25 backdrop-blur-md p-10">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="mb-4">
+                  <span className="bg-purple-600 text-white shadow-purple-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Brain Health</span>
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-4 text-glow-subtle">AI-Powered Brain Wellness on the Water</h2>
+                <p className="text-white text-lg leading-relaxed text-glow-black">
+                  Brain health access is unequal across America. Rural waterfront communities face cognitive decline, sleep disorders, and neurological conditions at rates equal to or higher than urban populations — yet access to advanced neuro wellness technology can be hours away. The Brain Wellness Boat, powered by One Hype Wellness, brings a private, fully equipped brain wellness platform directly to the dock, whether in a small lakeside town or a major waterfront city.
+                </p>
+              </div>
+              <div className="relative h-64 rounded-xl overflow-hidden">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('/images/Wellness_Retreat_Boat.png')" }}
+                />
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* Main Deck — Flagship Technologies */}
+        <FadeIn>
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md p-10">
+            <div className="mb-4 text-center">
+              <span className="bg-purple-600 text-white shadow-purple-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Main Deck — Private Treatment</span>
+            </div>
+            <h2 className="text-2xl font-bold text-white mb-8 text-center text-glow-subtle">Flagship Technologies</h2>
+            <p className="text-white text-center max-w-3xl mx-auto mb-8 text-glow-black">
+              Three private soundproofed treatment rooms deliver One Hype's AI-powered neuro wellness technology, trusted in 40+ countries with 2,000+ installations worldwide — used by NASA, Fairmont Hotels, Six Senses Resorts, and leading clinics globally.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { title: "One Brain X", desc: "5-minute AI-powered brain mapping and neurofeedback built on the world's largest clinical QEEG database." },
+                { title: "One Hyperbaric", desc: "Smart oxygen chambers with eight AI-optimized protocols delivering up to 1,500% more oxygen into blood plasma." },
+                { title: "One Light", desc: "Red and near-infrared therapy beds with eight intelligent protocols for recovery, sleep, and cognitive performance." },
+              ].map((tech) => (
+                <div key={tech.title} className="rounded-xl border border-purple-500/10 bg-purple-500/5 p-6 text-center hover:bg-purple-500/10 transition-all duration-300">
+                  <h3 className="text-lg font-bold text-purple-400 mb-2 text-glow-purple">{tech.title}</h3>
+                  <p className="text-white text-sm leading-relaxed text-glow-black-light">{tech.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* Upper Deck — Community & Employer Wellness */}
+        <FadeIn>
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
+            <div className="grid lg:grid-cols-2">
+              <div className="relative h-64 lg:h-auto min-h-[300px]">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('/images/Mental_Wellness_3.png')" }}
+                />
+              </div>
+              <div className="p-10 flex flex-col justify-center">
+                <div className="mb-4">
+                  <span className="bg-purple-600 text-white shadow-purple-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Upper Deck — Community & Employer Wellness</span>
+                </div>
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">Brain Health for Everyone</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
+                  Beyond private treatment, the Brain Wellness Boat serves as a community brain health hub — offering screening, coaching, and employer programming backed by One Hype's AI protocols.
+                </p>
+                <ul className="space-y-3 text-white text-glow-black-light">
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> One AI Brain Health Screening — neuro baseline assessment tracking cognition, focus, emotional regulation, sleep, memory, and executive function.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Brain performance coaching — optimization, stress resilience, and daily performance support.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Employer brain health programming — partnering with regional employers.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> University student brain health and performance services.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* Rooftop Pavilion */}
+        <FadeIn>
+          <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/25 backdrop-blur-md">
+            <div className="grid lg:grid-cols-2">
+              <div className="p-10 flex flex-col justify-center lg:order-2">
+                <div className="mb-4">
+                  <span className="bg-[#FFD700] text-black shadow-[#FFD700]/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Rooftop Pavilion</span>
+                </div>
+                <h2 className="text-3xl font-bold text-white mb-4 text-glow-subtle">The Most Important Feature</h2>
+                <p className="text-white text-lg leading-relaxed mb-6 text-glow-black">
+                  The open-air waterfront deck hosts yoga sessions, mindfulness programming, peer support gatherings, and community wellness events — drawing people to the marina in a stigma-free environment before they ever step inside for a private session. The path from pavilion to brain health screening becomes natural and destigmatized.
+                </p>
+                <ul className="space-y-3 text-white text-glow-black-light">
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Yoga and mindfulness sessions on the water.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Peer support and community wellness events.</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> University neuroscience intern placement (U of M, MSU, Western Michigan).</li>
+                  <li className="flex items-start"><span className="text-purple-400 mr-3 mt-1">✦</span> Stigma-free gathering space overlooking the marina.</li>
+                </ul>
+              </div>
+              <div className="relative h-64 lg:h-auto min-h-[300px] lg:order-1">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('/images/Mental_Wellness_4.png')" }}
+                />
+              </div>
+            </div>
+          </div>
+        </FadeIn>
+
+        {/* One Hype Wellness */}
+        <FadeIn>
+          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-white/25 backdrop-blur-md p-10">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="mb-4">
+                  <span className="bg-purple-600 text-white shadow-purple-400/50 shadow-lg px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide uppercase backdrop-blur-md">Powered by One Hype Wellness</span>
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-4 text-glow-subtle">Proven Technology, Global Reach</h2>
+                <p className="text-white text-lg leading-relaxed text-glow-black">
+                  One Hype Wellness designs AI-powered neuro wellness technology trusted in 40+ countries with more than 2,000 installations worldwide — used by NASA, Fairmont Hotels, Six Senses Resorts, and leading clinics globally. Built on the world's largest clinical QEEG database and backed by NASA-funded research, their three flagship systems are unified through One AI, an intelligence layer that measures baseline brain health, personalises treatment protocols, and proves results over time.
+                </p>
+              </div>
+              <div className="relative h-64 rounded-xl overflow-hidden">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: "url('/images/Wellness_Retreat_Boat.png')" }}
+                />
+              </div>
             </div>
           </div>
         </FadeIn>
