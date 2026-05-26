@@ -356,13 +356,7 @@ const WellnessEcosystem = () => {
                   {/* Content Section */}
                   <div className="lg:col-span-4 p-8 lg:p-12">
                     <h3 className={`text-2xl md:text-3xl font-bold ${colorMap[section.color]} mb-6 text-glow-subtle`}>
-                      {"vimeoId" in section ? (
-                        <>
-                          Examining the Evolving Landscape of<br />the Global Wellness Market
-                        </>
-                      ) : (
-                        section.title
-                      )}
+                      {section.title}
                     </h3>
 
                     {"vimeoId" in section && !("visitItems" in section) && (
