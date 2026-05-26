@@ -141,6 +141,11 @@ body {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 1);
 }
 
+.text-glow-white {
+  color: #0a0a0a;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 25px rgba(255, 255, 255, 0.3), 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 .text-glow-black-light {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.68), 0 0 15px rgba(0, 0, 0, 0.53), 0 2px 3px rgba(0, 0, 0, 0.75);
 }

@@ -337,7 +337,7 @@ const TeamSection = () => {
                     <h3 className="text-xl font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 mb-2 text-glow-subtle">
                       {member.name}
                     </h3>
-                    <p className="text-[#FFD700] text-glow-gold-subtle text-sm font-medium tracking-wide mb-4 text-glow-gold-subtle">
+                    <p className="text-glow-white text-sm font-medium tracking-wide mb-4">
                       {member.role}
                     </p>
                     <p className="text-white text-sm leading-relaxed text-glow-black">
@@ -364,11 +364,11 @@ const TeamSection = () => {
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="h-px w-12 bg-[#FFD700]/50" />
-                <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-medium tracking-[0.3em] uppercase">Partner</span>
+                <span className="text-glow-white text-xs font-medium tracking-[0.3em] uppercase">Partner</span>
                 <div className="h-px w-12 bg-[#FFD700]/50" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 text-glow-subtle">Lum&apos;ais</h2>
-              <p className="text-[#FFD700] text-glow-gold-subtle text-lg font-medium text-glow-gold-subtle">Resort Management & Wellness Operations Partner</p>
+              <p className="text-glow-white text-lg font-medium">Resort Management & Wellness Operations Partner</p>
             </div>
 
             <div className="space-y-6 text-white leading-relaxed text-lg text-glow-black">
@@ -408,7 +408,7 @@ const TeamSection = () => {
                         <h4 className="text-lg font-bold text-white group-hover:text-[#D4AF37] transition-colors duration-300 mb-1 text-glow-subtle">
                           {member.name}
                         </h4>
-                        <p className="text-[#FFD700] text-glow-gold-subtle text-sm font-medium tracking-wide mb-3 text-glow-gold-subtle">
+                        <p className="text-glow-white text-sm font-medium tracking-wide mb-3">
                           {member.role}
                         </p>
                         <p className="text-white text-sm leading-relaxed text-glow-black">

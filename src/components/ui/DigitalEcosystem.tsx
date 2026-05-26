@@ -51,7 +51,7 @@ const DigitalEcosystem = () => {
               </p>
 
               <div className="space-y-3 mb-5">
-                <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-[#FFD700]/80 text-glow-gold-subtle">Membership Tiers</h4>
+                <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-glow-white">Membership Tiers</h4>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <div className="px-2.5 py-1 text-xs font-bold tracking-wider uppercase bg-[#FFD700]/15 border border-[#FFD700]/30 rounded-lg text-[#FFD700] text-glow-gold-subtle shrink-0 text-glow-gold-subtle">Digital</div>
@@ -69,7 +69,7 @@ const DigitalEcosystem = () => {
               </div>
 
               <div className="space-y-2.5 mb-5">
-                <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-[#FFD700]/80 text-glow-gold-subtle">Core Offerings</h4>
+                <h4 className="text-sm font-semibold tracking-[0.2em] uppercase text-glow-white">Core Offerings</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2.5 text-white/80 text-sm leading-relaxed text-glow-black-light">
                     <span className="text-[#FFD700] text-glow-gold-subtle mt-0.5 shrink-0">✦</span>

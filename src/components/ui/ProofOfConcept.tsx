@@ -82,7 +82,7 @@ const ProofOfConcept = () => {
                     }}
                   />
                   <div className="absolute bottom-6 left-6 lg:hidden">
-                    <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-semibold tracking-wider uppercase text-glow-gold-subtle">{market.role}</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-semibold tracking-wider uppercase">{market.role}</span>
                     <h3 className="text-3xl font-bold text-white mt-1 text-glow-subtle">{market.name}</h3>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ const ProofOfConcept = () => {
                 {/* Content Side */}
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="hidden lg:block mb-2">
-                    <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-semibold tracking-wider uppercase text-glow-gold-subtle">{market.role}</span>
+                    <span className="text-[#FFD700] text-glow-gold-subtle text-xs font-semibold tracking-wider uppercase">{market.role}</span>
                     <h3 className="text-3xl font-bold text-white mt-1 text-glow-subtle">{market.name}</h3>
                   </div>
 

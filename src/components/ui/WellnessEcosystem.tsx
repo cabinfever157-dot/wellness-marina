@@ -190,7 +190,7 @@ const VideoThumbnail = ({ vimeoId, thumbnailSrc }: { vimeoId: string; thumbnailS
 const ecosystemSections = [
   {
     title: "Healthcare is the Anchor",
-    content: "Primary care, dental, mental health, pharmacy, and preventive services are delivered directly within the marina through partnerships with regional healthcare providers and FQHCs. Care is offered on a sliding scale or subsidized basis, ensuring access for those who need it most. Healthcare becomes part of daily life—not something delayed until crisis.",
+    content: "Primary care, dental, brain wellness, pharmacy, and preventive services are delivered directly within the marina through partnerships with regional healthcare providers and FQHCs. Care is offered on a sliding scale or subsidized basis, ensuring access for those who need it most. Healthcare becomes part of daily life—not something delayed until crisis.",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.977-2.95l.26-1.477m0 0a4.5 4.5 0 00-1.624-3.648 4.5 4.5 0 01.924-3.607m0 0a4.5 4.5 0 00-1.924-3.607 4.5 4.5 0 01-.924-3.607m0 0l.26-1.477m-2.977 2.95l-.26-1.477" />
@@ -381,7 +381,7 @@ const WellnessEcosystem = () => {
                     {"visitItems" in section && (
                       <div className="grid md:grid-cols-2 gap-6 mb-6">
                         <div>
-                          <h4 className="text-[#FFD700]/80 text-glow-gold-subtle text-sm font-semibold tracking-[0.2em] uppercase mb-3 text-glow-gold-subtle">Why People Visit</h4>
+                          <h4 className="text-glow-white text-sm font-semibold tracking-[0.2em] uppercase mb-3">Why People Visit</h4>
                           <ul className="space-y-2">
                             {(section.visitItems as string[]).map((item) => (
                               <li key={item} className="flex items-start gap-2.5 text-white/80 text-base leading-relaxed text-glow-black">

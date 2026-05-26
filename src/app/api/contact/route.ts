@@ -1,7 +1,7 @@
 import sgMail from "@sendgrid/mail";
 import { NextRequest, NextResponse } from "next/server";
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
+sgMail.setApiKey(process.env.SENDGRID_AK || "");
 
 export async function POST(req: NextRequest) {
   try {

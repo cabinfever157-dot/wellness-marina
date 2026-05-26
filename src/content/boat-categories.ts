@@ -18,7 +18,7 @@ export interface BoatCategory {
 export const boatCategories: BoatCategory[] = [
   {
     title: "Healthcare Boats",
-    description: "Bringing world-class clinical care to the water — diagnostics, mental health, oncology, dermatology, and vision services.",
+      description: "Bringing world-class clinical care to the water — diagnostics, brain wellness, oncology, dermatology, and vision services.",
     href: "/boats/healthcare",
     image: "/images/Primary_CareBoat.png",
     boats: [
@@ -31,9 +31,9 @@ export const boatCategories: BoatCategory[] = [
         tagColor: "bg-blue-600/90 text-white shadow-blue-500/50 shadow-lg",
       },
       {
-        name: "Mental Health Boat",
+        name: "Brain Wellness Boat",
         description: "Soundproofed counseling rooms, private check-in, rooftop yoga pavilion.",
-        href: "/boats/mental-health",
+        href: "/boats/brain-wellness",
         image: "/images/Mental_Health.png",
         tag: "Wellness",
         tagColor: "bg-teal-600/90 text-white shadow-teal-500/50 shadow-lg",

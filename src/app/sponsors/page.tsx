@@ -33,7 +33,7 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Physical Boat Naming Rights</h2>
-                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Build Offsets Available</div>
+                <div className="text-glow-white text-2xl font-light mb-6">Build Offsets Available</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   National and regional brands can sponsor individual live-work boat concepts, securing naming rights, co-branding, and product placement, while actively funding health and economic development.
                 </p>
@@ -53,7 +53,7 @@ export default function SponsorsPage() {
               <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold text-white mb-3 text-glow-subtle">Digital Ecosystem Sponsorships</h2>
-                <div className="text-[#FFD700] text-glow-gold-subtle text-2xl font-light mb-6 text-glow-gold-subtle">Tiered Sponsorship Options</div>
+                <div className="text-glow-white text-2xl font-light mb-6">Tiered Sponsorship Options</div>
                 <p className="text-white mb-8 text-lg leading-relaxed flex-grow text-glow-black">
                   Directly fund access to critical health content for underserved populations through our Rural Connect platform. 83% of rural residents cite transportation as a barrier to care.
                 </p>

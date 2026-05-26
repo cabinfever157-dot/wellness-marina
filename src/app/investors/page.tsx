@@ -8,7 +8,7 @@ export default function InvestorsPage() {
       <div className="relative h-[400px] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/5.png')" }}
+          style={{ backgroundImage: "url('/images/investors.jpg')" }}
         />
         <div className="absolute inset-0 bg-[#020C1B]/60" />
         <div className="relative z-10 h-full flex items-center justify-center">
